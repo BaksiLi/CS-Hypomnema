@@ -4,7 +4,6 @@ CS-Hypomnema: Computer Science Notes Collection
 
 Note-taker: [Baksi](https://github.com/BaksiLi)  
 This repository curates my computer science notes.    
-
 <sub>I used *Byword* (Standard Markdown) when taking notes, so the files might encounter problems of compilation on GitHub, *esp.* with LaTeX. I will try to tackle this in the future. </sub>
 
 # Catalogue
@@ -15,9 +14,9 @@ This repository curates my computer science notes.
 1. 【Upload Pending】***Graph Theory and Algorithms (with Python)***   
 	A summary note from [NET04x](https://www.imt-atlantique.fr/fr/formation/moocs-et-cours-ouverts/moocs/advanced-algorithmics-and-graph-theory-python) (IMTx) and [ALGS202x](https://www.edx.org/course/graph-algorithms-uc-san-diegox-algs202x) (UCSanDiegoX). The former provided most of the algorithmics knowledge, whereas the latter course supported the note with mathematical details.
 ## Mathematica (Wolfram Language)
-1. ***Learning Mathematica as a Code-reader***
-	I wrote this notebook alongside with my [myNote.nb](https://github.com/BaksiLi/Wolflang-Workshop/blob/master/resources/myNote.nb)
-1. ***Wolflang Workshop***
+1. [***Learning Mathematica as a Code-reader***](https://github.com/BaksiLi/Wolflang-Workshop/blob/master/resources/myNote.nb)
+	I wrote this notebook alongside with learning.
+1. 【Updating】***Wolflang Workshop***
 	NorthKoreaSleuthing.nb
 
 # Acknowledgement

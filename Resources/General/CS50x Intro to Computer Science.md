@@ -2,7 +2,7 @@
 CS50x: Introduction to Computer Science  
 ---  
  [//]: # (Define NTBC = Need to be checked)
-### Content
+# Content
 
 - [Introduction](#intro)  
 - [Main Course](#main)    
@@ -13,40 +13,45 @@ CS50x: Introduction to Computer Science
 - [Future Study](#future)
 
 ---
-## Introduction
+# Introduction
 Lecturer: <a mailto="malan@havard.edu">David J. Malan</a>  
 Note taking: [Baksi](https://github.com/BaksiLi)  
 This my note of CS50x 2017 course. The content and structure may be slightly different from the [official syllables](http://docs.cs50.net/2017/x/syllabus.html), nevertheless all the knowledge will be covered. The original course video and other supporting materials could be found in the [seminar page](http://cs50.tv/2017/fall/#about,lectures). 
  
-## Main Course
-### I. Week 0: Programming [w0]
-- [Scratch](www.scratch.mit.edu) language is introduced. A visual toolkit for children to grab an idea of *programming*. <img src="http://www.quarrylane.org/uploaded/Summer/images/ScratchBlogLogo.jpg" alt = "Scratch logo" width = "330" />
-- How programme works?  
-	- **Computers** are very dumb machines indeed because they do only what they are instructed to do, but at the same time very clever since the people behind are intellegent. 
-	- A computer **programme** is a collection of instructions to achieve a specific task. The approach of it is so called an **Algorithm**, therefore generally speaking, any piece of code can be refered as [Algorithm](w3). 
-	- **Binaries** that corresponed directly to specific instructions -> **Assembly Language** which enabled the programmer to use symbolics instead, but still one-to-one therefore low-level and not portable -> **Higher-level Language**, *FORTRAN* (FORmula TRANslation) language first came.   
-	- **Compilers** translate programme statements into computer instructions. **Operating System** channeled all input and output (*i.e.* I/O) operations.
-- Relavent readings at the stage
-	- How Computers Work, Tenth Edition
+# Main Course
+## I. Week 0: Programming [w0]
+### Scratch
+ [Scratch](www.scratch.mit.edu) is a visual toolkit for amatures to learn and grab an idea of *programming*. <img src="http://www.quarrylane.org/uploaded/Summer/images/ScratchBlogLogo.jpg" alt = "Scratch logo" width = "330" />
+### How programme works?  
+- **Computers** are information processing automata; they are dumb machines in the sense that they do *only* what user instructed, but at the same time very clever if the people behind are intellegent.
+- A computer **programme** is a collection of instructions to achieve a specific task. It is, a  liminal artefact, since instructions are abstract but the operations are done in the physical world. **Binaries** that corresponed directly to specific instructions. Tasks are approached by **Algorithms**, *cf.* [Week 3](w3).  
+- **Assembly Language** enabled the programmers to use symbolics instead of binaries, but it is symbol-to-operation therefore low-level and not portable. **Higher-level Language**, *FORTRAN* (FORmula TRANslation) language first came.   
+- **Compilers** translate programme statements into computer instructions. **Operating System** channeled all input and output (*i.e.* I/O) operations.
+### Relavent readings at the stage
+- How Computers Work, Tenth Edition
 Ron White
 Que Publishing, 2014
 ISBN 0-7897-4984-X
-	- *Code: The Hidden Language of Computer Hardware and Software*, First Edition
+- *Code: The Hidden Language of Computer Hardware and Software*, First Edition
 Charles Petzold
 Microsoft Press, 2000
 ISBN 0-735-61131-9
-	- *Programming in C*, Fourth Edition
+- *Programming in C*, Fourth Edition
 Stephen G. Kochan
 Pearson Education, 2015
 ISBN 0-321-77641-0
-	- *Hacker’s Delight*, Second Edition
+- *Hacker’s Delight*, Second Edition
 Henry S. Warren Jr.
 Pearson Education, 2013
 ISBN 0-321-84268-5
 
-### II. Week 1: C Language Fundamentals [w1]
-- Environment: Cloud [IDE](https://ide.cs50.io/) platform, [CS50.h Reference](https://reference.cs50.net/math/modf).
-- Introduced *C* language and basic *Bash* instructions, *e.g.* gcc.   
+## II. Week 1: C Language Basics [w1]
+### Environment
+- Environment: Cloud [IDE](https://ide.cs50.io/) platform, [CS50.h Reference](https://reference.cs50.net/math/modf). The library is available at GitHub, *cf.* [libcs50](https://github.com/cs50/libcs50).
+- Debugging in IDE: `eprintf`,` help50` and `debug50`.
+- Editors: [Vim](https://en.wikipedia.org/wiki/Vim_(text_editor) or [Elipse](https://en.wikipedia.org/wiki/Eclipse_(software)) for Hardcore players. The presenter uses [Atom](https://atom.io/).
+### C language
+- Introduction to *C* language and basic *Bash* instructions, *e.g.* gcc.   
 CS50 [style guide of C](https://manual.cs50.net/style)
 - [Problem set #1](https://docs.cs50.net/2017/x/psets/1/pset1.html)
  <input type="checkbox" name="pset1" checked="true"> Status <br/>
@@ -54,17 +59,17 @@ CS50 [style guide of C](https://manual.cs50.net/style)
 	- Functions  
 	- IO & Loop  
 
-### III. Week 2: Arrays [w2]
-1. Debugging in IDE: "eprintf", help50 / debug50  
+## III. Week 2: Arrays [w2]
 1. String: it turns out that underneath the hood, strings are a little more mundane - **grid of information**, sometimes known as bucket. Lee takes those contiguous block of memory "- L - e - e - \0 -" in RAM.  
 	`int main(int argc, string argv[])`  
-1. [Problem set #2](https://docs.cs50.net/2017/x/psets/2/pset2.html): Cryptography  
+1. [Problem set #2](https://docs.cs50.net/2017/x/psets/2/pset2.html): Simple Cryptographies   
 <input type="checkbox" name="pset2" checked="true"> Status <br/>
-	- Caesar
-	- Vigenere
-	- [Crack Cytology question](https://docs.cs50.net/problems/crack/crack.html):   wait to be done as an afterlecture work.
+	- Caesar Cipher
+	- Vigenere Cipher
+	- [Crack Cytology question](https://docs.cs50.net/problems/crack/crack.html)
 
-### III. Week 3: Algorithms [w3]
+[#]: (MARKER)
+## III. Week 3: Algorithms [w3]
 <sub>This section use both C and Python for the examples.</sub>
 As above mentioned, **Algorithm** is the method for problem solving, involves a finite series of steps. "In computing practiceb the algorithm denites the expression on paper of the proposed computing process (often by means of a flowchart) prior to the preparation of the programme. If no algorithms is possible a heuristic solution has to be sought {in which it involves trial and error, as in iteration.}."
 
@@ -144,7 +149,7 @@ Upper boundary $(n-1) + (n-2) + ... + 1 \\ = \frac{n(n-1)}{2} = O(n^2)$  ; Lower
 		- how to **configurate a compiler**
 		- how to **write programme in multiple files**
 	- Implement Game of Fifteen  
-### IV. Week 4: Memory
+## IV. Week 4: Memory
 1. Underneath the hood: **RAM**
 	Same "incantation of strings" are different, in the sense of memory. Why?
 	Notice that if you run a programme in terminal, your computer would give that programme the illusion of a really big chunk of memory all on its own. When main is called, main is given a stack space.	... [sloppily drawn]  
@@ -177,7 +182,7 @@ Incidentally, HTML and CSS (languages in which webpages can be written) model co
 	- [Whodunit](https://docs.cs50.net/problems/whodunit/whodunit.html#background): restore a forensic image by switching certain pixels into other colours. To be familiar with the structure of 24-bit uncompressed BMPs.  
 	- Resize  NTBC;  
 	- [Recover](https://docs.cs50.net/problems/recover/recover.html)  
-### V. Week 5: Data Structures (Further)  
+## V. Week 5: Data Structures (Further)  
 1. Data structure allows more flexible running, memory are allocated dynamically, rather than using remalloc(), free() and so frequently.  
 	- **Node** type is essential.  
 
@@ -285,7 +290,7 @@ The running time of search  would always be O(n) since the only way of searching
 	- Understand [C compiler](https://docs.cs50.net/problems/speller/speller.html#code-makefile-code)
 	- NTBC using Hash table.
 	- the [form](https://forms.cs50.net/2017/x/psets/5)   
-### VI. Week 6: HTTP  
+## VI. Week 6: HTTP  
  [//]: # (Waited to be reviewed after refered to a book.)  
 1. Inter-net models. 
 	- A central **protocal** is used to assign certain settings to all the devices, so called **router**. It is a typical example, and a special type of software called **DHCP** (Dynamic Host Configuration Protocal). 
@@ -304,10 +309,10 @@ The running time of search  would always be O(n) since the only way of searching
 	- `telnet sss.harvard.edu 80`. N.B. telnet and ftp are no longer available due to some "insecure" reason (or due to 32bit) on macOS 10.13, so nc, ssh and stfp is used instead. `curl -I ` just for header.  
 1. **CSS**  
 
-### VII. Week 7: Machine Learning  
+## VII. Week 7: Machine Learning  
 - This section is removed to another note, acting as an introduction.
 
-### IIX. Week 8: Python   
+## IIX. Week 8: Python   
 1. Comparison between C & Python from the perspective of C.
 1. The meaning of object type, value, and identity. Depending on the type of the object, it could be either immutable (*e.g.*, strings and tuples) or mutable (*e.g.*, dictionaries and lists). Methods are functions associated with objects, whereas data attributes are data associated with objects.   
 	Polymorphism to operators   
@@ -355,23 +360,23 @@ The running time of search  would always be O(n) since the only way of searching
 	Flask, Twitter application, Analyzer
 <input type="checkbox" checked="True" name="pset3"> Status <br/>  
 
-### IX. Week 9: SQL   
+## IX. Week 9: SQL   
 1. Model part of Web  
  
 1. [Problem set #7](https://docs.cs50.net/2017/x/psets/7/pset7.html): C$50 Finance  
 <input type="checkbox" name="pset3"> Status <br/>  
-### X. Week 10: JavaScrip   
+## X. Week 10: JavaScrip   
 1. [Problem set #8](https://docs.cs50.net/2017/x/psets/8/pset8.html): Mashup
 	- [Google map JS API](https://developers.google.com/maps/web/) powered by [Google Developers](console.developers.google.com)
 	- [Google JS tutorial](https://developers.google.com/maps/documentation/javascript/tutorial)  
 	- [SQLite csv_import](https://www.sqlite.org/cli.html#csv_import)
 <input type="checkbox" name="pset3"> Status <br/>  
-### XI. Week 11: Final Project  
+## XI. Week 11: Final Project  
 -> [Page](https://docs.cs50.net/2017/fall/project/project.html)  
 -> [Proposal link](final/readme.md)  
 
 ---
-## Further Study [future]
+# Further Study [future]
 - Further in C
 	- [Further reading](#readings) &  [C language@cppreference.com](http://en.cppreference.com/w/c/language)
 	- Read the module of cs50.h
