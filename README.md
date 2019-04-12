@@ -1,6 +1,7 @@
 CS-Hypomnema: Computer Science Notes Collection
 ---
 [![License: CC BY-NC-ND 4.0](https://img.shields.io/badge/License-CC%20BY--NC--ND%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-nd/4.0/)
+
 Note-taker: [Baksi](https://github.com/BaksiLi)  
 This repository curates my computer science notes.    
 
@@ -16,7 +17,8 @@ This repository curates my computer science notes.
 ## Mathematica (Wolfram Language)
 1. ***Learning Mathematica as a Code-reader***
 	I wrote this notebook alongside with my [myNote.nb](https://github.com/BaksiLi/Wolflang-Workshop/blob/master/resources/myNote.nb)
-1. NorthKoreaSleuthing.nb
+1. ***Wolflang Workshop***
+	NorthKoreaSleuthing.nb
 
 # Acknowledgement
 This repository is licenced under the Creative Commons *Attribution-NonCommercial-NoDerivatives 4.0 International* License.  
