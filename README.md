@@ -9,8 +9,8 @@ This repository curates my computer science notes.
 # Catalogue
 ## I. Introduction to CS
 1. [***CS50x: Introduction to Computer Science***](https://github.com/BaksiLi/CS-Hypomnema/blob/master/Resources/General/CS50x%20Intro%20to%20Computer%20Science.md)   
-	Note of CS50x 2017 course, the content and structure may be slightly different from the [official syllables](http://docs.cs50.net/2017/x/syllabus.html). Nevertheless all the knowledge will be covered. The original course video and other supporting materials could be found in the [seminar page](http://cs50.tv/2017/fall/#about,lectures). 
-1.【Upload Pending】 [***Zsh (Z shell) development with comparison to Bash***]
+	Note of CS50x 2017 course, the content and structure may be slightly different from the [official syllables](http://docs.cs50.net/2017/x/syllabus.html). Nevertheless all the knowledge will be covered. The original course video and other supporting materials could be found in the [seminar page](http://cs50.tv/2017/fall/#about,lectures).
+1. 【Upload Pending】 ***Zsh (Z shell) development with comparison to Bash***
 	This is a *Learn X in Y minutes*-styled tutorial for using Zsh for development. It act as a fast introduction for programmers, esp. those who have knowledge about Bash.
 ## II. Algorithmics
 1. 【Upload Pending】***Graph Theory and Algorithms (with Python)***   
@@ -19,7 +19,7 @@ This repository curates my computer science notes.
 ### i. Mathematica (Wolfram Language)
 1. [***Learning Mathematica by example***](https://github.com/BaksiLi/Wolflang-Workshop/blob/master/resources/myNote.nb)   
 	I wrote this notebook alongside with learning.
-1. 【Updating】***Wolflang Workshop***
+1. 【Updating】***Wolflang Workshop***   
 	Including NorthKoreaSleuthing.nb
 
 # Acknowledgement
