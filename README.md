@@ -12,7 +12,7 @@ This repository curates my computer science notes.
 	Note based on CS50x 2017 course, the content and structure may be slightly different from the [official syllables](http://docs.cs50.net/2017/x/syllabus.html).	It covers the basics of C, Python, Javascript, HTML and CSS, as well as some important concepts in computer science like Computational Complexity and so on.
 1. 【Upload Pending】***Introduction to Web Development***    
 	Note based on CS50w course. It covers Git, Flask, Django et.c.
-1. 【Upload Pending】 ***Zsh (Z shell) development with comparison to Bash***   
+1. 【Upload Pending】 ***Zsh (Z shell) Development with Comparison to Bash***   
 	This is a *Learn X in Y minutes*-styled tutorial for using Zsh for development. It act as a fast introduction for programmers, esp. those who have knowledge about Bash.
 ## II. Mathematics
 1. 【Upload Pending】***Graph Theory and Algorithms (with Python)***   
@@ -21,7 +21,7 @@ This repository curates my computer science notes.
 	This is a coding theory text with Python implementations. Not ready to upload so far.
 ## III. Scientific Programming
 ### i. Mathematica (Wolfram Language)
-1. [***Learn Mathematica by example***](https://github.com/BaksiLi/Wolflang-Workshop/blob/master/resources/myNote.nb)   
+1. [***Learn Mathematica by Example***](https://github.com/BaksiLi/Wolflang-Workshop/blob/master/resources/myNote.nb)   
 	I wrote this notebook alongside with learning. The official tutorial, [*Fast Introduction for math students*](http://www.wolfram.com/language/fast-introduction-for-math-students/en/) is a good source of reference as well.
 1. 【Updating】***Wolflang Workshop***   
 	Including NorthKoreaSleuthing.nb

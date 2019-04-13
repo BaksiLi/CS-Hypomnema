@@ -1,25 +1,24 @@
 <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 CS50x: Introduction to Computer Science  
 ---  
- [//]: # (Define NTBC = Need to be checked)
 # Content
 
 - [Introduction](#intro)  
-- [Main Course](#main)    
-	1. [Week 0: Programming](#w0)
-	1. [Week 1: C Language Fundamentals](#w1)
-	1. [Week 2: Arrays](w2)
-	1. [Week 3: Algorithms](w3)
+- [Main](#main)    
+	1. [I: Programming](#w0)
+	1. [II: C Language Fundamentals](#w1)
+	1. [III: Arrays](w2)
+	1. [IV: Algorithms](w3)
 - [Future Study](#future)
 
 ---
 # Introduction
 Lecturer: <a mailto="malan@havard.edu">David J. Malan</a>  
-Note taking: [Baksi](https://github.com/BaksiLi)  
+Note-taker: [Baksi](https://github.com/BaksiLi)  
 This note is written based on CS50x 2017 course. The content and structure may be slightly different from the [official syllables](http://docs.cs50.net/2017/x/syllabus.html) since I have restructured and filled it new materials from other sources.  Nevertheless, all the knowledge are covered and extended beyond the scope. The original course video and other supporting materials could be found in the [seminar page](http://cs50.tv/2017/fall/#about,lectures), or in their channel [cs50 live](https://www.youtube.com/user/cs50tv/).
  
-# Main Course
-## I. Week 0: Programming [w0]
+# Main
+## I. Programming [w0]
 ### Scratch
  [Scratch](www.scratch.mit.edu) is a visual toolkit for amatures to learn and grab an idea of *programming*. <img src="http://www.quarrylane.org/uploaded/Summer/images/ScratchBlogLogo.jpg" alt = "Scratch logo" width = "330" />
 ### How programme works?  
@@ -45,7 +44,7 @@ Henry S. Warren Jr.
 Pearson Education, 2013
 ISBN 0-321-84268-5
 
-## II. Week 1: C Language Basics [w1]
+## II. C Language Basics [w1]
 ### Environment
 - Environment: Cloud [IDE](https://ide.cs50.io/) platform, [CS50.h Reference](https://reference.cs50.net/math/modf). The library is available at GitHub, *cf.* [libcs50](https://github.com/cs50/libcs50).
 - Debugging in IDE: `eprintf`, ` help50` and `debug50`.
@@ -54,12 +53,11 @@ ISBN 0-321-84268-5
 - Introduction to *C* language and basic *Bash* instructions, *e.g.* gcc.   
 CS50 [style guide of C](https://manual.cs50.net/style)
 ### [Problem set #1](https://docs.cs50.net/2017/x/psets/1/pset1.html)
- <input type="checkbox" name="pset1" checked="true"> Status <br/>
-	- Hello World  
-	- Functions  
-	- IO & Loop  
+- Hello World  
+- Functions  
+- IO & Loop  
 
-## III. Week 2: Arrays [w2]
+## III. Arrays [w2]
 ### Array structure
 - String: it turns out that underneath the hood, strings are a little more mundane - **grid of information**, sometimes known as bucket. Lee takes those contiguous block of memory "- L - e - e - \0 -" in RAM.  
 	`int main(int argc, string argv[])`  
@@ -90,14 +88,12 @@ CS50 [style guide of C](https://manual.cs50.net/style)
 	print('x = {}, y = {}'.format(p.x, p.y))
 	```
 
-### [Problem set #2](https://docs.cs50.net/2017/x/psets/2/pset2.html): Simple Cryptographies   
-<input type="checkbox" name="pset2" checked="true"> Status <br/>
-	- Caesar Cipher
-	- Vigenere Cipher
-	- [Crack Cytology question](https://docs.cs50.net/problems/crack/crack.html)
+### [Problem set #2](https://docs.cs50.net/2017/x/psets/2/pset2.html)
+- Caesar Cipher
+- Vigenere Cipher
+- [Crack Cytology question](https://docs.cs50.net/problems/crack/crack.html)
 
-[#]: (MARKER)
-## III. Week 3: Algorithms [w3]
+## IV. Algorithms [w3]
 As above mentioned, **Algorithm** is the method for problem solving, involves a finite series of steps. "In computing practice the algorithm denotes the expression on paper of the proposed computing process (often by means of a flowchart) prior to the preparation of the programme. If no algorithms is possible a heuristic solution has to be sought {in which it involves trial and error, as in iteration.}."
 ### Addressing a Computational Problem   
 - Formulation:  express the problem formally
@@ -113,6 +109,9 @@ As above mentioned, **Algorithm** is the method for problem solving, involves a 
 - Constants and low-order terms are droped, which means two algorithms may have the same $O$ even though one is always faster than the other. Ordered:
 > $log(n)\leq n\leq n^2\leq n^z\leq a^n$
 
+![Complexity illustration, $a=z=3$](resources/complexity.pdf)
+
+[#]: (MARKER)
 ### Search and Sort
 1. Search (in a sorted list)
 	- Linear: Search linearly, i.e. if asking to guess a number in the range of 100, then $O(n)$.  
@@ -186,7 +185,7 @@ Upper boundary $(n-1) + (n-2) + ... + 1 \\ = \frac{n(n-1)}{2} = O(n^2)$  ; Lower
 		- how to **configurate a compiler**
 		- how to **write programme in multiple files**
 	- Implement Game of Fifteen  
-## IV. Week 4: Memory
+## V. Memory
 1. Underneath the hood: **RAM**
 	Same "incantation of strings" are different, in the sense of memory. Why?
 	Notice that if you run a programme in terminal, your computer would give that programme the illusion of a really big chunk of memory all on its own. When main is called, main is given a stack space.	... [sloppily drawn]  
@@ -207,11 +206,11 @@ syntatic sugar `s[i]` is just `*(s+i)`
 1. file structures
 	- Picture:
 		- BMP(Bit map): see [Bitmaps & Palette Manipulation](http://www.brackeen.com/vga/bitmaps.html).
-		![Grid of pixels](pic/bpm.jpg)
+		![Grid of pixels](resources/bpm.jpg)
 		hex editor: ` xxd -c 24 -g 3 -s 54 smiley.bmp `. `-s 54` stead for starting from adress 00000036 which is 54 in hexadecimal since 14 + 40 = 54 lines (bytes) the metadate of a 24-bit BMP has. Further descriptions -> [this](https://docs.cs50.net/problems/whodunit/whodunit.html#background)  
 		In c there is *struct* can be defined.  RGB colour.
 		- JPEG image:  
-![beginning of JPEG](pic/jpg.png)
+![beginning of JPEG](resources/jpg.png)
 Incidentally, HTML and CSS (languages in which webpages can be written) model colors in this same way. If curious, see http://en.wikipedia.org/wiki/Web_colors for more details.
 	- CSV (Comma separated)
 ### [Problem set #4](https://docs.cs50.net/2017/x/psets/4/pset4.html): Forensics  
@@ -273,7 +272,7 @@ The running time of search  would always be O(n) since the only way of searching
 	queue;
 	``` 
 	- **Tree** type: <!--58:00-->
-![tree](pic/tree.png)
+![tree](resources/tree.png)
 		*Binary search tree*, left smaller right greater. *aut idem pro*:  
 		 
 	```C
@@ -307,7 +306,7 @@ The running time of search  would always be O(n) since the only way of searching
 	}
 	 ``` 
 	but for the case of text, this is not that practical -> **Huffman coding**.
-	![huffman tree](pic/huffman.png)
+	![huffman tree](resources/huffman.png)
 	Compression certainly has a lower limit, relavent to *information entropy*.  
 	
 	```C
@@ -390,7 +389,7 @@ The running time of search  would always be O(n) since the only way of searching
 	More features of Python, see
 	
 2. Web App with Python. 
-	![model](pic/model.png)
+	![model](resources/model.png)
 	using http.server module b;
 1. [Problem set #6](https://docs.cs50.net/2017/x/psets/6/pset6.html): Sentimental
 	NTBC
