@@ -16,7 +16,7 @@ CS50x: Introduction to Computer Science
 # Introduction
 Lecturer: <a mailto="malan@havard.edu">David J. Malan</a>  
 Note taking: [Baksi](https://github.com/BaksiLi)  
-This my note of CS50x 2017 course. The content and structure may be slightly different from the [official syllables](http://docs.cs50.net/2017/x/syllabus.html), nevertheless all the knowledge will be covered. The original course video and other supporting materials could be found in the [seminar page](http://cs50.tv/2017/fall/#about,lectures). 
+This note is written based on CS50x 2017 course. The content and structure may be slightly different from the [official syllables](http://docs.cs50.net/2017/x/syllabus.html) since I have restructured and filled it new materials from other sources.  Nevertheless, all the knowledge are covered and extended beyond the scope. The original course video and other supporting materials could be found in the [seminar page](http://cs50.tv/2017/fall/#about,lectures), or in their channel [cs50 live](https://www.youtube.com/user/cs50tv/).
  
 # Main Course
 ## I. Week 0: Programming [w0]
@@ -48,21 +48,49 @@ ISBN 0-321-84268-5
 ## II. Week 1: C Language Basics [w1]
 ### Environment
 - Environment: Cloud [IDE](https://ide.cs50.io/) platform, [CS50.h Reference](https://reference.cs50.net/math/modf). The library is available at GitHub, *cf.* [libcs50](https://github.com/cs50/libcs50).
-- Debugging in IDE: `eprintf`,` help50` and `debug50`.
-- Editors: [Vim](https://en.wikipedia.org/wiki/Vim_(text_editor) or [Elipse](https://en.wikipedia.org/wiki/Eclipse_(software)) for Hardcore players. The presenter uses [Atom](https://atom.io/).
+- Debugging in IDE: `eprintf`, ` help50` and `debug50`.
+- Editors: [Vim](https://en.wikipedia.org/wiki/Vim_(text_editor)) or [Elipse](https://en.wikipedia.org/wiki/Eclipse_(software)) for Hardcore players. The presenter uses [Atom](https://atom.io/).
 ### C language
 - Introduction to *C* language and basic *Bash* instructions, *e.g.* gcc.   
 CS50 [style guide of C](https://manual.cs50.net/style)
-- [Problem set #1](https://docs.cs50.net/2017/x/psets/1/pset1.html)
+### [Problem set #1](https://docs.cs50.net/2017/x/psets/1/pset1.html)
  <input type="checkbox" name="pset1" checked="true"> Status <br/>
 	- Hello World  
 	- Functions  
 	- IO & Loop  
 
 ## III. Week 2: Arrays [w2]
-1. String: it turns out that underneath the hood, strings are a little more mundane - **grid of information**, sometimes known as bucket. Lee takes those contiguous block of memory "- L - e - e - \0 -" in RAM.  
+### Array structure
+- String: it turns out that underneath the hood, strings are a little more mundane - **grid of information**, sometimes known as bucket. Lee takes those contiguous block of memory "- L - e - e - \0 -" in RAM.  
 	`int main(int argc, string argv[])`  
-1. [Problem set #2](https://docs.cs50.net/2017/x/psets/2/pset2.html): Simple Cryptographies   
+### Python
+- Recursion in Python: functions can call themselves. For example:
+
+	``` python3
+	def factorial(n):
+		if  n == 1:  # base case
+			return 1
+		return n * factorial(n - 1)
+	```
+	
+- Object-Oriented Programming features in Python: paradigm based on object. For example:
+
+	``` python3
+	class Coordinates:
+		def __init__(self, x, y):
+			self.x = x
+			self.y = y
+		
+		def shift(self, x, y):
+			self.x += x
+			self.y += y
+			
+	p = Coordinates(1, 2)
+	p.shift(1, 1)
+	print('x = {}, y = {}'.format(p.x, p.y))
+	```
+
+### [Problem set #2](https://docs.cs50.net/2017/x/psets/2/pset2.html): Simple Cryptographies   
 <input type="checkbox" name="pset2" checked="true"> Status <br/>
 	- Caesar Cipher
 	- Vigenere Cipher
@@ -70,14 +98,23 @@ CS50 [style guide of C](https://manual.cs50.net/style)
 
 [#]: (MARKER)
 ## III. Week 3: Algorithms [w3]
-<sub>This section use both C and Python for the examples.</sub>
-As above mentioned, **Algorithm** is the method for problem solving, involves a finite series of steps. "In computing practiceb the algorithm denites the expression on paper of the proposed computing process (often by means of a flowchart) prior to the preparation of the programme. If no algorithms is possible a heuristic solution has to be sought {in which it involves trial and error, as in iteration.}."
+As above mentioned, **Algorithm** is the method for problem solving, involves a finite series of steps. "In computing practice the algorithm denotes the expression on paper of the proposed computing process (often by means of a flowchart) prior to the preparation of the programme. If no algorithms is possible a heuristic solution has to be sought {in which it involves trial and error, as in iteration.}."
+### Addressing a Computational Problem   
+- Formulation:  express the problem formally
+- Specification: find the algorithm
+- Implementation: coding
+### Computational complexity
+- In terms of the growth rate (# of operations against input size $n$), functions are ordered:
+> Logarithmic $log(n)$, Linear $an + b$, Quadratic $an^2 + bn + c$, Polynomial $an^z + \dots + an^1 + an^0\text{ with constant }z$, Exponential $a^n\text{ with constant }a$
+- **Asymptotic complexity** measures the effieciency. Its notations is to indicate the running time of a give algorithm, which takes the behaviour with increasing input size into account. 
+	- $O$, a.k.a. asymptotic upper bound -> worst-case scenario.
+	- $\Omega$, a.k.a. asymptotic lower bound -> best-case scenario.
+	- $\Theta$ notes when $\Omega = O$, known as the asymptotically tight bound.
+- Constants and low-order terms are droped, which means two algorithms may have the same $O$ even though one is always faster than the other. Ordered:
+> $log(n)\leq n\leq n^2\leq n^z\leq a^n$
 
-1. Computational Complexity
-	- The measurement of efficiency of a given algorithm. Asymptotic notations to express. Constants and low-order terms are droped, which means two algorithms may have the same $O$ even though one is always faster than the other.
-	- $O$ is the "worst-case scenario", whilst the best is refered as $\Omega$.
-	- $\Theta$ notes when $\Omega = O$  -> r.f. "Algorithm"
-2. Search (in a sorted list)
+### Search and Sort
+1. Search (in a sorted list)
 	- Linear: Search linearly, i.e. if asking to guess a number in the range of 100, then $O(n)$.  
 	- Binary (Divide & Conquer Algorithm): $O(log_2 n)$.  
 
@@ -177,11 +214,12 @@ syntatic sugar `s[i]` is just `*(s+i)`
 ![beginning of JPEG](pic/jpg.png)
 Incidentally, HTML and CSS (languages in which webpages can be written) model colors in this same way. If curious, see http://en.wikipedia.org/wiki/Web_colors for more details.
 	- CSV (Comma separated)
-1. [Problem set #4](https://docs.cs50.net/2017/x/psets/4/pset4.html): Forensics  
+### [Problem set #4](https://docs.cs50.net/2017/x/psets/4/pset4.html): Forensics  
 <input type="checkbox" name="pset3" checked="True"> Status <br/>
 	- [Whodunit](https://docs.cs50.net/problems/whodunit/whodunit.html#background): restore a forensic image by switching certain pixels into other colours. To be familiar with the structure of 24-bit uncompressed BMPs.  
 	- Resize  NTBC;  
 	- [Recover](https://docs.cs50.net/problems/recover/recover.html)  
+
 ## V. Week 5: Data Structures (Further)  
 1. Data structure allows more flexible running, memory are allocated dynamically, rather than using remalloc(), free() and so frequently.  
 	- **Node** type is essential.  
@@ -313,7 +351,6 @@ The running time of search  would always be O(n) since the only way of searching
 - This section is removed to another note, acting as an introduction.
 
 ## IIX. Week 8: Python   
-1. Comparison between C & Python from the perspective of C.
 1. The meaning of object type, value, and identity. Depending on the type of the object, it could be either immutable (*e.g.*, strings and tuples) or mutable (*e.g.*, dictionaries and lists). Methods are functions associated with objects, whereas data attributes are data associated with objects.   
 	Polymorphism to operators   
 	Typing or assigning data types feres to the set of rules that the language uses to ensure that the part of the program receiveing the data knows how to correctly interpret that data. Some langaguages are **statically typed**, like C/C++; whilst other languages are **dynamically typed**, like Python. Static typing means that type checking is perfoormed during compile time, whereas dynamic typing means that type checking is performed at run time. 
@@ -372,20 +409,21 @@ The running time of search  would always be O(n) since the only way of searching
 	- [SQLite csv_import](https://www.sqlite.org/cli.html#csv_import)
 <input type="checkbox" name="pset3"> Status <br/>  
 ## XI. Week 11: Final Project  
--> [Page](https://docs.cs50.net/2017/fall/project/project.html)  
--> [Proposal link](final/readme.md)  
+- [Project Page](https://docs.cs50.net/2017/fall/project/project.html)  
 
 ---
 # Further Study [future]
-- Further in C
-	- [Further reading](#readings) &  [C language@cppreference.com](http://en.cppreference.com/w/c/language)
-	- Read the module of cs50.h
-	- CS107 - [Programming Paradigms](https://see.stanford.edu/Course/CS107) by Stanford
-	- Computing Examination in China
-- Review CS50
-	- NTBCs
-	- Sort out notes
-	- Revise with short videos
-- More Harvard Courses
+- 【Updated 2019】[CS50 Beyond](https://cs50.harvard.edu/beyond/2019/winter/lectures/) is a 6-days lecture series that provides a continuation of CS50 in Web Development.
+- Further in Languages
+	- Learn [C language@cppreference.com](http://en.cppreference.com/w/c/language)
+	- Maybe learn the 'better C' *C++*?
+- Specified path
+	- Data Science: [6.00.2x: Introduction to Computational Thinking and Data Science](https://www.edx.org/course/introduction-computational-thinking-data-mitx-6-00-2x-6) (which is considered as the continuous course of 6.00.1x, equivalent to cs50x)
+	- Web: [CS50's Web Programming with Python and JavaScript](https://www.edx.org/course/cs50s-web-programming-with-python-and-javascript)
+	- Game Development: [CS50's Introduction to Game Development](https://www.edx.org/course/cs50s-introduction-to-game-development)
+	- Mobile Apps: [CS50's Mobile App Development with React Native](https://www.edx.org/course/cs50s-mobile-app-development-with-react-native)
+
+- More Courses
 	- [Life after CS50!](https://cs50.stackexchange.com/questions/2890/life-after-cs50)
-	- [Self study for Stanford's MSCS Foundation courses.](https://backdoorgraduteschooladmissions.quora.com/Self-study-for-Stanfords-MSCS-Foundation-courses?share=1&srid=n9RZ), especially [6.00.2x: Introduction to Computational Thinking and Data Science](https://www.edx.org/course/introduction-computational-thinking-data-mitx-6-00-2x-6), this is considered as the continuous course of 6.00.1x, equivalent to cs50x.
+	- [Self study for Stanford's MSCS Foundation courses](https://backdoorgraduteschooladmissions.quora.com/Self-study-for-Stanfords-MSCS-Foundation-courses?share=1&srid=n9RZ), esp. CS107 - [Programming Paradigms](https://see.stanford.edu/Course/CS107) by Stanford
+- ET CETERA
