@@ -70,6 +70,7 @@ CS50 [style guide of C](https://manual.cs50.net/style)
 			return 1
 		return n * factorial(n - 1)
 	```
+cf. [Recursion Factorial](https://www.cs.usfca.edu/~galles/visualization/RecFact.html) visualization.
 	
 - Object-Oriented Programming features in Python: paradigm based on object. For example:
 
@@ -110,6 +111,8 @@ As above mentioned, **Algorithm** is the method for problem solving, involves a 
 > $log(n)\leq n\leq n^2\leq n^z\leq a^n$
 
 ![Complexity illustration, $a=z=3$](resources/complexity.pdf)
+
+- Further in algorithm and computational complexity theory, cf. *Graph Theory and Algorithms (with Python)* note.
 
 [#]: (MARKER)
 ### Search and Sort
@@ -321,11 +324,11 @@ The running time of search  would always be O(n) since the only way of searching
 	``` 	
 	- **Hash tables**: Linear probing, or dynamically extended linked lists.  
 	- **Trie** type, widely used as spelling checker model (dictionary!).  
+	- **Min Heap** used in Graph Algorithms.
 1. [Problem set #5](https://docs.cs50.net/2017/x/psets/5/pset5.html): Mispellings  
 <input type="checkbox" name="pset3" checked="True"> Status <br/>
 	- [Speller](https://docs.cs50.net/problems/speller/speller.html): `submit50 cs50/2017/x/speller`  
 	- Understand [C compiler](https://docs.cs50.net/problems/speller/speller.html#code-makefile-code)
-	- NTBC using Hash table.
 	- the [form](https://forms.cs50.net/2017/x/psets/5)   
 ## VI. Week 6: HTTP  
  [//]: # (Waited to be reviewed after refered to a book.)  
