@@ -12,7 +12,7 @@ This repository curates my computer science notes.
 	Note based on CS50x 2017 course, the content and structure may be slightly different from the [official syllables](http://docs.cs50.net/2017/x/syllabus.html).	It covers the basics of C, Python, Javascript, HTML and CSS, as well as some important concepts in computer science like Computational Complexity and so on.
 1. ***Introduction to Web Development*** ![Pending](https://img.shields.io/badge/status-Pending-orange.svg)    
 	Note based on CS50w course. It covers Git, Flask, Django et.c.
-1. 【Pending】 ***Zsh (Z shell) Development with Comparison to Bash***   
+1. ***Zsh (Z shell) Development with Comparison to Bash*** ![Pending](https://img.shields.io/badge/status-Pending-orange.svg)   
 	This is a *Learn X in Y minutes*-styled tutorial for using Zsh for development. It act as a fast introduction for programmers, esp. those who have knowledge about Bash.
 
 ## II. Algotithmics & Mathematics
@@ -32,7 +32,7 @@ There are open-source collections of algorithm implementations, which are useful
 	Including NorthKoreaSleuthing.nb
 ### ii. Python
 1. ***D-Wave machine Introduction*** ![Pending](https://img.shields.io/badge/status-Pending-orange.svg)   
-	This was part of my undergraduate thesis topic. I will sort it up and upload it in the future.
+	This was part of my undergraduate thesis topic. I will sort it up and upload it in the future. The code is available now, see [here](https://github.com/BaksiLi/CS-Hypomnema/tree/master/Resources/Quantum/mapcl.py)
 
 # Acknowledgement
 This repository is licenced under the Creative Commons [BY-NC-ND](https://creativecommons.org/licenses/by-nc-nd/4.0/) (*Attribution-NonCommercial-NoDerivatives 4.0 International*) Licence.  
