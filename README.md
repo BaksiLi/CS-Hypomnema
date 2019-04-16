@@ -32,15 +32,16 @@ There are open-source collections of algorithm implementations, which are useful
 	This is a collection of small projects, each has their own topic. 
 	<details>
 	<summary>Workshop Lists</summary>
+	
 	1. [Country Flag Colour Analysis](https://github.com/BaksiLi/Wolflang-Workshop/blob/master/resources/AnalyzeFlagColours.nb): An analysis on the dominant colours of the country flags around the world.
 	1. [Amateur Sleuthing of NK Nuclear Tests](https://github.com/BaksiLi/Wolflang-Workshop/blob/master/resources/NorthKoreaSleuthing.nb): Note from Stephen Wolfram's live stream chat. I have added some parts into it as well.
+	
 	</details>
-
 [//]: # (### ii. Python)
 
-## III. Quantum Computing
+## IV. Quantum Computing
 1. ***D-Wave machine Introduction*** ![Pending](https://img.shields.io/badge/status-Pending-orange.svg)   
-	This was part of my undergraduate thesis topic. The code is available now, see [here](https://github.com/BaksiLi/CS-Hypomnema/tree/master/Resources/Quantum/mapcl.py).
+	This was part of my undergraduate thesis topic. The code is available now, see [here](https://github.com/BaksiLi/CS-Hypomnema/blob/master/Resources/Quantum/D-Wave/mapcl.py).
 
 # Acknowledgement
 This repository is licenced under the Creative Commons [BY-NC-ND](https://creativecommons.org/licenses/by-nc-nd/4.0/) (*Attribution-NonCommercial-NoDerivatives 4.0 International*) Licence.  
