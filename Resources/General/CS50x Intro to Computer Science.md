@@ -63,7 +63,7 @@ CS50 [style guide of C](https://manual.cs50.net/style)
 	`int main(int argc, string argv[])`  
 ### Python
 - Recursion in Python: functions can call themselves. For example:
-<details>
+	<details>
 
 	``` python3
 	def factorial(n):
@@ -72,13 +72,13 @@ CS50 [style guide of C](https://manual.cs50.net/style)
 		return n * factorial(n - 1)
 	```
 	
-</details>
-cf. [Recursion Factorial](https://www.cs.usfca.edu/~galles/visualization/RecFact.html) visualization.
-	
-- Object-Oriented Programming features in Python: paradigm based on object. For example:
-<details>
+	</details>
 
-	``` python3
+cf. [Recursion Factorial](https://www.cs.usfca.edu/~galles/visualization/RecFact.html) visualization.
+- Object-Oriented Programming features in Python: paradigm based on object. For example:
+	<details>
+
+	```python
 	class Coordinates:
 		def __init__(self, x, y):
 			self.x = x
@@ -93,7 +93,7 @@ cf. [Recursion Factorial](https://www.cs.usfca.edu/~galles/visualization/RecFact
 	print('x = {}, y = {}'.format(p.x, p.y))
 	```
 
-</details>
+	</details>
 
 ### [Problem set #2](https://docs.cs50.net/2017/x/psets/2/pset2.html)
 - Caesar Cipher
@@ -129,7 +129,8 @@ As above mentioned, **Algorithm** is the method for problem solving, involves a 
 1. Search (in a sorted list)
 	- Linear: Search linearly, i.e. if asking to guess a number in the range of 100, then $O(n)$.  
 	- Binary (Divide & Conquer Algorithm): $O(log_2 n)$.  
-
+		<details>
+	
 		```python
 		def binary_search(list, n):	
 			low = 0
@@ -145,11 +146,14 @@ As above mentioned, **Algorithm** is the method for problem solving, involves a 
 					high  = mod + 1
 			return None
 		```
+		
+		</details>
 1. Sorting  
 	1. **Counting sort**: Time Complexity: O(n+k) where n is the number of elements in input array and k is the range of input.
 	1. **Selection sort** gets slower&slower through time because the whole list is scanned everytime.  $\Omega(n^2)$ ok 
  `for i from 0 from n-1: find smallest between i'th and n-1'th: swap smallest with i'th ` 
- 
+		<details>
+	
  		```python
  		def findsmallest(arr):
  			smallest = arr[0]
@@ -166,7 +170,9 @@ As above mentioned, **Algorithm** is the method for problem solving, involves a 
  				smallest = findsmaillest(arr)
  				arr_new.append(arr.pop(smallest))
  			return arr_new
- 		``` 
+ 		```
+		
+		</details>
  
 	1. **Bubble sort** that swap only consecutive pairwises every time.
  `repeat until no swaps: for i from 0 to n-2: if i'th and i+1'th elements out of order: swap them`  
@@ -176,22 +182,30 @@ Upper boundary $(n-1) + (n-2) + ... + 1 \\ = \frac{n(n-1)}{2} = O(n^2)$  ; Lower
 	1. **Merge sort**
 `On input of n elements: if n<2: return; else: sort left half of elements; sort right half of elements; merge sorted halves `  → $T(n) = T(\frac{n}{2}) + T(\frac{n}{2}) + O(n) \\ \stackrel{\text{if n \geq 2}}{=} O(nlogn)$  
 
+	<details>
+	
 	```C
 	int sigma(int m){
 		int sum = 0;
 		for(int i = 1; i <= n; i++){
 			sum += i;
 		}
-	}
+	 }
 	 ```
-	 *aut pro*:  `
+	 *aut pro*:  
+	 ```C
 	 int sigma(int m){
 	 	if(m <= 0){
 	 		return 0;
 	 	}else{
 	 		return (m + sigma(m - 1));
 	 	}
-	 }` in a **Reflexive** or **inductive** or **recursive** calls <sub> use the defination again & again</sub> fashion
+	 }
+	 ```
+	 in a **Reflexive** or **inductive** or **recursive** calls (use the defination again & again) fashion.
+	 
+	 </details>
+	 
 1. [Problem set #3](https://docs.cs50.net/2017/x/psets/3/pset3.html)  
  <input type="checkbox" name="pset3" checked='True'> Status <br/>
 	- Find, either less or more comfortable: (latter one is chosen)
@@ -249,6 +263,7 @@ Incidentally, HTML and CSS (languages in which webpages can be written) model co
 	} 
 	node; 
 	```
+	
 1. Consider a **collection of nodes** that are linked together by pointers. The starting pointer and the ending null. In order to achive the function of *insert*, *remove* and *search*.   
 The running time of search  would always be O(n) since the only way of searching is just linear. code as below:
 
@@ -264,7 +279,8 @@ The running time of search  would always be O(n) since the only way of searching
 		}
 		return false;
 	}
-	 ``` 
+	``` 
+	
 	- **Stack** type: Push and Pop (?LIFO data structure)  
 
 	```C
@@ -274,6 +290,7 @@ The running time of search  would always be O(n) since the only way of searching
 	}
 	stack;
 	``` 
+	
 	- **Queue** type: enqueue and dequeue   
 
 	```C
@@ -284,9 +301,10 @@ The running time of search  would always be O(n) since the only way of searching
 	}
 	queue;
 	``` 
+	
 	- **Tree** type: <!--58:00-->
 ![tree](resources/tree.png)
-		*Binary search tree*, left smaller right greater. *aut idem pro*:  
+	*Binary search tree*, left smaller right greater. *aut idem pro*:  
 		 
 	```C
 	typedef struc node{
@@ -297,7 +315,6 @@ The running time of search  would always be O(n) since the only way of searching
 	node;
 	``` 
 	therefore searching fuction:
-	
 	```C
 	bool search(int n, node *tree){
 		if (tree == NULL)
@@ -332,6 +349,7 @@ The running time of search  would always be O(n) since the only way of searching
 	}
 	node;
 	``` 	
+	
 	- **Hash tables**: Linear probing, or dynamically extended linked lists.  
 	- **Trie** type, widely used as spelling checker model (dictionary!).  
 	- **Min Heap** used in Graph Algorithms.
