@@ -63,6 +63,7 @@ CS50 [style guide of C](https://manual.cs50.net/style)
 	`int main(int argc, string argv[])`  
 ### Python
 - Recursion in Python: functions can call themselves. For example:
+<details>
 
 	``` python3
 	def factorial(n):
@@ -70,9 +71,12 @@ CS50 [style guide of C](https://manual.cs50.net/style)
 			return 1
 		return n * factorial(n - 1)
 	```
+	
+</details>
 cf. [Recursion Factorial](https://www.cs.usfca.edu/~galles/visualization/RecFact.html) visualization.
 	
 - Object-Oriented Programming features in Python: paradigm based on object. For example:
+<details>
 
 	``` python3
 	class Coordinates:
@@ -89,6 +93,8 @@ cf. [Recursion Factorial](https://www.cs.usfca.edu/~galles/visualization/RecFact
 	print('x = {}, y = {}'.format(p.x, p.y))
 	```
 
+</details>
+
 ### [Problem set #2](https://docs.cs50.net/2017/x/psets/2/pset2.html)
 - Caesar Cipher
 - Vigenere Cipher
@@ -96,10 +102,14 @@ cf. [Recursion Factorial](https://www.cs.usfca.edu/~galles/visualization/RecFact
 
 ## IV. Algorithms [w3]
 As above mentioned, **Algorithm** is the method for problem solving, involves a finite series of steps. "In computing practice the algorithm denotes the expression on paper of the proposed computing process (often by means of a flowchart) prior to the preparation of the programme. If no algorithms is possible a heuristic solution has to be sought {in which it involves trial and error, as in iteration.}."
+
+[//]: # (http://discrete.gr/complexity/ as a reference)
+
 ### Addressing a Computational Problem   
 - Formulation:  express the problem formally
 - Specification: find the algorithm
 - Implementation: coding
+
 ### Computational complexity
 - In terms of the growth rate (# of operations against input size $n$), functions are ordered:
 > Logarithmic $log(n)$, Linear $an + b$, Quadratic $an^2 + bn + c$, Polynomial $an^z + \dots + an^1 + an^0\text{ with constant }z$, Exponential $a^n\text{ with constant }a$
@@ -110,7 +120,7 @@ As above mentioned, **Algorithm** is the method for problem solving, involves a 
 - Constants and low-order terms are droped, which means two algorithms may have the same $O$ even though one is always faster than the other. Ordered:
 > $log(n)\leq n\leq n^2\leq n^z\leq a^n$
 
-![Complexity illustration, $a=z=3$](resources/complexity.pdf)
+![Complexity illustration, $z=3$](resources/complexity.png)
 
 - Further in algorithm and computational complexity theory, cf. *Graph Theory and Algorithms (with Python)* note.
 
