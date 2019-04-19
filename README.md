@@ -4,12 +4,11 @@ CS-Hypomnema: Computer Science Notes Collection
 
 Note-taker: [Baksi](https://github.com/BaksiLi)  
 This repository curates my computer science notes.    
-<sub>I used *Byword* (with Standard Markdown Syntax) for taking notes. However, it might encounter problems of compilation on GitHub, *esp.* with LaTeX. I will try to tackle this in the future. </sub>
 
 # Catalogue
 ## I. Introductions
 1. [***Introduction to Computer Science***](https://github.com/BaksiLi/CS-Hypomnema/blob/master/Resources/General/CS50x%20Intro%20to%20Computer%20Science.md) ![Editing](https://img.shields.io/badge/status-revising-lightgreen.svg)   
-	Note based on CS50x 2017 course, the content and structure may be slightly different from the [official syllables](http://docs.cs50.net/2017/x/syllabus.html).	It covers the basics of C, Python, Javascript, HTML and CSS, as well as some important concepts in computer science like Computational Complexity and so on.
+	Note based on CS50x 2017 course, the content and structure is slightly different from the [official syllables](http://docs.cs50.net/2017/x/syllabus.html).	It covers the basics of C, Python, Javascript, HTML and CSS, as well as some important concepts in computer science like Computational Complexity.
 1. ***Introduction to Web Development*** ![Pending](https://img.shields.io/badge/status-Pending-orange.svg)    
 	Note based on CS50w course. It covers Git, Flask, Django et.c.
 1. ***Zsh (Z shell) Development with Comparison to Bash*** ![Pending](https://img.shields.io/badge/status-Pending-orange.svg)   
@@ -17,14 +16,15 @@ This repository curates my computer science notes.
 
 ## II. Algotithmics & Mathematics
 [//]: # (I am also planning to sort out a more detailed general Algorithm note from my previous notes.)   
-There are open-source collections of algorithm implementations, which are useful during study, e.g. [Python](https://github.com/TheAlgorithms/Python) and [Java](https://github.com/TheAlgorithms/Java). Also for visualizations there is [Data Structure Visualizations](https://www.cs.usfca.edu/~galles/visualization/Algorithms.html).
+For reading materials, [Algorithms](http://algorithmics.lsi.upc.edu/docs/Dasgupta-Papadimitriou-Vazirani.pdf) by S. Dasgupta et al is good and concise (recommended by UC San Diego cources), [Introduction to Algorithms](https://www.amazon.co.uk/Introduction-Algorithms-Thomas-H-Cormen/dp/0262033844/) by T. H. Cormen is a longer and newer one (recommended by MIT cources).
+There are also many open-source collections of algorithm implementations, which are useful during study, e.g. [Python](https://github.com/TheAlgorithms/Python) and [Java](https://github.com/TheAlgorithms/Java).   Also for visualizations there is [Data Structure Visualizations](https://www.cs.usfca.edu/~galles/visualization/Algorithms.html).   
 
 1. ***Graph Theory and Algorithms (with Python)*** ![Pending](https://img.shields.io/badge/status-Pending-orange.svg)   
 	A summary note from [NET04x](https://www.imt-atlantique.fr/fr/formation/moocs-et-cours-ouverts/moocs/advanced-algorithmics-and-graph-theory-python) (IMTx) and [ALGS202x](https://www.edx.org/course/graph-algorithms-uc-san-diegox-algs202x) (UCSanDiegoX) with a nicely balanced theoretical and pratical content.   
-	If you wish to go deeper in the theory of computational complexity (esp. after studied Chapter IV), reading of *NP-Complete Problems* is definately recommended.
+	If you wish to go deeper in the theory of computational complexity (esp. after studied Chapter IV), reading of *Complexity and NP-Complete Problems* is definately recommended.
 
-1. ***NP-Complete Problems*** ![Pending](https://img.shields.io/badge/status-Pending-orange.svg)   
-	A note from [ALGS203x](https://www.edx.org/course/np-complete-problems-uc-san-diegox-algs203x). It covers NP-completeness, approximate algorithms and algorithm analysis.
+1. ***Complexity and NP-Complete Problems*** ![Pending](https://img.shields.io/badge/status-Pending-orange.svg)   
+	A note from [ALGS203x](https://www.edx.org/course/np-complete-problems-uc-san-diegox-algs203x) (UCSanDiegoX). It covers NP-completeness, approximate algorithms and algorithm analysis.
 	
 1. ***Coding theory (with Python)*** ![Pending](https://img.shields.io/badge/status-Pending-orange.svg)   
 	This is a coding theory text with Python implementations. Not ready to upload so far.
@@ -50,5 +50,9 @@ There are open-source collections of algorithm implementations, which are useful
 
 # Acknowledgement
 This repository is licenced under the Creative Commons [BY-NC-ND](https://creativecommons.org/licenses/by-nc-nd/4.0/) (*Attribution-NonCommercial-NoDerivatives 4.0 International*) Licence.  
+
+<sub>I used *Byword* (with Standard Markdown Syntax) for taking notes. However, it might encounter problems of compilation on GitHub, *esp.* with LaTeX. I will try to tackle this in the future. </sub>
+
+[//]: # (I am grateful to my Coding Theory teacher, Prof. P.P.M., for bringing me to this fascinating field of mathematics. (although I failed his module))
 
 Copyright (c) 2019 BaksiLi

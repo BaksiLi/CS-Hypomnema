@@ -65,7 +65,7 @@ CS50 [style guide of C](https://manual.cs50.net/style)
 - Recursion in Python: functions can call themselves. For example:
 	<details>
 
-	``` python3
+	``` python
 	def factorial(n):
 		if  n == 1:  # base case
 			return 1
@@ -73,7 +73,6 @@ CS50 [style guide of C](https://manual.cs50.net/style)
 	```
 	
 	</details>
-
 cf. [Recursion Factorial](https://www.cs.usfca.edu/~galles/visualization/RecFact.html) visualization.
 - Object-Oriented Programming features in Python: paradigm based on object. For example:
 	<details>
@@ -94,7 +93,6 @@ cf. [Recursion Factorial](https://www.cs.usfca.edu/~galles/visualization/RecFact
 	```
 
 	</details>
-
 ### [Problem set #2](https://docs.cs50.net/2017/x/psets/2/pset2.html)
 - Caesar Cipher
 - Vigenere Cipher
@@ -103,8 +101,6 @@ cf. [Recursion Factorial](https://www.cs.usfca.edu/~galles/visualization/RecFact
 ## IV. Algorithms [w3]
 As above mentioned, **Algorithm** is the method for problem solving, involves a finite series of steps. "In computing practice the algorithm denotes the expression on paper of the proposed computing process (often by means of a flowchart) prior to the preparation of the programme. If no algorithms is possible a heuristic solution has to be sought {in which it involves trial and error, as in iteration.}."
 
-[//]: # (http://discrete.gr/complexity/ as a reference)
-
 ### Addressing a Computational Problem   
 - Formulation:  express the problem formally
 - Specification: find the algorithm
@@ -112,15 +108,15 @@ As above mentioned, **Algorithm** is the method for problem solving, involves a 
 
 ### Computational complexity
 - In terms of the growth rate (# of operations against input size $n$), functions are ordered:
-> Logarithmic $log(n)$, Linear $an + b$, Quadratic $an^2 + bn + c$, Polynomial $an^z + \dots + an^1 + an^0\text{ with constant }z$, Exponential $a^n\text{ with constant }a$
+> Logarithmic $log(n)$, Linear $an + b$, Quadratic $an^2 + bn + c$, Polynomial $an^z + \dots + an^1 + an^0\text{ with constant }z$, Exponential $a^n\text{ with constant }a$, Factorial $n!$
 - **Asymptotic complexity** measures the effieciency. Its notations is to indicate the running time of a give algorithm, which takes the behaviour with increasing input size into account. 
 	- $O$, a.k.a. asymptotic upper bound -> worst-case scenario.
 	- $\Omega$, a.k.a. asymptotic lower bound -> best-case scenario.
 	- $\Theta$ notes when $\Omega = O$, known as the asymptotically tight bound.
 - Constants and low-order terms are droped, which means two algorithms may have the same $O$ even though one is always faster than the other. Ordered:
-> $log(n)\leq n\leq n^2\leq n^z\leq a^n$
+> $log(n)\leq n\leq n^2\leq n^z\leq a^n\approx n!$
 
-![Complexity illustration, $z=3$](resources/complexity.png)
+![Complexity illustration, $z=3$. © Author.](resources/complexity.png)
 
 - Further in algorithm and computational complexity theory, cf. *Graph Theory and Algorithms (with Python)* note.
 
@@ -173,7 +169,6 @@ As above mentioned, **Algorithm** is the method for problem solving, involves a 
  		```
 		
 		</details>
- 
 	1. **Bubble sort** that swap only consecutive pairwises every time.
  `repeat until no swaps: for i from 0 to n-2: if i'th and i+1'th elements out of order: swap them`  
 Upper boundary $(n-1) + (n-2) + ... + 1 \\ = \frac{n(n-1)}{2} = O(n^2)$  ; Lower boundary $\Omega$ = n
@@ -212,6 +207,7 @@ Upper boundary $(n-1) + (n-2) + ... + 1 \\ = \frac{n(n-1)}{2} = O(n^2)$  ; Lower
 		- how to **configurate a compiler**
 		- how to **write programme in multiple files**
 	- Implement Game of Fifteen  
+
 ## V. Memory
 1. Underneath the hood: **RAM**
 	Same "incantation of strings" are different, in the sense of memory. Why?
@@ -358,6 +354,7 @@ The running time of search  would always be O(n) since the only way of searching
 	- [Speller](https://docs.cs50.net/problems/speller/speller.html): `submit50 cs50/2017/x/speller`  
 	- Understand [C compiler](https://docs.cs50.net/problems/speller/speller.html#code-makefile-code)
 	- the [form](https://forms.cs50.net/2017/x/psets/5)   
+
 ## VI. Week 6: HTTP  
  [//]: # (Waited to be reviewed after refered to a book.)  
 1. Inter-net models. 
@@ -377,10 +374,9 @@ The running time of search  would always be O(n) since the only way of searching
 	- `telnet sss.harvard.edu 80`. N.B. telnet and ftp are no longer available due to some "insecure" reason (or due to 32bit) on macOS 10.13, so nc, ssh and stfp is used instead. `curl -I ` just for header.  
 1. **CSS**  
 
-## VII. Week 7: Machine Learning  
-- This section is removed to another note, acting as an introduction.
+[//]: # (Week 7: Machine Learning. This section is removed to another note, acting as an introduction.)
 
-## IIX. Week 8: Python   
+## VII. Week 8: Python   
 1. The meaning of object type, value, and identity. Depending on the type of the object, it could be either immutable (*e.g.*, strings and tuples) or mutable (*e.g.*, dictionaries and lists). Methods are functions associated with objects, whereas data attributes are data associated with objects.   
 	Polymorphism to operators   
 	Typing or assigning data types feres to the set of rules that the language uses to ensure that the part of the program receiveing the data knows how to correctly interpret that data. Some langaguages are **statically typed**, like C/C++; whilst other languages are **dynamically typed**, like Python. Static typing means that type checking is perfoormed during compile time, whereas dynamic typing means that type checking is performed at run time. 
@@ -427,18 +423,20 @@ The running time of search  would always be O(n) since the only way of searching
 	Flask, Twitter application, Analyzer
 <input type="checkbox" checked="True" name="pset3"> Status <br/>  
 
-## IX. Week 9: SQL   
+## IIX. Week 9: SQL   
 1. Model part of Web  
  
 1. [Problem set #7](https://docs.cs50.net/2017/x/psets/7/pset7.html): C$50 Finance  
 <input type="checkbox" name="pset3"> Status <br/>  
-## X. Week 10: JavaScrip   
+
+## IX. Week 10: JavaScrip   
 1. [Problem set #8](https://docs.cs50.net/2017/x/psets/8/pset8.html): Mashup
 	- [Google map JS API](https://developers.google.com/maps/web/) powered by [Google Developers](console.developers.google.com)
 	- [Google JS tutorial](https://developers.google.com/maps/documentation/javascript/tutorial)  
 	- [SQLite csv_import](https://www.sqlite.org/cli.html#csv_import)
 <input type="checkbox" name="pset3"> Status <br/>  
-## XI. Week 11: Final Project  
+
+## X. Week 11: Final Project  
 - [Project Page](https://docs.cs50.net/2017/fall/project/project.html)  
 
 ---
