@@ -3,7 +3,9 @@ CS-Hypomnema: Computer Science Notes Collection
 [![Licence: CC BY-NC-ND 4.0](https://img.shields.io/badge/License-CC%20BY--NC--ND%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-nd/4.0/)
 
 Note-taker: [Baksi](https://github.com/BaksiLi)  
-This repository curates my computer science notes.    
+This repository curates some computer science notes. It records my steps of learning, which means it is always updating, as the knowledge could never suffice. Anyone is more than welcomed to give suggestions, or even raise a PR.   
+
+Lastly, please feel free to **star this repository** if you found it interesting or boring (yeah, p ∧ ¬p).    
 
 # Catalogue
 ## I. Introductions
@@ -16,8 +18,9 @@ This repository curates my computer science notes.
 
 ## II. Algotithmics & Mathematics
 [//]: # (I am also planning to sort out a more detailed general Algorithm note from my previous notes.)   
-For reading materials, [Algorithms](http://algorithmics.lsi.upc.edu/docs/Dasgupta-Papadimitriou-Vazirani.pdf) by S. Dasgupta et al is good and concise (recommended by UC San Diego cources), [Introduction to Algorithms](https://www.amazon.co.uk/Introduction-Algorithms-Thomas-H-Cormen/dp/0262033844/) by T. H. Cormen is a longer and newer one (recommended by MIT cources).
-There are also many open-source collections of algorithm implementations, which are useful during study, e.g. [Python](https://github.com/TheAlgorithms/Python) and [Java](https://github.com/TheAlgorithms/Java).   Also for visualizations there is [Data Structure Visualizations](https://www.cs.usfca.edu/~galles/visualization/Algorithms.html).   
+For reading materials, [*Algorithms*](http://algorithmics.lsi.upc.edu/docs/Dasgupta-Papadimitriou-Vazirani.pdf) by S. Dasgupta et al is good and concise (recommended by UC San Diego cources), [*Introduction to Algorithms*](https://www.amazon.co.uk/Introduction-Algorithms-Thomas-H-Cormen/dp/0262033844/) by T. H. Cormen is a longer and newer one (recommended by MIT cources). \*   
+There are also many open-source collections of algorithm implementations, which are useful during study, e.g. [Python](https://github.com/TheAlgorithms/Python) and [Java](https://github.com/TheAlgorithms/Java).   
+Also for visualizations there is [Data Structure Visualizations](https://www.cs.usfca.edu/~galles/visualization/Algorithms.html).   
 
 1. ***Graph Theory and Algorithms (with Python)*** ![Pending](https://img.shields.io/badge/status-Pending-orange.svg)   
 	A summary note from [NET04x](https://www.imt-atlantique.fr/fr/formation/moocs-et-cours-ouverts/moocs/advanced-algorithmics-and-graph-theory-python) (IMTx) and [ALGS202x](https://www.edx.org/course/graph-algorithms-uc-san-diegox-algs202x) (UCSanDiegoX) with a nicely balanced theoretical and pratical content.   
@@ -28,6 +31,9 @@ There are also many open-source collections of algorithm implementations, which 
 	
 1. ***Coding theory (with Python)*** ![Pending](https://img.shields.io/badge/status-Pending-orange.svg)   
 	This is a coding theory text with Python implementations. Not ready to upload so far.
+
+
+\* <sub>Although I have never finished reading any one of them :(</sub>   
 
 ## III. Scientific Programming
 ### i. Mathematica (Wolfram Language)
@@ -45,8 +51,11 @@ There are also many open-source collections of algorithm implementations, which 
 	
 [//]: # (### ii. Python)
 ## IV. Quantum Computing
+For reading materials, [Quantum Computation and Quantum Information](https://books.google.co.uk/books/about/Quantum_Computation_and_Quantum_Informat.html) is the choice.
+
 1. ***D-Wave machine Introduction*** ![Pending](https://img.shields.io/badge/status-Pending-orange.svg)   
 	This was part of my undergraduate thesis topic. The code is available now, see [here](https://github.com/BaksiLi/CS-Hypomnema/blob/master/Resources/Quantum/D-Wave/mapcl.py).
+
 
 # Acknowledgement
 This repository is licenced under the Creative Commons [BY-NC-ND](https://creativecommons.org/licenses/by-nc-nd/4.0/) (*Attribution-NonCommercial-NoDerivatives 4.0 International*) Licence.  
