@@ -5,7 +5,7 @@ CS-Hypomnema: Computer Science Notes Collection
 Note-taker: [Baksi](https://github.com/BaksiLi)  
 This repository curates some computer science notes. It records my steps of learning, which means it is always updating, as the knowledge could never suffice. Anyone is more than welcomed to give suggestions, or even raise a PR.   
 
-Lastly, please feel free to **star this repository** if you found it interesting or boring (yeah, p ∧ ¬p).    
+Lastly, please feel free to **star this repository** if you found it interesting or boring (yeah, p ∨ ¬p).    
 
 # Catalogue
 ## I. Introductions
