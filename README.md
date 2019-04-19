@@ -30,7 +30,7 @@ Also for visualizations there is [Data Structure Visualizations](https://www.cs.
 	A note from [ALGS203x](https://www.edx.org/course/np-complete-problems-uc-san-diegox-algs203x) (UCSanDiegoX). It covers NP-completeness, approximate algorithms and algorithm analysis.
 	
 1. ***Coding theory (with Python)*** ![Pending](https://img.shields.io/badge/status-Pending-orange.svg)   
-	This is a coding theory text with Python implementations. Not ready to upload so far.
+	This is a coding theory text (thanks to Prof. PPM) with Python implementations. Not ready to upload so far.
 
 
 \* <sub>Although I have never finished reading any one of them :(</sub>   
@@ -61,7 +61,5 @@ For reading materials, [Quantum Computation and Quantum Information](https://boo
 This repository is licenced under the Creative Commons [BY-NC-ND](https://creativecommons.org/licenses/by-nc-nd/4.0/) (*Attribution-NonCommercial-NoDerivatives 4.0 International*) Licence.  
 
 <sub>I used *Byword* (with Standard Markdown Syntax) for taking notes. However, it might encounter problems of compilation on GitHub, *esp.* with LaTeX. I will try to tackle this in the future. </sub>
-
-[//]: # (I am grateful to my Coding Theory teacher, Prof. P.P.M., for bringing me to this fascinating field of mathematics. (although I failed his module))
 
 Copyright (c) 2019 BaksiLi
