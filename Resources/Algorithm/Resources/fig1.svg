@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="iso-8859-1" standalone="no"?> 
+<?xml-stylesheet href="script.css" type="text/css"?> 
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="249.34732pt" height="107.0836pt" viewBox="-10.86269 -10.86269 249.34732 107.0836 "> 
+<g transform="translate(0, 96.22092 ) scale(1,-1) translate(0,10.86269 )"> 
+   <g>
+ <g stroke="rgb(0.0%,0.0%,0.0%)">
+ <g fill="rgb(0.0%,0.0%,0.0%)">
+ <g stroke-width="0.4pt">
+ <g>
+ <g stroke-width="1.2pt">
+ <g>
+ <path d=" M  10.2627 0.0 C  10.2627 5.668 5.668 10.2627 0.0 10.2627 C  -5.668 10.2627 -10.2627 5.668 -10.2627 0.0 C  -10.2627 -5.668 -5.668 -10.2627 0.0 -10.2627 C  5.668 -10.2627 10.2627 -5.668 10.2627 0.0 Z M  0.0 0.0  " style="fill:none"/>
+ <g>
+ <g transform="matrix(1.0,0.0,0.0,1.0,-4.84607,-1.40279)">
+ <g fill="rgb(0.0%,0.0%,0.0%)">
+ <text style="stroke:none" transform="scale(1,-1) translate(4.84607,0)" text-anchor="middle"  font-size="10"> 
+<tspan font-family="cmmi" font-size="10">v</tspan><tspan baseline-shift="sub"><tspan font-family="cmr" font-size="7">1</tspan></tspan></text> 
+</g>
+ </g>
+ </g>
+ </g>
+ <g>
+ <path d=" M  67.16818 28.45274 C  67.16818 34.12074 62.57349 38.71544 56.90549 38.71544 C  51.23749 38.71544 46.64279 34.12074 46.64279 28.45274 C  46.64279 22.78474 51.23749 18.19005 56.90549 18.19005 C  62.57349 18.19005 67.16818 22.78474 67.16818 28.45274 Z M  56.90549 28.45274  " style="fill:none"/>
+ <g>
+ <g transform="matrix(1.0,0.0,0.0,1.0,52.05942,27.04996)">
+ <g fill="rgb(0.0%,0.0%,0.0%)">
+ <text style="stroke:none" transform="scale(1,-1) translate(4.84607,0)" text-anchor="middle"  font-size="10"> 
+<tspan font-family="cmmi" font-size="10">v</tspan><tspan baseline-shift="sub"><tspan font-family="cmr" font-size="7">2</tspan></tspan></text> 
+</g>
+ </g>
+ </g>
+ </g>
+ <g>
+ <path d=" M  124.07367 85.35823 C  124.07367 91.02623 119.47897 95.62093 113.81097 95.62093 C  108.14297 95.62093 103.54828 91.02623 103.54828 85.35823 C  103.54828 79.69023 108.14297 75.09554 113.81097 75.09554 C  119.47897 75.09554 124.07367 79.69023 124.07367 85.35823 Z M  113.81097 85.35823  " style="fill:none"/>
+ <g>
+ <g transform="matrix(1.0,0.0,0.0,1.0,108.9649,83.95544)">
+ <g fill="rgb(0.0%,0.0%,0.0%)">
+ <text style="stroke:none" transform="scale(1,-1) translate(4.84607,0)" text-anchor="middle"  font-size="10"> 
+<tspan font-family="cmmi" font-size="10">v</tspan><tspan baseline-shift="sub"><tspan font-family="cmr" font-size="7">3</tspan></tspan></text> 
+</g>
+ </g>
+ </g>
+ </g>
+ <g>
+ <path d=" M  38.71544 56.90549 C  38.71544 62.57349 34.12074 67.16818 28.45274 67.16818 C  22.78474 67.16818 18.19005 62.57349 18.19005 56.90549 C  18.19005 51.23749 22.78474 46.64279 28.45274 46.64279 C  34.12074 46.64279 38.71544 51.23749 38.71544 56.90549 Z M  28.45274 56.90549  " style="fill:none"/>
+ <g>
+ <g transform="matrix(1.0,0.0,0.0,1.0,23.60667,55.5027)">
+ <g fill="rgb(0.0%,0.0%,0.0%)">
+ <text style="stroke:none" transform="scale(1,-1) translate(4.84607,0)" text-anchor="middle"  font-size="10"> 
+<tspan font-family="cmmi" font-size="10">v</tspan><tspan baseline-shift="sub"><tspan font-family="cmr" font-size="7">4</tspan></tspan></text> 
+</g>
+ </g>
+ </g>
+ </g>
+ <g>
+ <path d=" M  237.88464 56.90549 C  237.88464 62.57349 233.28995 67.16818 227.62195 67.16818 C  221.95395 67.16818 217.35925 62.57349 217.35925 56.90549 C  217.35925 51.23749 221.95395 46.64279 227.62195 46.64279 C  233.28995 46.64279 237.88464 51.23749 237.88464 56.90549 Z M  227.62195 56.90549  " style="fill:none"/>
+ <g>
+ <g transform="matrix(1.0,0.0,0.0,1.0,222.77588,55.5027)">
+ <g fill="rgb(0.0%,0.0%,0.0%)">
+ <text style="stroke:none" transform="scale(1,-1) translate(4.84607,0)" text-anchor="middle"  font-size="10"> 
+<tspan font-family="cmmi" font-size="10">v</tspan><tspan baseline-shift="sub"><tspan font-family="cmr" font-size="7">5</tspan></tspan></text> 
+</g>
+ </g>
+ </g>
+ </g>
+ <g>
+ <path d=" M  180.97916 28.45274 C  180.97916 34.12074 176.38446 38.71544 170.71646 38.71544 C  165.04846 38.71544 160.45377 34.12074 160.45377 28.45274 C  160.45377 22.78474 165.04846 18.19005 170.71646 18.19005 C  176.38446 18.19005 180.97916 22.78474 180.97916 28.45274 Z M  170.71646 28.45274  " style="fill:none"/>
+ <g>
+ <g transform="matrix(1.0,0.0,0.0,1.0,165.87039,27.04996)">
+ <g fill="rgb(0.0%,0.0%,0.0%)">
+ <text style="stroke:none" transform="scale(1,-1) translate(4.84607,0)" text-anchor="middle"  font-size="10"> 
+<tspan font-family="cmmi" font-size="10">v</tspan><tspan baseline-shift="sub"><tspan font-family="cmr" font-size="7">6</tspan></tspan></text> 
+</g>
+ </g>
+ </g>
+ </g>
+ <g>
+ <path d=" M  209.4319 85.35823 C  209.4319 91.02623 204.8372 95.62093 199.1692 95.62093 C  193.5012 95.62093 188.90651 91.02623 188.90651 85.35823 C  188.90651 79.69023 193.5012 75.09554 199.1692 75.09554 C  204.8372 75.09554 209.4319 79.69023 209.4319 85.35823 Z M  199.1692 85.35823  " style="fill:none"/>
+ <g>
+ <g transform="matrix(1.0,0.0,0.0,1.0,194.32314,83.95544)">
+ <g fill="rgb(0.0%,0.0%,0.0%)">
+ <text style="stroke:none" transform="scale(1,-1) translate(4.84607,0)" text-anchor="middle"  font-size="10"> 
+<tspan font-family="cmmi" font-size="10">v</tspan><tspan baseline-shift="sub"><tspan font-family="cmr" font-size="7">7</tspan></tspan></text> 
+</g>
+ </g>
+ </g>
+ </g>
+ <g>
+ <path d=" M  9.75462 4.87706 L  47.18964 23.59491  " style="fill:none"/>
+ </g>
+ <g>
+ <path d=" M  4.87706 9.75462 L  23.59491 47.18964  " style="fill:none"/>
+ </g>
+ <g>
+ <path d=" M  67.76817 28.45274 L  159.85378 28.45274  " style="fill:none"/>
+ </g>
+ <g>
+ <path d=" M  49.22458 36.13382 L  36.13399 49.22441  " style="fill:none"/>
+ </g>
+ <g>
+ <path d=" M  106.12973 77.67715 L  64.58673 36.13382  " style="fill:none"/>
+ </g>
+ <g>
+ <path d=" M  103.49544 81.91972 L  38.76828 60.344  " style="fill:none"/>
+ </g>
+ <g>
+ <path d=" M  39.12448 54.77144 L  160.04472 30.58679  " style="fill:none"/>
+ </g>
+ <g>
+ <path d=" M  180.47108 33.3298 L  217.9061 52.04765  " style="fill:none"/>
+ </g>
+ <g>
+ <path d=" M  175.59352 38.20737 L  194.31137 75.64238  " style="fill:none"/>
+ </g>
+ </g>
+ </g>
+ </g>
+ </g>
+ </g>
+ </g>
+ 
+                                                                                             </g> 
+</svg> 

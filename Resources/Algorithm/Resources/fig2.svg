@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="iso-8859-1" standalone="no"?> 
+<?xml-stylesheet href="script.css" type="text/css"?> 
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="448.51662pt" height="107.0836pt" viewBox="-10.86269 -10.86269 448.51662 107.0836 "> 
+<g transform="translate(0, 96.22092 ) scale(1,-1) translate(0,10.86269 )"> 
+   <g>
+ <g stroke="rgb(0.0%,0.0%,0.0%)">
+ <g fill="rgb(0.0%,0.0%,0.0%)">
+ <g stroke-width="0.4pt">
+ <g>
+ <g stroke-width="1.2pt">
+ <g>
+ <path d=" M  10.2627 0.0 C  10.2627 5.668 5.668 10.2627 0.0 10.2627 C  -5.668 10.2627 -10.2627 5.668 -10.2627 0.0 C  -10.2627 -5.668 -5.668 -10.2627 0.0 -10.2627 C  5.668 -10.2627 10.2627 -5.668 10.2627 0.0 Z M  0.0 0.0  " style="fill:none"/>
+ <g>
+ <g transform="matrix(1.0,0.0,0.0,1.0,-4.84607,-1.40279)">
+ <g fill="rgb(0.0%,0.0%,0.0%)">
+ <text style="stroke:none" transform="scale(1,-1) translate(4.84607,0)" text-anchor="middle"  font-size="10"> 
+<tspan font-family="cmmi" font-size="10">v</tspan><tspan baseline-shift="sub"><tspan font-family="cmr" font-size="7">1</tspan></tspan></text> 
+</g>
+ </g>
+ </g>
+ </g>
+ <g>
+ <path d=" M  67.16818 28.45274 C  67.16818 34.12074 62.57349 38.71544 56.90549 38.71544 C  51.23749 38.71544 46.64279 34.12074 46.64279 28.45274 C  46.64279 22.78474 51.23749 18.19005 56.90549 18.19005 C  62.57349 18.19005 67.16818 22.78474 67.16818 28.45274 Z M  56.90549 28.45274  " style="fill:none"/>
+ <g>
+ <g transform="matrix(1.0,0.0,0.0,1.0,52.05942,27.04996)">
+ <g fill="rgb(0.0%,0.0%,0.0%)">
+ <text style="stroke:none" transform="scale(1,-1) translate(4.84607,0)" text-anchor="middle"  font-size="10"> 
+<tspan font-family="cmmi" font-size="10">v</tspan><tspan baseline-shift="sub"><tspan font-family="cmr" font-size="7">2</tspan></tspan></text> 
+</g>
+ </g>
+ </g>
+ </g>
+ <g>
+ <path d=" M  124.07367 85.35823 C  124.07367 91.02623 119.47897 95.62093 113.81097 95.62093 C  108.14297 95.62093 103.54828 91.02623 103.54828 85.35823 C  103.54828 79.69023 108.14297 75.09554 113.81097 75.09554 C  119.47897 75.09554 124.07367 79.69023 124.07367 85.35823 Z M  113.81097 85.35823  " style="fill:none"/>
+ <g>
+ <g transform="matrix(1.0,0.0,0.0,1.0,108.9649,83.95544)">
+ <g fill="rgb(0.0%,0.0%,0.0%)">
+ <text style="stroke:none" transform="scale(1,-1) translate(4.84607,0)" text-anchor="middle"  font-size="10"> 
+<tspan font-family="cmmi" font-size="10">v</tspan><tspan baseline-shift="sub"><tspan font-family="cmr" font-size="7">3</tspan></tspan></text> 
+</g>
+ </g>
+ </g>
+ </g>
+ <g>
+ <path d=" M  38.71544 56.90549 C  38.71544 62.57349 34.12074 67.16818 28.45274 67.16818 C  22.78474 67.16818 18.19005 62.57349 18.19005 56.90549 C  18.19005 51.23749 22.78474 46.64279 28.45274 46.64279 C  34.12074 46.64279 38.71544 51.23749 38.71544 56.90549 Z M  28.45274 56.90549  " style="fill:none"/>
+ <g>
+ <g transform="matrix(1.0,0.0,0.0,1.0,23.60667,55.5027)">
+ <g fill="rgb(0.0%,0.0%,0.0%)">
+ <text style="stroke:none" transform="scale(1,-1) translate(4.84607,0)" text-anchor="middle"  font-size="10"> 
+<tspan font-family="cmmi" font-size="10">v</tspan><tspan baseline-shift="sub"><tspan font-family="cmr" font-size="7">4</tspan></tspan></text> 
+</g>
+ </g>
+ </g>
+ </g>
+ <g>
+ <path d=" M  209.4319 56.90549 C  209.4319 62.57349 204.8372 67.16818 199.1692 67.16818 C  193.5012 67.16818 188.90651 62.57349 188.90651 56.90549 C  188.90651 51.23749 193.5012 46.64279 199.1692 46.64279 C  204.8372 46.64279 209.4319 51.23749 209.4319 56.90549 Z M  199.1692 56.90549  " style="fill:none"/>
+ <g>
+ <g transform="matrix(1.0,0.0,0.0,1.0,194.32314,55.5027)">
+ <g fill="rgb(0.0%,0.0%,0.0%)">
+ <text style="stroke:none" transform="scale(1,-1) translate(4.84607,0)" text-anchor="middle"  font-size="10"> 
+<tspan font-family="cmmi" font-size="10">v</tspan><tspan baseline-shift="sub"><tspan font-family="cmr" font-size="7">5</tspan></tspan></text> 
+</g>
+ </g>
+ </g>
+ </g>
+ <g>
+ <path d=" M  152.52641 28.45274 C  152.52641 34.12074 147.93172 38.71544 142.26372 38.71544 C  136.59572 38.71544 132.00102 34.12074 132.00102 28.45274 C  132.00102 22.78474 136.59572 18.19005 142.26372 18.19005 C  147.93172 18.19005 152.52641 22.78474 152.52641 28.45274 Z M  142.26372 28.45274  " style="fill:none"/>
+ <g>
+ <g transform="matrix(1.0,0.0,0.0,1.0,137.41765,27.04996)">
+ <g fill="rgb(0.0%,0.0%,0.0%)">
+ <text style="stroke:none" transform="scale(1,-1) translate(4.84607,0)" text-anchor="middle"  font-size="10"> 
+<tspan font-family="cmmi" font-size="10">v</tspan><tspan baseline-shift="sub"><tspan font-family="cmr" font-size="7">6</tspan></tspan></text> 
+</g>
+ </g>
+ </g>
+ </g>
+ <g>
+ <path d=" M  180.97916 85.35823 C  180.97916 91.02623 176.38446 95.62093 170.71646 95.62093 C  165.04846 95.62093 160.45377 91.02623 160.45377 85.35823 C  160.45377 79.69023 165.04846 75.09554 170.71646 75.09554 C  176.38446 75.09554 180.97916 79.69023 180.97916 85.35823 Z M  170.71646 85.35823  " style="fill:none"/>
+ <g>
+ <g transform="matrix(1.0,0.0,0.0,1.0,165.87039,83.95544)">
+ <g fill="rgb(0.0%,0.0%,0.0%)">
+ <text style="stroke:none" transform="scale(1,-1) translate(4.84607,0)" text-anchor="middle"  font-size="10"> 
+<tspan font-family="cmmi" font-size="10">v</tspan><tspan baseline-shift="sub"><tspan font-family="cmr" font-size="7">7</tspan></tspan></text> 
+</g>
+ </g>
+ </g>
+ </g>
+ <g>
+ <path d=" M  23.57568 47.15086 L  5.69856 11.39735  " style="fill:none"/>
+ <g>
+ <g transform="matrix(-0.4472,-0.89442,0.89442,-0.4472,5.69856,11.39737)">
+ <g>
+ <g stroke-dasharray="none" stroke-dashoffset="0.0pt">
+ <g stroke-linejoin="round">
+ <path d=" M  1.28 0.0 C  -0.31999 0.31999 -1.92 0.95999 -3.84 2.07999 C  -1.92 0.64 -1.92 -0.64 -3.84 -2.07999 C  -1.92 -0.95999 -0.31999 -0.31999 1.28 0.0 Z  " />
+ </g>
+ </g>
+ </g>
+  </g>
+ </g>
+ </g>
+ <g>
+ <path d=" M  64.58673 36.13382 L  104.80035 76.34781  " style="fill:none"/>
+ <g>
+ <g transform="matrix(0.70712,0.7071,-0.7071,0.70712,104.80034,76.3478)">
+ <g>
+ <g stroke-dasharray="none" stroke-dashoffset="0.0pt">
+ <g stroke-linejoin="round">
+ <path d=" M  1.28 0.0 C  -0.31999 0.31999 -1.92 0.95999 -3.84 2.07999 C  -1.92 0.64 -1.92 -0.64 -3.84 -2.07999 C  -1.92 -0.95999 -0.31999 -0.31999 1.28 0.0 Z  " />
+ </g>
+ </g>
+ </g>
+  </g>
+ </g>
+ </g>
+ <g>
+ <path d=" M  131.40103 28.45274 L  69.64816 28.45274  " style="fill:none"/>
+ <g>
+ <g transform="matrix(-1.0,0.0,0.0,-1.0,69.64816,28.45274)">
+ <g>
+ <g stroke-dasharray="none" stroke-dashoffset="0.0pt">
+ <g stroke-linejoin="round">
+ <path d=" M  1.28 0.0 C  -0.31999 0.31999 -1.92 0.95999 -3.84 2.07999 C  -1.92 0.64 -1.92 -0.64 -3.84 -2.07999 C  -1.92 -0.95999 -0.31999 -0.31999 1.28 0.0 Z  " />
+ </g>
+ </g>
+ </g>
+  </g>
+ </g>
+ </g>
+ <g>
+ <path d=" M  103.49544 81.91972 L  40.55357 60.93903  " style="fill:none"/>
+ <g>
+ <g transform="matrix(-0.94963,-0.31651,0.31651,-0.94963,40.55357,60.93904)">
+ <g>
+ <g stroke-dasharray="none" stroke-dashoffset="0.0pt">
+ <g stroke-linejoin="round">
+ <path d=" M  1.28 0.0 C  -0.31999 0.31999 -1.92 0.95999 -3.84 2.07999 C  -1.92 0.64 -1.92 -0.64 -3.84 -2.07999 C  -1.92 -0.95999 -0.31999 -0.31999 1.28 0.0 Z  " />
+ </g>
+ </g>
+ </g>
+  </g>
+ </g>
+ </g>
+ <g>
+ <path d=" M  189.41458 52.02843 L  153.66107 34.1513  " style="fill:none"/>
+ <g>
+ <g transform="matrix(-0.89442,-0.4472,0.4472,-0.89442,153.66109,34.1513)">
+ <g>
+ <g stroke-dasharray="none" stroke-dashoffset="0.0pt">
+ <g stroke-linejoin="round">
+ <path d=" M  1.28 0.0 C  -0.31999 0.31999 -1.92 0.95999 -3.84 2.07999 C  -1.92 0.64 -1.92 -0.64 -3.84 -2.07999 C  -1.92 -0.95999 -0.31999 -0.31999 1.28 0.0 Z  " />
+ </g>
+ </g>
+ </g>
+  </g>
+ </g>
+ </g>
+ <g>
+ <path d=" M  165.8394 75.6036 L  147.96228 39.8501  " style="fill:none"/>
+ <g>
+ <g transform="matrix(-0.4472,-0.89442,0.89442,-0.4472,147.96228,39.85011)">
+ <g>
+ <g stroke-dasharray="none" stroke-dashoffset="0.0pt">
+ <g stroke-linejoin="round">
+ <path d=" M  1.28 0.0 C  -0.31999 0.31999 -1.92 0.95999 -3.84 2.07999 C  -1.92 0.64 -1.92 -0.64 -3.84 -2.07999 C  -1.92 -0.95999 -0.31999 -0.31999 1.28 0.0 Z  " />
+ </g>
+ </g>
+ </g>
+  </g>
+ </g>
+ </g>
+ <g>
+ <g>
+ <path d=" M  237.88474 0.0 C  237.88474 5.668 233.29004 10.2627 227.62204 10.2627 C  221.95404 10.2627 217.35934 5.668 217.35934 0.0 C  217.35934 -5.668 221.95404 -10.2627 227.62204 -10.2627 C  233.29004 -10.2627 237.88474 -5.668 237.88474 0.0 Z M  227.62204 0.0  " style="fill:none"/>
+ <g>
+ <g transform="matrix(1.0,0.0,0.0,1.0,222.77597,-1.40279)">
+ <g fill="rgb(0.0%,0.0%,0.0%)">
+ <text style="stroke:none" transform="scale(1,-1) translate(4.84607,0)" text-anchor="middle"  font-size="10"> 
+<tspan font-family="cmmi" font-size="10">v</tspan><tspan baseline-shift="sub"><tspan font-family="cmr" font-size="7">1</tspan></tspan></text> 
+</g>
+ </g>
+ </g>
+ </g>
+ <g>
+ <path d=" M  294.79022 28.45274 C  294.79022 34.12074 290.19553 38.71544 284.52753 38.71544 C  278.85953 38.71544 274.26483 34.12074 274.26483 28.45274 C  274.26483 22.78474 278.85953 18.19005 284.52753 18.19005 C  290.19553 18.19005 294.79022 22.78474 294.79022 28.45274 Z M  284.52753 28.45274  " style="fill:none"/>
+ <g>
+ <g transform="matrix(1.0,0.0,0.0,1.0,279.68146,27.04996)">
+ <g fill="rgb(0.0%,0.0%,0.0%)">
+ <text style="stroke:none" transform="scale(1,-1) translate(4.84607,0)" text-anchor="middle"  font-size="10"> 
+<tspan font-family="cmmi" font-size="10">v</tspan><tspan baseline-shift="sub"><tspan font-family="cmr" font-size="7">2</tspan></tspan></text> 
+</g>
+ </g>
+ </g>
+ </g>
+ <g>
+ <path d=" M  351.69571 85.35823 C  351.69571 91.02623 347.10101 95.62093 341.43301 95.62093 C  335.76501 95.62093 331.17032 91.02623 331.17032 85.35823 C  331.17032 79.69023 335.76501 75.09554 341.43301 75.09554 C  347.10101 75.09554 351.69571 79.69023 351.69571 85.35823 Z M  341.43301 85.35823  " style="fill:none"/>
+ <g>
+ <g transform="matrix(1.0,0.0,0.0,1.0,336.58694,83.95544)">
+ <g fill="rgb(0.0%,0.0%,0.0%)">
+ <text style="stroke:none" transform="scale(1,-1) translate(4.84607,0)" text-anchor="middle"  font-size="10"> 
+<tspan font-family="cmmi" font-size="10">v</tspan><tspan baseline-shift="sub"><tspan font-family="cmr" font-size="7">3</tspan></tspan></text> 
+</g>
+ </g>
+ </g>
+ </g>
+ <g>
+ <path d=" M  266.33748 56.90549 C  266.33748 62.57349 261.74278 67.16818 256.07478 67.16818 C  250.40678 67.16818 245.81209 62.57349 245.81209 56.90549 C  245.81209 51.23749 250.40678 46.64279 256.07478 46.64279 C  261.74278 46.64279 266.33748 51.23749 266.33748 56.90549 Z M  256.07478 56.90549  " style="fill:none"/>
+ <g>
+ <g transform="matrix(1.0,0.0,0.0,1.0,251.22871,55.5027)">
+ <g fill="rgb(0.0%,0.0%,0.0%)">
+ <text style="stroke:none" transform="scale(1,-1) translate(4.84607,0)" text-anchor="middle"  font-size="10"> 
+<tspan font-family="cmmi" font-size="10">v</tspan><tspan baseline-shift="sub"><tspan font-family="cmr" font-size="7">4</tspan></tspan></text> 
+</g>
+ </g>
+ </g>
+ </g>
+ <g>
+ <path d=" M  437.05394 56.90549 C  437.05394 62.57349 432.45924 67.16818 426.79124 67.16818 C  421.12325 67.16818 416.52855 62.57349 416.52855 56.90549 C  416.52855 51.23749 421.12325 46.64279 426.79124 46.64279 C  432.45924 46.64279 437.05394 51.23749 437.05394 56.90549 Z M  426.79124 56.90549  " style="fill:none"/>
+ <g>
+ <g transform="matrix(1.0,0.0,0.0,1.0,421.94518,55.5027)">
+ <g fill="rgb(0.0%,0.0%,0.0%)">
+ <text style="stroke:none" transform="scale(1,-1) translate(4.84607,0)" text-anchor="middle"  font-size="10"> 
+<tspan font-family="cmmi" font-size="10">v</tspan><tspan baseline-shift="sub"><tspan font-family="cmr" font-size="7">5</tspan></tspan></text> 
+</g>
+ </g>
+ </g>
+ </g>
+ <g>
+ <path d=" M  380.14845 28.45274 C  380.14845 34.12074 375.55376 38.71544 369.88576 38.71544 C  364.21776 38.71544 359.62306 34.12074 359.62306 28.45274 C  359.62306 22.78474 364.21776 18.19005 369.88576 18.19005 C  375.55376 18.19005 380.14845 22.78474 380.14845 28.45274 Z M  369.88576 28.45274  " style="fill:none"/>
+ <g>
+ <g transform="matrix(1.0,0.0,0.0,1.0,365.03969,27.04996)">
+ <g fill="rgb(0.0%,0.0%,0.0%)">
+ <text style="stroke:none" transform="scale(1,-1) translate(4.84607,0)" text-anchor="middle"  font-size="10"> 
+<tspan font-family="cmmi" font-size="10">v</tspan><tspan baseline-shift="sub"><tspan font-family="cmr" font-size="7">6</tspan></tspan></text> 
+</g>
+ </g>
+ </g>
+ </g>
+ <g>
+ <path d=" M  408.6012 85.35823 C  408.6012 91.02623 404.0065 95.62093 398.3385 95.62093 C  392.6705 95.62093 388.0758 91.02623 388.0758 85.35823 C  388.0758 79.69023 392.6705 75.09554 398.3385 75.09554 C  404.0065 75.09554 408.6012 79.69023 408.6012 85.35823 Z M  398.3385 85.35823  " style="fill:none"/>
+ <g>
+ <g transform="matrix(1.0,0.0,0.0,1.0,393.49243,83.95544)">
+ <g fill="rgb(0.0%,0.0%,0.0%)">
+ <text style="stroke:none" transform="scale(1,-1) translate(4.84607,0)" text-anchor="middle"  font-size="10"> 
+<tspan font-family="cmmi" font-size="10">v</tspan><tspan baseline-shift="sub"><tspan font-family="cmr" font-size="7">7</tspan></tspan></text> 
+</g>
+ </g>
+ </g>
+ </g>
+ <g>
+ <path d=" M  251.19772 47.15086 L  233.3206 11.39735  " style="fill:none"/>
+ <g>
+ <g transform="matrix(-0.4472,-0.89442,0.89442,-0.4472,233.3206,11.39737)">
+ <g>
+ <g stroke-dasharray="none" stroke-dashoffset="0.0pt">
+ <g stroke-linejoin="round">
+ <path d=" M  1.28 0.0 C  -0.31999 0.31999 -1.92 0.95999 -3.84 2.07999 C  -1.92 0.64 -1.92 -0.64 -3.84 -2.07999 C  -1.92 -0.95999 -0.31999 -0.31999 1.28 0.0 Z  " />
+ </g>
+ </g>
+ </g>
+  </g>
+ </g>
+ </g>
+ <g>
+ <path d=" M  274.7729 23.57568 L  239.0194 5.69856  " style="fill:none"/>
+ <g>
+ <g transform="matrix(-0.89442,-0.4472,0.4472,-0.89442,239.01941,5.69856)">
+ <g>
+ <g stroke-dasharray="none" stroke-dashoffset="0.0pt">
+ <g stroke-linejoin="round">
+ <path d=" M  1.28 0.0 C  -0.31999 0.31999 -1.92 0.95999 -3.84 2.07999 C  -1.92 0.64 -1.92 -0.64 -3.84 -2.07999 C  -1.92 -0.95999 -0.31999 -0.31999 1.28 0.0 Z  " />
+ </g>
+ </g>
+ </g>
+  </g>
+ </g>
+ </g>
+ <g>
+ <path d=" M  331.11748 81.91972 L  268.17561 60.93903  " style="fill:none"/>
+ <g>
+ <g transform="matrix(-0.94963,-0.31651,0.31651,-0.94963,268.17561,60.93904)">
+ <g>
+ <g stroke-dasharray="none" stroke-dashoffset="0.0pt">
+ <g stroke-linejoin="round">
+ <path d=" M  1.28 0.0 C  -0.31999 0.31999 -1.92 0.95999 -3.84 2.07999 C  -1.92 0.64 -1.92 -0.64 -3.84 -2.07999 C  -1.92 -0.95999 -0.31999 -0.31999 1.28 0.0 Z  " />
+ </g>
+ </g>
+ </g>
+  </g>
+ </g>
+ </g>
+ <g>
+ <path d=" M  359.02307 28.45274 L  297.2702 28.45274  " style="fill:none"/>
+ <g>
+ <g transform="matrix(-1.0,0.0,0.0,-1.0,297.2702,28.45274)">
+ <g>
+ <g stroke-dasharray="none" stroke-dashoffset="0.0pt">
+ <g stroke-linejoin="round">
+ <path d=" M  1.28 0.0 C  -0.31999 0.31999 -1.92 0.95999 -3.84 2.07999 C  -1.92 0.64 -1.92 -0.64 -3.84 -2.07999 C  -1.92 -0.95999 -0.31999 -0.31999 1.28 0.0 Z  " />
+ </g>
+ </g>
+ </g>
+  </g>
+ </g>
+ </g>
+ <g>
+ <path d=" M  417.03662 52.02843 L  381.28311 34.1513  " style="fill:none"/>
+ <g>
+ <g transform="matrix(-0.89442,-0.4472,0.4472,-0.89442,381.28313,34.1513)">
+ <g>
+ <g stroke-dasharray="none" stroke-dashoffset="0.0pt">
+ <g stroke-linejoin="round">
+ <path d=" M  1.28 0.0 C  -0.31999 0.31999 -1.92 0.95999 -3.84 2.07999 C  -1.92 0.64 -1.92 -0.64 -3.84 -2.07999 C  -1.92 -0.95999 -0.31999 -0.31999 1.28 0.0 Z  " />
+ </g>
+ </g>
+ </g>
+  </g>
+ </g>
+ </g>
+ <g>
+ <path d=" M  393.46144 75.6036 L  375.58432 39.8501  " style="fill:none"/>
+ <g>
+ <g transform="matrix(-0.4472,-0.89442,0.89442,-0.4472,375.58432,39.85011)">
+ <g>
+ <g stroke-dasharray="none" stroke-dashoffset="0.0pt">
+ <g stroke-linejoin="round">
+ <path d=" M  1.28 0.0 C  -0.31999 0.31999 -1.92 0.95999 -3.84 2.07999 C  -1.92 0.64 -1.92 -0.64 -3.84 -2.07999 C  -1.92 -0.95999 -0.31999 -0.31999 1.28 0.0 Z  " />
+ </g>
+ </g>
+ </g>
+  </g>
+ </g>
+ </g>
+ </g>
+ </g>
+ </g>
+ </g>
+ </g>
+ </g>
+ </g>
+ 
+                                                                                                                                                                      </g> 
+</svg> 
