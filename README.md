@@ -19,7 +19,7 @@ Lastly, please feel free to **star this repository** if you found it interesting
 ## II. Algotithmics & Mathematics
 [//]: # (I am also planning to sort out a more detailed general Algorithm note from my previous notes.)   
 For reading materials, [*Algorithms*](http://algorithmics.lsi.upc.edu/docs/Dasgupta-Papadimitriou-Vazirani.pdf) by S. Dasgupta et al is good and concise (recommended by UC San Diego cources), [*Introduction to Algorithms*](https://www.amazon.co.uk/Introduction-Algorithms-Thomas-H-Cormen/dp/0262033844/) by T. H. Cormen is a longer and newer one (recommended by MIT cources), [solutions](https://github.com/gzc/CLRS). \*   
-There are also many open-source collections of algorithm implementations, which are useful during study, e.g. [Python](https://github.com/TheAlgorithms/Python) and [Java](https://github.com/TheAlgorithms/Java).   
+There are also many open-source collections of algorithm implementations, which are useful during study, e.g. in [Python](https://github.com/TheAlgorithms/Python) and [Java](https://github.com/TheAlgorithms/Java).   
 Also for visualizations there is [Data Structure Visualizations](https://www.cs.usfca.edu/~galles/visualization/Algorithms.html).   
 
 1. [***Graph Theory and Algorithms (with Python)***](https://github.com/BaksiLi/CS-Hypomnema/tree/master/Resources/Algorithm/graph.md) ![Editing](https://img.shields.io/badge/status-revising-lightgreen.svg)   
@@ -34,7 +34,7 @@ Also for visualizations there is [Data Structure Visualizations](https://www.cs.
 
 \* <sub>Although I have never finished reading any one of them :(</sub>   
 
-## III. Scientific Programming
+## III. Scientific Computing
 ### i. Mathematica (Wolfram Language)
 1. [***Learn Mathematica by Example***](https://github.com/BaksiLi/Wolflang-Workshops/blob/master/resources/myNote.nb) ![Editing](https://img.shields.io/badge/status-revising-lightgreen.svg)   
 	I wrote this notebook alongside with learning. The official tutorial, [*Fast Introduction for math students*](http://www.wolfram.com/language/fast-introduction-for-math-students/en/) is a good source of reference as well.
@@ -50,7 +50,7 @@ Also for visualizations there is [Data Structure Visualizations](https://www.cs.
 	
 [//]: # (### ii. Python)
 ## IV. Quantum Computing
-For reading materials, [Quantum Computation and Quantum Information](https://books.google.co.uk/books/about/Quantum_Computation_and_Quantum_Informat.html) is the choice.
+For reading materials, [Quantum Computation and Quantum Information](https://books.google.co.uk/books?id=-s4DEy7o-a0C) is the choice.
 
 1. ***D-Wave machine Introduction*** ![Pending](https://img.shields.io/badge/status-Pending-orange.svg)   
 	This was part of my undergraduate thesis topic. The code is available now, see [here](https://github.com/BaksiLi/CS-Hypomnema/blob/master/Resources/Quantum/D-Wave/mapcl.py).
