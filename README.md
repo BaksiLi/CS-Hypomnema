@@ -3,7 +3,7 @@ CS-Hypomnema: Computer Science Notes Collection
 [![Licence: CC BY-NC-ND 4.0](https://img.shields.io/badge/License-CC%20BY--NC--ND%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-nd/4.0/)
 
 Note-taker: [Baksi](https://github.com/BaksiLi)  
-This repository curates some computer science notes. It records my steps of learning, which means it is always updating, as the knowledge could never suffice. Anyone is more than welcomed to give suggestions, or even raise a PR.   
+This repository curates a few computer science notes. It records my steps of learning, which means it will keep updating, as the knowledge could never suffice. Anyone is more than welcomed to give suggestions, or even raise a PR.   
 
 Lastly, please feel free to **star this repository** if you found it interesting or boring (yeah, p ∨ ¬p).    
 
@@ -43,18 +43,21 @@ Also for visualizations there is [Data Structure Visualizations](https://www.cs.
 	<details>
 	<summary>Workshop Lists</summary>
 	
-	1. [Country Flag Colour Analysis](https://github.com/BaksiLi/Wolflang-Workshops/blob/master/resources/AnalyzeFlagColours.nb): An analysis on the dominant colours of the country flags around the world.
-	1. [Amateur Sleuthing of NK Nuclear Tests](https://github.com/BaksiLi/Wolflang-Workshops/blob/master/resources/NorthKoreaSleuthing.nb): Note from Stephen Wolfram's live stream chat. I have added some parts into it as well.
+	1. [Country flags colour analysis](https://github.com/BaksiLi/Wolflang-Workshops/blob/master/resources/AnalyzeFlagColours.nb): An analysis on the dominant colours of the country flags around the world.
+	1. [*Impaint*: Remove texts from Images](): This workshop starts from a simple usage – removing texts or any unwanted elements from an image – and therefore introduces *Impaint* funtion in Wolflang.
+	1. [Amateur sleuthing of NK nuclear tests](https://github.com/BaksiLi/Wolflang-Workshops/blob/master/resources/NorthKoreaSleuthing.nb): Note from Stephen Wolfram's live stream chat. I have added some parts into it as well.
+
 	
 	</details>
 	
-[//]: # (### ii. Python)
+[//]: # (### ii. Machine Learning Specification)
 ## IV. Quantum Computing
 For reading materials, [Quantum Computation and Quantum Information](https://books.google.co.uk/books?id=-s4DEy7o-a0C) is the choice.
 
 1. ***D-Wave machine Introduction*** ![Pending](https://img.shields.io/badge/status-Pending-orange.svg)   
 	This was part of my undergraduate thesis topic. The code is available now, see [here](https://github.com/BaksiLi/CS-Hypomnema/blob/master/Resources/Quantum/D-Wave/mapcl.py).
 
+[//]: # (As I've been studied about Quantum technologies for so long, and early notes are hand-written, the note in this part may lack of detail for fundamental stuffs.)
 
 # Acknowledgement
 This repository is licenced under the Creative Commons [BY-NC-ND](https://creativecommons.org/licenses/by-nc-nd/4.0/) (*Attribution-NonCommercial-NoDerivatives 4.0 International*) Licence.  
