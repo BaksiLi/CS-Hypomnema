@@ -11,7 +11,7 @@ Lastly, please feel free to **star this repository** if you found it interesting
 
 # Catalogue
 ## I. Introductions
-1. [***Introduction to Computer Science***](https://github.com/BaksiLi/CS-Hypomnema/tree/master/Resources/General/CS50x.md) ![Editing](https://img.shields.io/badge/status-revising-lightgreen.svg)   
+1. [***Introduction to Computer Science***](https://github.com/BaksiLi/CS-Hypomnema/tree/master/Resources/General/IntroToCS.md) ![Editing](https://img.shields.io/badge/status-revising-lightgreen.svg)   
 	Note based on CS50x 2017 course, the content and structure is slightly different from the [official syllables](http://docs.cs50.net/2017/x/syllabus.html).	It covers the basics of C, Python, Javascript, HTML and CSS, as well as some important concepts in computer science like Computational Complexity.
 1. ***Introduction to Web Development*** ![Pending](https://img.shields.io/badge/status-Pending-orange.svg)    
 	Note based on CS50w course. It covers Git, Flask, Django et.c.
@@ -27,7 +27,7 @@ For reading materials, [*Algorithms*](http://algorithmics.lsi.upc.edu/docs/Dasgu
 There are also many open-source collections of algorithm implementations, which are useful during study, e.g. in [Python](https://github.com/TheAlgorithms/Python) and [Java](https://github.com/TheAlgorithms/Java).   
 In addition, for visualizations there is [Data Structure Visualizations](https://www.cs.usfca.edu/~galles/visualization/Algorithms.html).   
 
-1. [***Graph Theory and Algorithms (with Python)***](https://github.com/BaksiLi/CS-Hypomnema/tree/master/Resources/Algorithm/graph.md) ![Editing](https://img.shields.io/badge/status-revising-lightgreen.svg)   
+1. [***Graph Theory and Algorithms (with Python)***](https://github.com/BaksiLi/CS-Hypomnema/tree/master/Resources/Algorithm/GraphAlgorithm.md) ![Editing](https://img.shields.io/badge/status-revising-lightgreen.svg)   
 <sub>This note is uploaded but still upon editing for mathematical details.</sub>   
 	A summary note from [NET04x](https://www.imt-atlantique.fr/fr/formation/moocs-et-cours-ouverts/moocs/advanced-algorithmics-and-graph-theory-python) (IMTx) and [ALGS202x](https://www.edx.org/course/graph-algorithms-uc-san-diegox-algs202x) (UCSanDiegoX) with a nicely balanced theoretical and pratical content. As graph algorithms are important in designing AI, this note provides an example of applying combinatorial game theory to win a game described by graph.    
 	For anyone who wishes to go deeper in the computational theory (esp. after studied Chapter IV), reading of *Complexity and NP-Complete Problems* is highly recommended.

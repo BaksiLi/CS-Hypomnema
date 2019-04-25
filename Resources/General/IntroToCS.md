@@ -1,5 +1,5 @@
 <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-CS50x: Introduction to Computer Science  
+Introduction to Computer Science  
 ---  
 # Content
 
@@ -9,6 +9,13 @@ CS50x: Introduction to Computer Science
 	1. [II: C Language Fundamentals](#w1)
 	1. [III: Arrays](w2)
 	1. [IV: Algorithms](w3)
+	1. [V: Memory](w4)
+	1. [VI: Data Structures](w5)
+	1. [VII: Web and Internet](w6)
+	1. [IIX: Python](w8)
+	1. [IX: SQL](w9)
+	1. [X: JavaScript](w10)
+	1. [Final Project][final]
 - [Future Study](#future)
 
 ---
@@ -23,7 +30,7 @@ This note is written based on CS50x 2017 course. The content and structure may b
  [Scratch](www.scratch.mit.edu) is a visual toolkit for amatures to learn and grab an idea of *programming*. <img src="http://www.quarrylane.org/uploaded/Summer/images/ScratchBlogLogo.jpg" alt = "Scratch logo" width = "330" />
 ### How programme works?  
 - **Computers** are information processing automata; they are dumb machines in the sense that they do *only* what user instructed, but at the same time very clever if the people behind are intellegent.
-- A computer **programme** is a collection of instructions to achieve a specific task. It is, a  liminal artefact, since instructions are abstract but the operations are done in the physical world. **Binaries** that corresponed directly to specific instructions. Tasks are approached by **Algorithms**, *cf.* [Week 3](w3).  
+- A computer **programme** is a collection of instructions to achieve a specific task. It is, a  liminal artefact, since instructions are abstract but the operations are done in the physical world. **Binaries** that corresponed directly to specific instructions. Tasks are approached by **Algorithms**.  
 - **Assembly Language** enabled the programmers to use symbolics instead of binaries, but it is symbol-to-operation therefore low-level and not portable. **Higher-level Language**, *FORTRAN* (FORmula TRANslation) language first came.   
 - **Compilers** translate programme statements into computer instructions. **Operating System** channeled all input and output (*i.e.* I/O) operations.
 ### Relavent readings at the stage
@@ -208,7 +215,7 @@ Upper boundary $(n-1) + (n-2) + ... + 1 \\ = \frac{n(n-1)}{2} = O(n^2)$  ; Lower
 		- how to **write programme in multiple files**
 	- Implement Game of Fifteen  
 
-## V. Memory
+## V. Memory [w4]
 1. Underneath the hood: **RAM**
 	Same "incantation of strings" are different, in the sense of memory. Why?
 	Notice that if you run a programme in terminal, your computer would give that programme the illusion of a really big chunk of memory all on its own. When main is called, main is given a stack space.	... [sloppily drawn]  
@@ -242,7 +249,7 @@ Incidentally, HTML and CSS (languages in which webpages can be written) model co
 	- Resize  NTBC;  
 	- [Recover](https://docs.cs50.net/problems/recover/recover.html)  
 
-## V. Week 5: Data Structures (Further)  
+## VI. Data Structures [w5]
 1. Data structure allows more flexible running, memory are allocated dynamically, rather than using remalloc(), free() and so frequently.  
 	- **Node** type is essential.  
 
@@ -355,9 +362,9 @@ The running time of search  would always be O(n) since the only way of searching
 	- Understand [C compiler](https://docs.cs50.net/problems/speller/speller.html#code-makefile-code)
 	- the [form](https://forms.cs50.net/2017/x/psets/5)   
 
-## VI. Week 6: HTTP  
+## VII. Web and Internet [w6]
  [//]: # (Waited to be reviewed after refered to a book.)  
-1. Inter-net models. 
+1. Internet models. 
 	- A central **protocal** is used to assign certain settings to all the devices, so called **router**. It is a typical example, and a special type of software called **DHCP** (Dynamic Host Configuration Protocal). 
 	- At the first time a device is connected, a unique identifier, is given to it. **IP adress**, **Ether & Inet**.  
 	- **DNS** helps the conversion between numerical address into more human-friendly host names, or fully qualified domain names (& thankfully no more mnemonics). Look up server address by cmd `nslookup xxxx`.  
@@ -376,7 +383,7 @@ The running time of search  would always be O(n) since the only way of searching
 
 [//]: # (Week 7: Machine Learning. This section is removed to another note, acting as an introduction.)
 
-## VII. Week 8: Python   
+## VII. Week 8: Python [w8] 
 1. The meaning of object type, value, and identity. Depending on the type of the object, it could be either immutable (*e.g.*, strings and tuples) or mutable (*e.g.*, dictionaries and lists). Methods are functions associated with objects, whereas data attributes are data associated with objects.   
 	Polymorphism to operators   
 	Typing or assigning data types feres to the set of rules that the language uses to ensure that the part of the program receiveing the data knows how to correctly interpret that data. Some langaguages are **statically typed**, like C/C++; whilst other languages are **dynamically typed**, like Python. Static typing means that type checking is perfoormed during compile time, whereas dynamic typing means that type checking is performed at run time. 
@@ -423,20 +430,20 @@ The running time of search  would always be O(n) since the only way of searching
 	Flask, Twitter application, Analyzer
 <input type="checkbox" checked="True" name="pset3"> Status <br/>  
 
-## IIX. Week 9: SQL   
+## IIX. Week 9: SQL [w9]
 1. Model part of Web  
  
 1. [Problem set #7](https://docs.cs50.net/2017/x/psets/7/pset7.html): C$50 Finance  
 <input type="checkbox" name="pset3"> Status <br/>  
 
-## IX. Week 10: JavaScrip   
+## IX. Week 10: JavaScrip [w10]
 1. [Problem set #8](https://docs.cs50.net/2017/x/psets/8/pset8.html): Mashup
 	- [Google map JS API](https://developers.google.com/maps/web/) powered by [Google Developers](console.developers.google.com)
 	- [Google JS tutorial](https://developers.google.com/maps/documentation/javascript/tutorial)  
 	- [SQLite csv_import](https://www.sqlite.org/cli.html#csv_import)
 <input type="checkbox" name="pset3"> Status <br/>  
 
-## X. Week 11: Final Project  
+## X. Week 11: Final Project [final]
 - [Project Page](https://docs.cs50.net/2017/fall/project/project.html)  
 
 ---
