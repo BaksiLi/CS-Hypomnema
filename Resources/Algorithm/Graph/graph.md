@@ -306,7 +306,7 @@ It is an algorithm that is guaranteed to output the shortest paths from an initi
 
 <details>
 <summary>Scheme</summary>
-- Initialise as the following:
+- Initialize as the following:
 <center>$\begin{array}{c|c|c|c|c|c|c|c|c|c|c}vertex& v_1 &v_2 & v_3 & v_4 & v_5 & v_6 & v_7 & v_8 & v_9 & v_{10}\\\hline explored & No & No & No & No & No & No & No & No & No & No\\ \hline distance & 0 & +\infty & +\infty&+\infty&+\infty&+\infty&+\infty&+\infty&+\infty&+\infty\end{array}$</center>
 - Add vertices as keys and distances with regard to the starting position as the values.
 <center>$\begin{array}{c|c|c|c|c|c|c|c|c|c|c}vertex& v_1 &v_2 & v_3 & v_4 & v_5 & v_6 & v_7 & v_8 & v_9 & v_{10}\\\hline explored & Yes & No & No & No & No & No & No & No & No & No\\ \hline distance & 0 & 5 & 3&+\infty&+\infty&+\infty&+\infty&+\infty&+\infty&+\infty\end{array}$</center>
@@ -395,20 +395,33 @@ This section is in the status `to be added` since it is not included in the cour
 </details>
 ### Improve with Bracktracking
 iteratively examines the lengths of routes and immediately aborts examination of a route that is longer than the shortest found so far. exploration of the current branch is aborted if the length of the partial route is greater than the best route found so far. In the best case, only the first branch has been fully explored.
+- True statements about TSP
+	- On a weighted graph in which all weights are equal, backtracking will be at least as costly as a bruteforce search.
+	- The order in which vertices are explored has an important influence on overall execution time.
 
 ## Unit 5 Heuristics, Greedy approaches
 - Heuristic, produce a solution that's faster to solve problem in hand. For example, if we know the direction of the destination, we can design the heuristic that move only in the direction, although this may be worse. A good heuristic provides a gain and is of the limited complexity.
-- Greedy Approach: The purpose of a greedy algorithm is to approximate the solution to a problem by a succession of locally optimal solutions. In TSP, we always choose to go for the edge with the shortest distance until reached the destination. 
+- Greedy Approach: The purpose of a greedy algorithm is to approximate the solution to a problem by a succession of locally optimal solutions. In TSP, we always choose to go for the edge with the shortest distance until reached the destination, which results in $O(|V|^{2})$.
 - An example in which greedy algorithm is optimal. 
 > Consider the problem of returning coins after a payment. We wish to return a certain amount of change in euros, and we've got the following pieces: 1c, 2c, 5c, 10c, 20c, 50c, 1€, 2€. The aim is to use as few coins as possible.
 
 but this when the condition slightly changed:
 > Now let us consider the following pieces: 1c, 2c, 5c, 10c, 20c, 40c, 50c, 1€, and in this case we want to return 80c. The greedy algorithm will return 50c (30c left), then 20c (10c left) and 10c, i.e., three pieces. However, returning 80c can also be done by returning two 40-cent pieces.
 
+- Pareto front delimits trade-offs between complexity and correctness; Pareto optimal.
 
-## Unit 6 Combinatorial Game Theory
+## Unit 6 Application: Combinatorial Game Theory
+- In computer science, game theory is widely applied. For example, in operating systems where the goal of the game is to prevent errors.
+- Consider in a maze, where two players move (simutaneously) to find the treasures in some positions, with the one who finds the most treasures firstly being the winner of the game.
+- The above game can be formalized by a specific graph called *arena*, where each vertex summarizes the state of the game (positions of the players and the treasures) and edges corresponds to how plays evolve. So a play can be seen as a walk in the arena, whereas a strategy is a function that associates a vertex in the arena with decisions.
+![First move in the arena](Resources/arena.png)
+- A *winning strategy* for the senario is the strategy that leads a player to victory. Since a maze is symmetrical, if both players choose to move by the symmetry, then the game will end up in a tie; else if a play at some point breaks the symmetry, the game will admit winning strategies subsequently. And we are to determine whether such a strategy exists throughout the game, by considering two interwined combinatorial factors – the moves of each players – which is a huge graph (we will at least have $(2\times 2)^{N}$, where $N$ is the number of turns), therfore we have to reduce the game.
+- Compute winning strategy by *dynamic programming*. Consider the senario:
+> 15*11 cells' maze -> 165 cells in total;
+7 treasures to find -> $2^{7}$ possibe states of the treasures;
+scores to win is 5 -> scores range $[0,4]$.
 
-
+so the maximum size of the arena is $2^{7} * 165^{2} * 5 \approx 10^{6}$. We then identify vertices in the arena for winning.
 
 ---
 # Further Study
