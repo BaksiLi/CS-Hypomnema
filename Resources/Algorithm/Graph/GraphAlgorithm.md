@@ -24,7 +24,7 @@ Graph Theory and Algorithms (with Python)
 - [Introduction](#intro)  
 - [Main](#main) 
 	1. [I. Definitions](#unit1)
-	2. [II. ](#unit2)
+	2. [II. Graph Traversal](#unit2)
 	3. [III. ](#unit3)
 	4. [IV. ](#unit4)
 	5. [V. ](#unit5)
@@ -39,11 +39,12 @@ This is a summary note from NET04x (IMTx) [^1], ALGS202x and {NP-Complete Proble
 There are six units in total, where each unit consists of a section of theory and a several sections of algorithms.
 
 [^1]: [NET04x: Advanced Algorithmics and Graph Theory with Python](https://www.imt-atlantique.fr/fr/formation/moocs-et-cours-ouverts/moocs/advanced-algorithmics-and-graph-theory-python) at IMT wesite, or [Advanced Algorithmics and Graph Theory with Python] at EdX. 
+
 [^2]: [ALGS202x: Graph Algorithms](https://www.edx.org/course/graph-algorithms-uc-san-diegox-algs202x). (UCSanDiegoX).
 
 # Main [main]
 ## Unit 1: Definitions [unit1]
-### 1.1 Basics of Graphs [maths1]
+### 1.1 Basics of Graphs [maths1]
 1. Graph is to represent connections between objects. For example, maps, social networks, configuration spaces (of robots).
 1. DEF: An (undirected) **graph**, is a collection $V$ of *vertices* and a collection of $E$ *edges* each of which connects a pair of vertices, denoted $G=(V,E)$.
 	- Analogy: Vertices are points; Edges are connecting lines.
@@ -77,12 +78,12 @@ There are six units in total, where each unit consists of a section of theory an
 	| Adj. List   | $\Theta(|E|)$ | $\Theta(|E|)$   | $\Theta(|E|)$ |
 	| Adj. Matric | $\Theta(deg)$ | $\Theta(|E|)$   | $\Theta(deg)$ |
 	
-To compare the complexities based on different parameters, we can look at the *graph density*. $|E|\approx|V|^2$ is a case of dense graph; $|E|\approx|V|$  is a case of sparse graph.
+To compare the complexities based on different parameters, we can look at the *graph density*. $|E|\approx|V|^2$ is a case of dense graph; $|E|\approx|V|$ is a case of sparse graph.
 
 ### Exercise
 -  [PyRat maze game](https://github.com/vgripon/PyRat)
 
-## Unit 2: Graph Traversal
+## Unit 2: Graph Traversal [unit2]
 Graph traversal explores the graph, one vertex at a time, between pairs of vertices in the graph, and obtains a list of all accessible vertices from a given initial vertex.
 
 [//]: # (clearly state that sth is Minimum spanning tree problem)
@@ -238,7 +239,7 @@ Individual implementations could be found [traversal.py](Resources/traversal.py)
 1. DEF: Two vertices $v$, $w$ in a directed graph are **connected** if $\{v,w\}$ and $\{w,v\}$ exists.
 1. Theorem: A directed graph can be partitioned into **strongly connected components** where two vertices are connected iff. they are in the same component.
 	- proof: Similar from showing it in the undirected case. The equivalence relation.
-1. A **metagraph** shows how the strongly connected components connect to one another. ![metagraph](Resources/metagraph.png)   
+1. DEF: A **metagraph** shows how the strongly connected components connect to one another. ![metagraph](Resources/metagraph.png)   
 1. Theorem: The metagraph of any graph is always a **DAG**.
 	- proof: Suppose it is not, then there is a cycle $C$, which means that any nodes in cycle can reach any others. But if they are all connected, they should be in one strongly connected component, which leands to contradiction.
 
@@ -323,7 +324,8 @@ It is an algorithm that is guaranteed to output the shortest paths from an initi
 		1. Add-or-replace: given a new element (k, v). If k already exists in the heap, then by comparing v, the one with the less v (shorter distance) is remained.
 		1. Remove
 	- An implementation:
-		<details>
+
+	<details>
 	
 		``` python3
 		def heap_add_or_replace(heap, triplet):
@@ -376,25 +378,28 @@ This section is in the status `to be added` since it is not included in the cour
 - Brute Force Search is one of the exact algorithm which solves TSP. It tries all permutations and conclude the shortest, as called an *exhaustive* approach. 
 - Therefore if the size of the graph is fixed, permutation equals $(n-1)!$; therefore the algorithm is $O(n!)$ polynomial. It is therefore lack of scalability.
 - An implementation in Python:
+
 <details>
 
-	``` python3
-	best = 999  # infinity
-	def bruteforce(remaining, vertex, path, weight, graph):
-	  if remaining is empty:
-	    if weight < best:
-	      best = weight
-	      best_path = path
-	  else:
-	    for each vertex i in remaining:
-	      bruteforce(remaining - i, i, path + i, weight + graph[vertex][i],graph)
-	      
-	 bruteforce(vertexes_List - starting_vertex, starting_vertex, empty_list, 0, graph)
-	```
+``` python3
+best = 999  # infinity
+def bruteforce(remaining, vertex, path, weight, graph):
+  if remaining is empty:
+    if weight < best:
+      best = weight
+      best_path = path
+  else:
+    for each vertex i in remaining:
+      bruteforce(remaining - i, i, path + i, weight + graph[vertex][i],graph)
+      
+ bruteforce(vertexes_List - starting_vertex, starting_vertex, empty_list, 0, graph)
+```
 
 </details>
+
 ### Improve with Bracktracking
-iteratively examines the lengths of routes and immediately aborts examination of a route that is longer than the shortest found so far. exploration of the current branch is aborted if the length of the partial route is greater than the best route found so far. In the best case, only the first branch has been fully explored.
+Iteratively examines the lengths of routes and immediately aborts examination of a route that is longer than the shortest found so far. exploration of the current branch is aborted if the length of the partial route is greater than the best route found so far. In the best case, only the first branch has been fully explored.
+
 - True statements about TSP
 	- On a weighted graph in which all weights are equal, backtracking will be at least as costly as a bruteforce search.
 	- The order in which vertices are explored has an important influence on overall execution time.

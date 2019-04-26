@@ -15,14 +15,13 @@ Introduction to Computer Science
 	1. [IIX: Python](w8)
 	1. [IX: SQL](w9)
 	1. [X: JavaScript](w10)
-	1. [Final Project][final]
+	1. [Final Project](final)
 - [Future Study](#future)
 
 ---
 # Introduction
-Lecturer: <a mailto="malan@havard.edu">David J. Malan</a>  
 Note-taker: [Baksi](https://github.com/BaksiLi)  
-This note is written based on CS50x 2017 course. The content and structure may be slightly different from the [official syllables](http://docs.cs50.net/2017/x/syllabus.html) since I have restructured and filled it new materials from other sources.  Nevertheless, all the knowledge are covered and extended beyond the scope. The original course video and other supporting materials could be found in the [seminar page](http://cs50.tv/2017/fall/#about,lectures), or in their channel [cs50 live](https://www.youtube.com/user/cs50tv/).
+This article is written based on the note of CS50x 2017 of Harvard University, lectured by <a mailto="malan@havard.edu">David J. Malan</a>. The content and structure may be slightly different from the [official syllables](http://docs.cs50.net/2017/x/syllabus.html) since I have restructured and filled it with new materials. Nevertheless, all the knowledge are covered and extended beyond their scope. The original course video and other supporting materials could be found in the [seminar page](http://cs50.tv/2017/fall/#about,lectures), or in their channel [cs50 live](https://www.youtube.com/user/cs50tv/).
  
 # Main
 ## I. Programming [w0]
@@ -30,9 +29,9 @@ This note is written based on CS50x 2017 course. The content and structure may b
  [Scratch](www.scratch.mit.edu) is a visual toolkit for amatures to learn and grab an idea of *programming*. <img src="http://www.quarrylane.org/uploaded/Summer/images/ScratchBlogLogo.jpg" alt = "Scratch logo" width = "330" />
 ### How programme works?  
 - **Computers** are information processing automata; they are dumb machines in the sense that they do *only* what user instructed, but at the same time very clever if the people behind are intellegent.
-- A computer **programme** is a collection of instructions to achieve a specific task. It is, a  liminal artefact, since instructions are abstract but the operations are done in the physical world. **Binaries** that corresponed directly to specific instructions. Tasks are approached by **Algorithms**.  
-- **Assembly Language** enabled the programmers to use symbolics instead of binaries, but it is symbol-to-operation therefore low-level and not portable. **Higher-level Language**, *FORTRAN* (FORmula TRANslation) language first came.   
-- **Compilers** translate programme statements into computer instructions. **Operating System** channeled all input and output (*i.e.* I/O) operations.
+- A computer **programme** is a collection of instructions to achieve specific tasks. It is a liminal artefact, since instructions are abstract but the operations are done in the physical world. **Binaries** corresponed directly to specific instructions. Tasks are approached by **Algorithms**.  
+- **Assembly Language** enabled the programmers to use symbolics instead of binaries, but it is symbol-to-operation therefore low-level and not portable. 
+- **Higher-level Language** are designed, *FORTRAN* (FORmula TRANslation) language is the first. They requires **compilers** for translating programme statements into machine instructions. **Operating System** channeled all input and output (i.e. I/O) operations.
 ### Relavent readings at the stage
 - How Computers Work, Tenth Edition
 Ron White
@@ -53,12 +52,17 @@ ISBN 0-321-84268-5
 
 ## II. C Language Basics [w1]
 ### Environment
+#### CS50 IDE
 - Environment: Cloud [IDE](https://ide.cs50.io/) platform, [CS50.h Reference](https://reference.cs50.net/math/modf). The library is available at GitHub, *cf.* [libcs50](https://github.com/cs50/libcs50).
 - Debugging in IDE: `eprintf`, ` help50` and `debug50`.
+#### In situ
 - Editors: [Vim](https://en.wikipedia.org/wiki/Vim_(text_editor)) or [Elipse](https://en.wikipedia.org/wiki/Eclipse_(software)) for Hardcore players. The presenter uses [Atom](https://atom.io/).
+- IDEs are good and easy to install. 
+	- C: MacOS users can (sometimes must) install [Xcode](https://developer.apple.com/xcode/); for cross-flatform [Visual Studio Code](https://code.visualstudio.com/).
+	- Python: [Anaconda](https://www.anaconda.com/distribution/) (with its Spyder) is the default choice for data scientists, while [PyCharm](https://www.jetbrains.com/pycharm/) is more compatible with other uses. However, in early 2019 Anaconda and JetBrains announced that they will [join forces to launch 'PyCharm for Anaconda'](https://www.businesswire.com/news/home/20190404005205/en/Anaconda-JetBrains-Join-Forces-Launch-%E2%80%98PyCharm-Anaconda%E2%80%99), so no more troubles in the future.
 ### C language
-- Introduction to *C* language and basic *Bash* instructions, *e.g.* gcc.   
-CS50 [style guide of C](https://manual.cs50.net/style)
+- Introduction to *C* language and basic *Bash* instructions
+- Good coding style is important. [CS50 style guide of C](https://manual.cs50.net/style)
 ### [Problem set #1](https://docs.cs50.net/2017/x/psets/1/pset1.html)
 - Hello World  
 - Functions  
@@ -106,7 +110,7 @@ cf. [Recursion Factorial](https://www.cs.usfca.edu/~galles/visualization/RecFact
 - [Crack Cytology question](https://docs.cs50.net/problems/crack/crack.html)
 
 ## IV. Algorithms [w3]
-As above mentioned, **Algorithm** is the method for problem solving, involves a finite series of steps. "In computing practice the algorithm denotes the expression on paper of the proposed computing process (often by means of a flowchart) prior to the preparation of the programme. If no algorithms is possible a heuristic solution has to be sought {in which it involves trial and error, as in iteration.}."
+**Algorithm** is the method for problem solving, involves a finite series of steps. "In computing practice the algorithm denotes the expression on paper of the proposed computing process (often by means of a flowchart) prior to the preparation of the programme. If no algorithms is possible a heuristic solution has to be sought {in which it involves trial and error, as in iteration.}."
 
 ### Addressing a Computational Problem   
 - Formulation:  express the problem formally
