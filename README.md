@@ -15,7 +15,26 @@ Anyone is more than welcomed to give suggestions, or even raise a PR.
 Lastly, please feel free to **star this repository** if you found it interesting or boring (yeah, p ∨ ¬p).    
 
 # Catalogue
-<!-- According to [Curriculum Guidelines for Undergraduate Programs in Computer Science](https://dl.acm.org/citation.cfm?id=2534860) by ACM and IEEE Computer Society, there are 18 areas that consist the body of knowledge of Computer Science: ... -->
+According to [Curriculum Guidelines for Undergraduate Programs in Computer Science](https://dl.acm.org/citation.cfm?id=2534860) (p. 14) by ACM and IEEE Computer Society, there are 18 knowledge areas (KA) that consist the body of knowledge, which are used to label notes in this collection for reference. 
+
+<details>
+<summary>Keyword Table</summary>
+
+| Code |           Knowledge Area           |     |               (continued)               |
+|:----:|:----------------------------------:|:---:|:---------------------------------------:|
+|  AL  | Algorithms and Complexity          |  OS | Operating Systems                       |
+|  AR  | Architecture and Organization      | PBD | Platform-base Development               |
+|  CN  | Computational Science              |  PD | Parallel and Distributed Computing      |
+|  DS  | Discrete Structures                |  PL | Programming Languages                   |
+|  GV  | Graphics and Visualization         | SDF | Software Development Fundamentals       |
+|  HCI | Human Computer Interaction         |  SE | Software Engineering                    |
+|  IAS | Information Assurance and Security |  SF | Systems Fundamentals                    |
+|  IM  | Information Management             |  SP | Social Issues and Professional Practice |
+|  NC  | Networking and Communication       |     |                                         |
+
+</details>
+
+[About learning](https://github.com/BaksiLi/CS-Hypomnema/tree/master/Statement.md) gives more details on the structure of knowledge.
 
 ## I. Introductions
 
