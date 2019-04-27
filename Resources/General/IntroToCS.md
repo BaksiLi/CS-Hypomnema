@@ -127,7 +127,7 @@ cf. [Recursion Factorial](https://www.cs.usfca.edu/~galles/visualization/RecFact
 - Constants and low-order terms are droped, which means two algorithms may have the same $O$ even though one is always faster than the other. Ordered:
 > $log(n)\leq n\leq n^2\leq n^z\leq a^n\approx n!$
 
-![Complexity illustration, $z=3$. © Author.](resources/complexity.png)
+![Complexity illustration, $z=3$. © Author.](Resources/complexity.png)
 
 - Further in algorithm and computational complexity theory, cf. *Graph Theory and Algorithms (with Python)* note.
 
@@ -240,11 +240,11 @@ syntatic sugar `s[i]` is just `*(s+i)`
 1. file structures
 	- Picture:
 		- BMP(Bit map): see [Bitmaps & Palette Manipulation](http://www.brackeen.com/vga/bitmaps.html).
-		![Grid of pixels](resources/bpm.jpg)
+		![Grid of pixels](Resources/bpm.jpg)
 		hex editor: ` xxd -c 24 -g 3 -s 54 smiley.bmp `. `-s 54` stead for starting from adress 00000036 which is 54 in hexadecimal since 14 + 40 = 54 lines (bytes) the metadate of a 24-bit BMP has. Further descriptions -> [this](https://docs.cs50.net/problems/whodunit/whodunit.html#background)  
 		In c there is *struct* can be defined.  RGB colour.
 		- JPEG image:  
-![beginning of JPEG](resources/jpg.png)
+![beginning of JPEG](Resources/jpg.png)
 Incidentally, HTML and CSS (languages in which webpages can be written) model colors in this same way. If curious, see http://en.wikipedia.org/wiki/Web_colors for more details.
 	- CSV (Comma separated)
 ### [Problem set #4](https://docs.cs50.net/2017/x/psets/4/pset4.html): Forensics  
@@ -310,7 +310,7 @@ The running time of search  would always be O(n) since the only way of searching
 	``` 
 	
 	- **Tree** type: <!--58:00-->
-![tree](resources/tree.png)
+![tree](Resources/tree.png)
 	*Binary search tree*, left smaller right greater. *aut idem pro*:  
 		 
 	```C
@@ -343,7 +343,7 @@ The running time of search  would always be O(n) since the only way of searching
 	}
 	 ``` 
 	but for the case of text, this is not that practical -> **Huffman coding**.
-	![huffman tree](resources/huffman.png)
+	![huffman tree](Resources/huffman.png)
 	Compression certainly has a lower limit, relavent to *information entropy*.  
 	
 	```C
@@ -427,7 +427,7 @@ The running time of search  would always be O(n) since the only way of searching
 	More features of Python, see
 	
 2. Web App with Python. 
-	![model](resources/model.png)
+	![model](Resources/model.png)
 	using http.server module b;
 1. [Problem set #6](https://docs.cs50.net/2017/x/psets/6/pset6.html): Sentimental
 	NTBC
