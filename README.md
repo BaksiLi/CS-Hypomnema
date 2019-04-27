@@ -4,18 +4,17 @@ CS-Hypomnema: Computer Science Notes Collection
 
 Note-taker: [Baksi](https://github.com/BaksiLi)   
 
-This repository curates a few computer science notes. 
-Its scope is bounded by my own interests, and it will keep updating as limited knowledge will never suffice. 
+This repository curates divers computer science notes, whereas its scope is bounded by my own interests, and it will keep updating as limited knowledge will never suffice. 
 
 If you are looking for a structured CS course, you should probably go for a programme offered by accredited organisations. 
-However, I will still recommend some cources/books for the subjects that are not covered but important.
+However, I will advice some courses/books for the subjects that are not covered but important.
 
 Anyone is more than welcomed to give suggestions, or even raise a PR.   
 
 Lastly, please feel free to **star this repository** if you found it interesting or boring (yeah, p ∨ ¬p).    
 
 # Catalogue
-According to [Curriculum Guidelines for Undergraduate Programs in Computer Science](https://dl.acm.org/citation.cfm?id=2534860) (p. 14) by ACM and IEEE Computer Society, there are 18 knowledge areas (KA) that consist the body of knowledge, which are used to label notes in this collection for reference. 
+According to [Curriculum Guidelines for Undergraduate Programs in Computer Science](https://dl.acm.org/citation.cfm?id=2534860) (p. 14) by ACM and IEEE Computer Society, there are eighteen knowledge areas (KA) that consist the body of knowledge, which are used to label notes in this collection for reference. 
 
 <details>
 <summary>Keyword Table</summary>
@@ -50,16 +49,16 @@ According to [Curriculum Guidelines for Undergraduate Programs in Computer Scien
 	
 [//]: # (1. Network)
 
-## II. Algotithmics
+## II. Algorithmics
 [//]: # (I am also planning to sort out a more detailed general Algorithm note from my previous notes.)   
 For reading materials, [*Algorithms*](http://algorithmics.lsi.upc.edu/docs/Dasgupta-Papadimitriou-Vazirani.pdf) by S. Dasgupta et al is a good and concise book recommended by UC San Diego courses; 
-[*Introduction to Algorithms*](https://www.amazon.co.uk/Introduction-Algorithms-Thomas-H-Cormen/dp/0262033844/) by T. H. Cormen recommended by MIT cources is quite detailed in proofs ([solutions](https://github.com/gzc/CLRS) of the exercises also available). \*   
+[*Introduction to Algorithms*](https://www.amazon.co.uk/Introduction-Algorithms-Thomas-H-Cormen/dp/0262033844/) by T. H. Cormen recommended by MIT courses is quite detailed in proofs ([solutions](https://github.com/gzc/CLRS) of the exercises also available). \*   
 There are also many open-source collections of algorithm implementations, which are useful during study, e.g. in [Python](https://github.com/TheAlgorithms/Python) and [Java](https://github.com/TheAlgorithms/Java).   
 In addition, for visualizations there is [Data Structure Visualizations](https://www.cs.usfca.edu/~galles/visualization/Algorithms.html).   
 
 1. [***Graph Theory and Algorithms (with Python)***](https://github.com/BaksiLi/CS-Hypomnema/tree/master/Resources/Algorithm/Graph/GraphAlgorithm.md) ![Editing](https://img.shields.io/badge/status-revising-lightgreen.svg)   
 <sub>This note is uploaded but still upon editing for mathematical details.</sub>   
-	A summary note from [NET04x](https://www.imt-atlantique.fr/fr/formation/moocs-et-cours-ouverts/moocs/advanced-algorithmics-and-graph-theory-python) (IMTx) and [ALGS202x](https://www.edx.org/course/graph-algorithms-uc-san-diegox-algs202x) (UCSanDiegoX) with a nicely balanced theoretical and pratical content. In the end, an example on applying combinatorial game theory to win a game described by graph is provided.    
+	A summary note from [NET04x](https://www.imt-atlantique.fr/fr/formation/moocs-et-cours-ouverts/moocs/advanced-algorithmics-and-graph-theory-python) (IMTx) and [ALGS202x](https://www.edx.org/course/graph-algorithms-uc-san-diegox-algs202x) (UCSanDiegoX) with a nicely balanced theoretical and practical content. In the end, an example on applying combinatorial game theory to win a game described by graph is provided.    
 	For anyone who wishes to go deeper in the computational theory (esp. after studied Chapter IV), reading of *Complexity and NP-Complete Problems* is highly recommended.
 
 1. ***Complexity and NP-Complete Problems*** ![Pending](https://img.shields.io/badge/status-Pending-orange.svg)   
@@ -78,14 +77,14 @@ Mathematics prerequisites covered by [Mathematics for Computer Science](https://
 1. [***Learn Mathematica by Example***](https://github.com/BaksiLi/Wolflang-Workshops/blob/master/resources/myNote.nb) ![Editing](https://img.shields.io/badge/status-revising-lightgreen.svg)   
 	I wrote this notebook alongside with learning. The official tutorial, [*Fast Introduction for math students*](http://www.wolfram.com/language/fast-introduction-for-math-students/en/) is a good source of reference as well.
 1. [***Wolflang Workshops***](https://github.com/BaksiLi/Wolflang-Workshops) ![Editing](https://img.shields.io/badge/status-updating-lightgreen.svg)      
-	This is a collection of small projects, each has its own topic. 
+	This is a collection of notebooks, each has its own topic. For more inspiring notebooks, cf. [Notebook Archive](https://www.notebookarchive.org) by Wolfram Foundation.
+	
 	<details>
 	<summary>Workshop Lists</summary>
 	
 	1. [Country flags colour analysis](https://github.com/BaksiLi/Wolflang-Workshops/blob/master/resources/AnalyzeFlagColours.nb): An analysis on the dominant colours of the country flags around the world.
-	1. [Impaint: Remove texts from Images](): This workshop starts from a simple usage – removing texts or any unwanted elements from an image – and therefore introduces *Impaint* funtion in Wolflang.
+	1. [Impaint: Remove texts from Images](): This workshop starts from a simple usage – removing texts or any unwanted elements from an image – and therefore introduces *Impaint* function in Wolflang.
 	1. [Amateur sleuthing of NK nuclear tests](https://github.com/BaksiLi/Wolflang-Workshops/blob/master/resources/NorthKoreaSleuthing.nb): Note from Stephen Wolfram's live stream chat. I have added some parts into it as well.
-
 	
 	</details>
 	
