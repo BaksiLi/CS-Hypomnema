@@ -34,11 +34,11 @@ Graph Theory and Algorithms (with Python)
 ---
 # Introduction 
 Note-taker: [Baksi](https://github.com/BaksiLi)  
-This is a summary note from NET04x (IMTx) [^1], ALGS202x and {NP-Complete Problems} (UCSanDiegoX) [^2]. The former provided most of the algorithmics knowledge, whereas the latter two courses supported the note with mathematical details.
+This is a summary note from NET04x (IMTx) [^1], ALGS202x and {NP-Complete Problems} (UCSanDiegoX) [^2]. The former provided most of the algorithmic knowledge, whereas the latter two courses supported the note with mathematical details.
 
 There are six units in total, where each unit consists of a section of theory and a several sections of algorithms.
 
-[^1]: [NET04x: Advanced Algorithmics and Graph Theory with Python](https://www.imt-atlantique.fr/fr/formation/moocs-et-cours-ouverts/moocs/advanced-algorithmics-and-graph-theory-python) at IMT wesite, or [Advanced Algorithmics and Graph Theory with Python] at EdX. 
+[^1]: [NET04x: Advanced Algorithmics and Graph Theory with Python](https://www.imt-atlantique.fr/fr/formation/moocs-et-cours-ouverts/moocs/advanced-algorithmics-and-graph-theory-python) at IMT website, or [Advanced Algorithmics and Graph Theory with Python] at EdX. 
 
 [^2]: [ALGS202x: Graph Algorithms](https://www.edx.org/course/graph-algorithms-uc-san-diegox-algs202x). (UCSanDiegoX).
 
@@ -76,7 +76,7 @@ There are six units in total, where each unit consists of a section of theory an
 	|-------------|---------------|:---------------:|---------------|
 	| Edge List   | $\Theta(1)$   | $\Theta(|V|^2)$ | $\Theta(|V|)$   |
 	| Adj. List   | $\Theta(|E|)$ | $\Theta(|E|)$   | $\Theta(|E|)$ |
-	| Adj. Matric | $\Theta(deg)$ | $\Theta(|E|)$   | $\Theta(deg)$ |
+	| Adj. Matrix | $\Theta(deg)$ | $\Theta(|E|)$   | $\Theta(deg)$ |
 	
 To compare the complexities based on different parameters, we can look at the *graph density*. $|E|\approx|V|^2$ is a case of dense graph; $|E|\approx|V|$ is a case of sparse graph.
 
@@ -139,7 +139,7 @@ Graph traversal explores the graph, one vertex at a time, between pairs of verti
 1. **Breadth-first Search** (BFS): Look at 1 hop vertices, 2 hop vertices... If the graph is unweighted, the spanning tree would alway provide the shortest path.
 
 ### 2.3 Storing graph traversals
-- Stack: LIFO (Last in First out), DFS – last element being pushed to the structure would be the first being poped:
+- Stack: LIFO (Last in First out), DFS – last element being pushed to the structure would be the first being popped:
 
 	``` python3
 	LIFO_list = list()
@@ -177,7 +177,7 @@ def traversal(start_vertex, graph):
 Individual implementations could be found [traversal.py](Resources/traversal.py) in the Resources.
 	
 ### Exercise
-- Imagine we run a DFS (respectively a BFS) from any vertex of a complete graph of order . How many vertices are neighbors of  in the resulting tree?
+- Imagine we run a DFS (respectively a BFS) from any vertex of a complete graph of order . How many vertices are neighbours  in the resulting tree?
 	> $1$ and $n-1$
 - Imagine a graph where $u$ and $v$ are vertices, and there is no path for which $u$ and $v$ are extremities. If we run a DFS from , which of the following propositions are true?
 	> At the end of the DFS,  $v$ has not been explored. 
@@ -196,7 +196,7 @@ Individual implementations could be found [traversal.py](Resources/traversal.py)
 ### 3.2 Topological Sort
 - Linear Ordering Algorithm
 	- The general idea to produce a linear ordering is by removing sinks from the graph and ordering them with reversely until a source is met. But this would require us to know whether there *is* a sink in the graph. 
-	- The check could be done by following a path: if vertex repeats, it means that the graph has a cycle, then ther is no sink; otherwise (deadend met) there is a sink.
+	- The check could be done by following a path: if vertex repeats, it means that the graph has a cycle, then there is no sink; otherwise (dead-end met) there is a sink.
 	- We get an algorithm $LinearOrder(G)$:
 		
 	<details>
@@ -209,11 +209,11 @@ Individual implementations could be found [traversal.py](Resources/traversal.py)
 		Remove v from G
 	```
 		
-	Runtime: to compute one path for each vertex in the graph ($O(|V|)$) and for each vetex it taks $O(|V|)$ time. So the in overall $O(|V|^{2})$.
+	Runtime: to compute one path for each vertex in the graph ($O(|V|)$) and for each vertex it takes $O(|V|)$ time. So the in overall $O(|V|^{2})$.
 	</details>
 	
 - **Topological Sort**:
-	- Instead of by retracing the entire path everytime when a sink is found, we could back off one step to save time. This is de facto just BFS!
+	- Instead of by retracing the entire path every time when a sink is found, we could back off one step to save time. This is de facto just BFS!
 	- We get a better algorithm $TopologicalSort(G)$:
 
 	<details>
@@ -241,10 +241,10 @@ Individual implementations could be found [traversal.py](Resources/traversal.py)
 	- proof: Similar from showing it in the undirected case. The equivalence relation.
 1. DEF: A **metagraph** shows how the strongly connected components connect to one another. ![metagraph](Resources/metagraph.png)   
 1. Theorem: The metagraph of any graph is always a **DAG**.
-	- proof: Suppose it is not, then there is a cycle $C$, which means that any nodes in cycle can reach any others. But if they are all connected, they should be in one strongly connected component, which leands to contradiction.
+	- proof: Suppose it is not, then there is a cycle $C$, which means that any nodes in cycle can reach any others. But if they are all connected, they should be in one strongly connected component, which leads to contradiction.
 
 ### 3.4 Computing Strongly Connected Components Problem
-- Given a directed connected graph $G$, find the stongly connected components.
+- Given a directed connected graph $G$, find the strongly connected components.
 - Easy Algorithm $EasySCC(G)$:
 
 <details>
@@ -254,7 +254,7 @@ for each vertex v:
 	run explore(v) to determine vertices reachable from v
 for each vertex v:
 	find the u reachable from v that can also reach v
-thses are the SCCs
+theses are the SCCs
 ```
 Runtime: $O(|V|^{2}+|V||E|)$.
 
@@ -327,25 +327,25 @@ It is an algorithm that is guaranteed to output the shortest paths from an initi
 
 	<details>
 	
-		``` python3
-		def heap_add_or_replace(heap, triplet):
-		    v, w, p = triplet
-		    done = False
-		    for i in heap:  # for every triplet in the existing heap
-		        (v0, w0, p0) = i
-		        if v0 == v:  # same key
-		            done = True
-		            if w < w0:  # if triplet is of smaller value
-		                heap.remove(i)
-		                heap.append(triplet)
-		                break
-		    if not done:  # either empty heap or no matched key
-		        heap.append(triplet)
-		        
-		    # heap.sort(key=lambda x: x[1])
-		```
+	``` python3
+	def heap_add_or_replace(heap, triplet):
+	    v, w, p = triplet
+	    done = False
+	    for i in heap:  # for every triplet in the existing heap
+	        (v0, w0, p0) = i
+	        if v0 == v:  # same key
+	            done = True
+	            if w < w0:  # if triplet is of smaller value
+	                heap.remove(i)
+	                heap.append(triplet)
+	                break
+	    if not done:  # either empty heap or no matched key
+	        heap.append(triplet)
+	        
+	    # heap.sort(key=lambda x: x[1])
+	```
 		
-		</detaisl>
+	</details>
 	- See [Min Heap](https://www.cs.usfca.edu/~galles/visualization/Heap.html) visualization.
 
 - Complexity: $O(E\log(V))$. Since the worst case means a complete graph => $E=\frac{V(V-1)}{2}\cong V^2$ and $E\gg V$. With adjacency list, $O((V+E)\log(V))=O(E\log(V))$. Q.E.D.
@@ -358,9 +358,9 @@ This section is in the status `to be added` since it is not included in the cour
 ![©	Behnam Esfahbod, [source](https://en.wikipedia.org/wiki/File:P_np_np-complete_np-hard.svg).](Resources/PNPs.svg)
 
 - The complexity theory classifies problems based on their difficulties to solve.
-	- **P** (Polynomial time) problems are solved (deterministically) by algorithms that takes steps bounded by some power of the problem's size. These problems includes shortest path problem, which is solved by Dijkstra and BFS ($O(E\log{V})$ and $O(V+E)$ rerspectively).
+	- **P** (Polynomial time) problems are solved (deterministically) by algorithms that takes steps bounded by some power of the problem's size. These problems includes shortest path problem, which is solved by Dijkstra and BFS ($O(E\log{V})$ and $O(V+E)$ respectively).
 	- **NP** (Nondeterministic Polynomial) problems are those whose solution is verifiable in polynomial time. Therefore if a solution of a NP-problem is known, "then demonstrating the correctness of the solution can always be reduced to a single P verification." P-problem class is a subset of NP-problems.   
-		<sub>Another definition, solvable in polynomial time by a undeterministic Turing machine.</sub>
+		<sub>Another definition, solvable in polynomial time by an indeterministic Turing machine.</sub>
 	- **NP-hard**  problems could be translated into one for solving any NP problem, i.e. at least as hard as NP-problems.
 	- **NP-complete** problems are both NP and NP-hard. 
 - Reduction:  transforming one problem into another problem, typically for which solutions are already known. (Intuitively) $p\leqslant q$ indicates that $p$ is reducible from $q$, so it is solvable by the algorithm of $q$.
@@ -371,7 +371,7 @@ This section is in the status `to be added` since it is not included in the cour
 - To find the shortest route going through all vertices of a weighted graph from an initial vertex. 
 - A typical **NP-hard** problem (proved) in **combinatorial optimisation**.
 - The problem is represented by a weighted graph with vertices as cities and weights on the edges as travel costs. The aim is to find the path which has the minimum cost, *i.e.* the optimal solution. 
-- *E.g.* Transportation and logistics (to find the shortest path), Routing an artificial satelite (to reduce the cost in journy), Optical fibre network *etc*.
+- *E.g.* Transportation and logistics (to find the shortest path), Routing an artificial satellite (to reduce the cost in journey), Optical fibre network *etc*.
 - meta-graph
 
 ### Brute Force Search
@@ -397,7 +397,7 @@ def bruteforce(remaining, vertex, path, weight, graph):
 
 </details>
 
-### Improve with Bracktracking
+### Improve with Backtracking
 Iteratively examines the lengths of routes and immediately aborts examination of a route that is longer than the shortest found so far. exploration of the current branch is aborted if the length of the partial route is greater than the best route found so far. In the best case, only the first branch has been fully explored.
 
 - True statements about TSP
@@ -406,7 +406,7 @@ Iteratively examines the lengths of routes and immediately aborts examination of
 
 ## Unit 5 Heuristics, Greedy approaches
 - Heuristic, produce a solution that's faster to solve problem in hand. For example, if we know the direction of the destination, we can design the heuristic that move only in the direction, although this may be worse. A good heuristic provides a gain and is of the limited complexity.
-- Greedy Approach: The purpose of a greedy algorithm is to approximate the solution to a problem by a succession of locally optimal solutions. In TSP, we always choose to go for the edge with the shortest distance until reached the destination, which results in $O(|V|^{2})$.
+- Greedy Approach: The purpose of a greedy algorithm is to approximate the solution to a problem by a succession of locally optimal solutions. In TSP, we always chose to go for the edge with the shortest distance until reached the destination, which results in $O(|V|^{2})$.
 - An example in which greedy algorithm is optimal. 
 > Consider the problem of returning coins after a payment. We wish to return a certain amount of change in euros, and we've got the following pieces: 1c, 2c, 5c, 10c, 20c, 50c, 1€, 2€. The aim is to use as few coins as possible.
 
@@ -417,13 +417,13 @@ but this when the condition slightly changed:
 
 ## Unit 6 Application: Combinatorial Game Theory
 - In computer science, game theory is widely applied. For example, in operating systems where the goal of the game is to prevent errors.
-- Consider in a maze, where two players move (simutaneously) to find the treasures in some positions, with the one who finds the most treasures firstly being the winner of the game.
+- Consider in a maze, where two players move (simultaneously) to find the treasures in some positions, with the one who finds the most treasures firstly being the winner of the game.
 - The above game can be formalized by a specific graph called *arena*, where each vertex summarizes the state of the game (positions of the players and the treasures) and edges corresponds to how plays evolve. So a play can be seen as a walk in the arena, whereas a strategy is a function that associates a vertex in the arena with decisions.
 ![First move in the arena](Resources/arena.png)
-- A *winning strategy* for the senario is the strategy that leads a player to victory. Since a maze is symmetrical, if both players choose to move by the symmetry, then the game will end up in a tie; else if a play at some point breaks the symmetry, the game will admit winning strategies subsequently. And we are to determine whether such a strategy exists throughout the game, by considering two interwined combinatorial factors – the moves of each players – which is a huge graph (we will at least have $(2\times 2)^{N}$, where $N$ is the number of turns), therfore we have to reduce the game.
-- Compute winning strategy by *dynamic programming*. Consider the senario:
+- A *winning strategy* for the scenario is the strategy that leads a player to victory. Since a maze is symmetrical, if both players choose to move by the symmetry, then the game will end up in a tie; else if a play at some point breaks the symmetry, the game will admit winning strategies subsequently. And we are to determine whether such a strategy exists throughout the game, by considering two intertwined combinatorial factors – the moves of each players – which is a huge graph (we will at least have $(2\times 2)^{N}$, where $N$ is the number of turns), therefore we have to reduce the game.
+- Compute winning strategy by *dynamic programming*. Consider the scenario:
 > 15*11 cells' maze -> 165 cells in total;
-7 treasures to find -> $2^{7}$ possibe states of the treasures;
+7 treasures to find -> $2^{7}$ possible states of the treasures;
 scores to win is 5 -> scores range $[0,4]$.
 
 so the maximum size of the arena is $2^{7} * 165^{2} * 5 \approx 10^{6}$. We then identify vertices in the arena for winning.
