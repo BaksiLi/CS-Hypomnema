@@ -244,7 +244,7 @@ syntatic sugar `s[i]` is just `*(s+i)`
 		hex editor: ` xxd -c 24 -g 3 -s 54 smiley.bmp `. `-s 54` stead for starting from adress 00000036 which is 54 in hexadecimal since 14 + 40 = 54 lines (bytes) the metadate of a 24-bit BMP has. Further descriptions -> [this](https://docs.cs50.net/problems/whodunit/whodunit.html#background)  
 		In c there is *struct* can be defined.  RGB colour.
 		- JPEG image:  
-![beginning of JPEG](Resources/jpg.png)
+![beginning of JPEG](Resources/jpg-struct.png)
 Incidentally, HTML and CSS (languages in which webpages can be written) model colors in this same way. If curious, see http://en.wikipedia.org/wiki/Web_colors for more details.
 	- CSV (Comma separated)
 ### [Problem set #4](https://docs.cs50.net/2017/x/psets/4/pset4.html): Forensics  
