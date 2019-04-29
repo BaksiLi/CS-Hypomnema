@@ -10,6 +10,8 @@ However, as the learning become more theoretical and in need of memorizing defin
 
 My strategy is, jot down important things when learning, and come back with books and other materials for adding details. Regurgitate information by reading textbooks and practical exercises, and turn them into knowledge.
 
+The reason I put this collection on public domain is by doing so I could get a sort of feeling of responsibility of it.
+
 # What is a Hypomnema? 
 When I was doing my undergrad, I occasionally saw a professional person in the lecture theatre who helps students with inconvenience taking notes. This is why I call myself a 'note-taker' now, since most of the notes are really just a structured script from lectures. Of course, I add things into it, but still they are descendants of the lectures.
 
@@ -19,6 +21,6 @@ It is noted aptly in  [Curriculum Guidelines for Undergraduate Programs in Compu
 <!-- Therefore, ... -->
 
 # Acknowledgement
-This repository is licenced under the Creative Commons [BY-NC-ND](https://creativecommons.org/licenses/by-nc-nd/4.0/) (*Attribution-NonCommercial-NoDerivatives 4.0 International*) Licence.  
+[![Licence](https://ocw.tudelft.nl/wp-content/uploads/CC-by-nc-sa-300x105.jpg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 
 Copyright (c) 2019 BaksiLi

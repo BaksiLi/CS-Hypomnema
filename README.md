@@ -1,6 +1,6 @@
 CS-Hypomnema: Computer Science Notes Collection
 ---
-[![Licence: CC BY-NC-ND 4.0](https://img.shields.io/badge/License-CC%20BY--NC--ND%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-nd/4.0/)
+[![Licence: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 
 Note-taker: [Baksi](https://github.com/BaksiLi)   
 
@@ -14,7 +14,7 @@ Anyone is more than welcomed to give suggestions, or even raise a PR.
 Lastly, please feel free to **star this repository** if you found it interesting or boring (yeah, p ∨ ¬p).    
 
 # Catalogue
-According to [Curriculum Guidelines for Undergraduate Programs in Computer Science](https://dl.acm.org/citation.cfm?id=2534860) (p. 14) by ACM and IEEE Computer Society, there are eighteen knowledge areas (KA) that consist the body of knowledge, which are used to label notes in this collection for reference. 
+According to [Curriculum Guidelines for Undergraduate Programs in Computer Science](https://dl.acm.org/citation.cfm?id=2534860) (p. 14) by ACM and IEEE Computer Society, there are eighteen knowledge areas (KA) that consist the body of knowledge, which are used to **label notes in this collection** for reference. 
 
 <details>
 <summary>Keyword Table</summary>
@@ -38,16 +38,17 @@ According to [Curriculum Guidelines for Undergraduate Programs in Computer Scien
 ## I. Introductions
 
 1. [***Introduction to Computer Science***](https://github.com/BaksiLi/CS-Hypomnema/tree/master/Resources/General/IntroToCS.md) ![Editing](https://img.shields.io/badge/status-revising-lightgreen.svg)   
-	Note based on CS50x 2017 course, the content and structure is slightly different from the [official syllables](http://docs.cs50.net/2017/x/syllabus.html).	It covers the basics of C, Python, Javascript, HTML and CSS, as well as some important concepts in computer science like Computational Complexity.
+	Note based on CS50x 2017 course, the content and structure is somewhat different from the [official syllables](http://docs.cs50.net/2017/x/syllabus.html).	It covers the basics of C, Python, Web Programming content like Javascript, HTML and CSS, as well as some important concepts in computer science like Computational Complexity.
 <!-- Keywords: `C`, `Python`, `JavaScript`, `HTML/CSS`,`SQL`, `basic data structures` and `algorithms` et.c. -->
 
 1. ***Introduction to Web Development*** ![Pending](https://img.shields.io/badge/status-Pending-orange.svg)    
-	Note based on CS50w course. It covers Git, Flask, Django et.c.
+	Note based on CS50w course structure. It covers Git, HTML/CSS, JavaScript, Web Frameworks like Flask, Django et.c.
 
 1. ***Zsh (Z shell) Development with Comparison to Bash*** ![Pending](https://img.shields.io/badge/status-Pending-orange.svg)   
-	This is a *Learn X in Y minutes*-styled tutorial for using Zsh for development. It act as a fast introduction for programmers, esp. those who have knowledge about Bash.
+	This is a *Learn X in Y minutes*-styled tutorial of  Zsh development. It act as a fast introduction for programmers, esp. those who have knowledge about Bash.
 	
-[//]: # (1. Network)
+<!-- 1. Philosophy of Information -->
+<!-- 1. Network -->
 
 ## II. Algorithmics
 [//]: # (I am also planning to sort out a more detailed general Algorithm note from my previous notes.)   
@@ -76,8 +77,9 @@ Mathematics prerequisites covered by [Mathematics for Computer Science](https://
 ### i. Mathematica (Wolfram Language)
 1. [***Learn Mathematica by Example***](https://github.com/BaksiLi/Wolflang-Workshops/blob/master/resources/myNote.nb) ![Editing](https://img.shields.io/badge/status-revising-lightgreen.svg)   
 	I wrote this notebook alongside with learning. The official tutorial, [*Fast Introduction for math students*](http://www.wolfram.com/language/fast-introduction-for-math-students/en/) is a good source of reference as well.
-1. [***Wolflang Workshops***](https://github.com/BaksiLi/Wolflang-Workshops) ![Editing](https://img.shields.io/badge/status-updating-lightgreen.svg)      
-	This is a collection of notebooks, each has its own topic. For more inspiring notebooks, cf. [Notebook Archive](https://www.notebookarchive.org) by Wolfram Foundation.
+1. [***WolfLang Workshops***](https://github.com/BaksiLi/Wolflang-Workshops) ![Editing](https://img.shields.io/badge/status-updating-lightgreen.svg)      
+	This is a collection of notebooks, each has its own topic. 
+	For more inspiring notebooks, cf. [Notebook Archive](https://www.notebookarchive.org) by Wolfram Foundation.
 	
 	<details>
 	<summary>Workshop Lists</summary>
@@ -98,7 +100,7 @@ For reading materials, [Quantum Computation and Quantum Information (Cambridge, 
 <!-- As I've been studied about Quantum technologies for so long, and early notes are hand-written, the note in this part may lack of detail for fundamental stuffs. Another book (I know from my uni course) [Introduction to Quantum Information Science (Oxford, 2006)]() -->
 
 # Acknowledgement
-This repository is licenced under the Creative Commons [BY-NC-ND](https://creativecommons.org/licenses/by-nc-nd/4.0/) (*Attribution-NonCommercial-NoDerivatives 4.0 International*) Licence.  
+Unless otherwise specified, the repository CS-Hypomnema and its contents are Copyright [BaksiLi](https://github.com/BaksiLi), and are licenced under the Creative Commons [BY-NC-SA](https://creativecommons.org/licenses/by-nc-sa/4.0/) (*Attribution-NonCommercial-ShareAlike 4.0 International*) Licence. 
 
 <sub>I used *Byword* (with Standard Markdown Syntax) for taking notes. However, it might encounter problems of compilation on GitHub, *esp.* with LaTeX. I will try to tackle this in the future. </sub>
 
