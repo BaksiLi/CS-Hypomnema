@@ -6,9 +6,17 @@ Introduction to Computer Science
 - [Introduction](#intro)  
 - [Main](#main)    
 	1. [I: Programming](#w0)
+		1. Scratch
+		1. How computer works?
+		1. Computer Science?
 	1. [II: C Language Fundamentals](#w1)
+		1. Environments
+		1. C Language
 	1. [III: Arrays](w2)
+		1. Array Structure
 	1. [IV: Algorithms](w3)
+		1. Theory
+		1. Search and Sort
 	1. [V: Memory](w4)
 	1. [VI: Data Structures](w5)
 	1. [VII: Web and Internet](w6)
@@ -21,18 +29,22 @@ Introduction to Computer Science
 ---
 # Introduction
 Note-taker: [Baksi](https://github.com/BaksiLi)  
-This article is written based on the note of CS50x 2017 of Harvard University, lectured by <a mailto="malan@havard.edu">David J. Malan</a>. The content and structure may be slightly different from the [official syllables](http://docs.cs50.net/2017/x/syllabus.html) since I have restructured and filled it with new materials. Nevertheless, all the knowledge are covered and extended beyond their scope. The original course video and other supporting materials could be found in the [seminar page](http://cs50.tv/2017/fall/#about,lectures), or in their channel [cs50 live](https://www.youtube.com/user/cs50tv/).
+This article is edited based on my note of CS50x 2017 of Harvard University, lectured by <a mailto="malan@havard.edu">David J. Malan</a>.
+The content and structure may be different from the [official syllables](http://docs.cs50.net/2017/x/syllabus.html) since I have restructured and filled it with new materials, esp. to the part of computations. Nevertheless, all the knowledge are covered and extended beyond their scope. The original course video and other supporting materials could be found in the [seminar page](http://cs50.tv/2017/fall/#about,lectures), or in their channel [cs50 live](https://www.youtube.com/user/cs50tv/).
  
 # Main
 ## I. Programming [w0]
 ### Scratch
- [Scratch](www.scratch.mit.edu) is a visual toolkit for amatures to learn and grab an idea of *programming*. <img src="http://www.quarrylane.org/uploaded/Summer/images/ScratchBlogLogo.jpg" alt = "Scratch logo" width = "330" />
-### How programme works?  
-- **Computers** are information processing automata; they are dumb machines in the sense that they do *only* what user instructed, but at the same time very clever if the people behind are intellegent.
-- A computer **programme** is a collection of instructions to achieve specific tasks. It is a liminal artefact, since instructions are abstract but the operations are done in the physical world. **Binaries** corresponed directly to specific instructions. Tasks are approached by **Algorithms**.  
+ [Scratch](www.scratch.mit.edu) is a visual toolkit for amateurs to learn and grab an idea of *programming*. <img src="http://www.quarrylane.org/uploaded/Summer/images/ScratchBlogLogo.jpg" alt = "Scratch logo" width = "330" />
+### How program works?  
+- **Computers** are information processing automata; they are dumb machines in the sense that they do *only* what user instructed, but at the same time very clever if the people behind are intelligent.
+- A computer **program** is a collection of instructions to achieve specific tasks. It is a liminal artefact, since instructions are abstract but the operations are done in the physical world. **Binaries** corresponded directly to specific instructions. Tasks are approached by **Algorithms**.  
 - **Assembly Language** enabled the programmers to use symbolics instead of binaries, but it is symbol-to-operation therefore low-level and not portable. 
-- **Higher-level Language** are designed, *FORTRAN* (FORmula TRANslation) language is the first. They requires **compilers** for translating programme statements into machine instructions. **Operating System** channeled all input and output (i.e. I/O) operations.
-### Relavent readings at the stage
+- **Higher-level Language** is designed, *FORTRAN* (FORmula TRANslation) language is the first. They requires **compilers** for translating  statements into machine instructions. **Operating System** channeled all input and output (i.e. I/O) operations.
+### Computer Science?
+- Computational artefacts are *made*  things which entail the purpose of their creators. **Computer science** is the science of such artefacts.
+- Therefore often material computational artefacts, or computer hardwares, belong to the domain of engineering schools, while liminal and abstract ones are in the domain of school of science.
+### Relevant readings at the stage
 - How Computers Work, Tenth Edition
 Ron White
 Que Publishing, 2014
@@ -56,9 +68,9 @@ ISBN 0-321-84268-5
 - Environment: Cloud [IDE](https://ide.cs50.io/) platform, [CS50.h Reference](https://reference.cs50.net/math/modf). The library is available at GitHub, *cf.* [libcs50](https://github.com/cs50/libcs50).
 - Debugging in IDE: `eprintf`, ` help50` and `debug50`.
 #### In situ
-- Editors: [Vim](https://en.wikipedia.org/wiki/Vim_(text_editor)) or [Elipse](https://en.wikipedia.org/wiki/Eclipse_(software)) for Hardcore players. The presenter uses [Atom](https://atom.io/).
+- Editors: [Vim](https://en.wikipedia.org/wiki/Vim_(text_editor)) or [Eclipse](https://en.wikipedia.org/wiki/Eclipse_(software)) for Hardcore players. The presenter uses [Atom](https://atom.io/).
 - IDEs are good and easy to install. 
-	- C: MacOS users can (sometimes must) install [Xcode](https://developer.apple.com/xcode/); for cross-flatform [Visual Studio Code](https://code.visualstudio.com/).
+	- C: MacOS users can (sometimes must) install [Xcode](https://developer.apple.com/xcode/); for cross-platform [Visual Studio Code](https://code.visualstudio.com/).
 	- Python: [Anaconda](https://www.anaconda.com/distribution/) (with its Spyder) is the default choice for data scientists, while [PyCharm](https://www.jetbrains.com/pycharm/) is more compatible with other uses. However, in early 2019 Anaconda and JetBrains announced that they will [join forces to launch 'PyCharm for Anaconda'](https://www.businesswire.com/news/home/20190404005205/en/Anaconda-JetBrains-Join-Forces-Launch-%E2%80%98PyCharm-Anaconda%E2%80%99), so no more troubles in the future.
 ### C language
 - Introduction to *C* language and basic *Bash* instructions
@@ -74,6 +86,7 @@ ISBN 0-321-84268-5
 	`int main(int argc, string argv[])`  
 ### Python
 - Recursion in Python: functions can call themselves. For example:
+
 	<details>
 
 	``` python
@@ -110,17 +123,29 @@ cf. [Recursion Factorial](https://www.cs.usfca.edu/~galles/visualization/RecFact
 - [Crack Cytology question](https://docs.cs50.net/problems/crack/crack.html)
 
 ## IV. Algorithms [w3]
-**Algorithm** is the method for problem solving, involves a finite series of steps. "In computing practice the algorithm denotes the expression on paper of the proposed computing process (often by means of a flowchart) prior to the preparation of the programme. If no algorithms is possible a heuristic solution has to be sought {in which it involves trial and error, as in iteration.}."
+<!-- This chapter is modified according to Subrata Dasgupta's *Computer Science* -->
+### Algorithm?
+- **Algorithms** are abstract artefacts of the method for solving problems. They are designed to meet the goals or needs of its performer, in non-declarative procedures or *procedural knowledge*.
+	- In chemistry, litmus test is a decision procedure which decides the acidity (or alkalinity) of substance, *if* blue *then* alkaline; *if* red, acid; *otherwise* it is neutral. Examples in maths: long division algorithm for factorization.
+	- "In computing practice the algorithm denotes the expression on paper of the proposed computational process (often by means of a flowchart) prior to the preparation of the program. If no algorithms is possible a heuristic solution has to be sought {in which it involves trial and error, as in iteration.}."
+	- In such procedure, the experimenter does not necessarily need to know why it works. It is comforting that the performance of an algorithm is not dependent of the performer.
+- More generally, as enunciated by Donald Knuth, in order to procedure the following attributes must be satisfied:
+	1. Finiteness: An algorithm always terminates after a finite number of steps (or satisfied a certain termination criterion).
+	1. Definiteness: Every step of an algorithm must be precisely and unambiguously specified.
+		- In this sense, cookbook recipe is usually not algorithms, as it may includes instructions like 'cook slowly', 'moderately' which rely on the performer's judgement to interpret.
+	1. Effectiveness: Each operation performed as part of an algorithm must be primitive enough for a human being to perform it exactly (using a pencil and paper).
+	1. Input and Output: An algorithm must have one or more inputs and one or more outputs.
 
-### Addressing a Computational Problem   
-- Formulation:  express the problem formally
-- Specification: find the algorithm
-- Implementation: coding
+### Addressing a Computational Problem
+- To address a computational problem:
+	- Formulation:  Express the problem formally
+	- Specification: Find the algorithm
+	- Implementation: Coding
 
 ### Computational complexity
 - In terms of the growth rate (# of operations against input size $n$), functions are ordered:
 > Logarithmic $log(n)$, Linear $an + b$, Quadratic $an^2 + bn + c$, Polynomial $an^z + \dots + an^1 + an^0\text{ with constant }z$, Exponential $a^n\text{ with constant }a$, Factorial $n!$
-- **Asymptotic complexity** measures the effieciency. Its notations is to indicate the running time of a give algorithm, which takes the behaviour with increasing input size into account. 
+- **Asymptotic complexity** measures the efficiency. Its notations is to indicate the running time of a give algorithm, which takes the behaviour with increasing input size into account. 
 	- $O$, a.k.a. asymptotic upper bound -> worst-case scenario.
 	- $\Omega$, a.k.a. asymptotic lower bound -> best-case scenario.
 	- $\Theta$ notes when $\Omega = O$, known as the asymptotically tight bound.
@@ -216,13 +241,13 @@ Upper boundary $(n-1) + (n-2) + ... + 1 \\ = \frac{n(n-1)}{2} = O(n^2)$  ; Lower
  <input type="checkbox" name="pset3" checked='True'> Status <br/>
 	- Find, either less or more comfortable: (latter one is chosen)
 		- how to **configurate a compiler**
-		- how to **write programme in multiple files**
+		- how to **write program in multiple files**
 	- Implement Game of Fifteen  
 
 ## V. Memory [w4]
 1. Underneath the hood: **RAM**
 	Same "incantation of strings" are different, in the sense of memory. Why?
-	Notice that if you run a programme in terminal, your computer would give that programme the illusion of a really big chunk of memory all on its own. When main is called, main is given a stack space.	... [sloppily drawn]  
+	Notice that if you run a program in terminal, your computer would give that program the illusion of a really big chunk of memory all on its own. When main is called, main is given a stack space.	... [sloppily drawn]  
 	A string is technically just the address of a character in memory (the first byte of your 'string' array, ends with '\0').   Therefore when two individually defined strings are compared, they are different since their address are different. It is just an address, AKA a **pointer**.  
 	A string is a synonym for a data type called `char *`, `strcmp()` can compare two strings from their pointers. 
 	

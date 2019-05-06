@@ -1,6 +1,6 @@
 CS-Hypomnema: Computer Science Notes Collection
 ---
-[![Licence: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+[![Licence: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/) <!-- contribute badge -->
 
 Note-taker: [Baksi](https://github.com/BaksiLi)   
 
@@ -38,7 +38,7 @@ According to [Curriculum Guidelines for Undergraduate Programs in Computer Scien
 ## I. Introductions
 
 1. [***Introduction to Computer Science***](https://github.com/BaksiLi/CS-Hypomnema/tree/master/Resources/General/IntroToCS.md) ![Editing](https://img.shields.io/badge/status-revising-lightgreen.svg)   
-	Note based on CS50x 2017 course, the content and structure is somewhat different from the [official syllables](http://docs.cs50.net/2017/x/syllabus.html).	It covers the basics of C, Python, Web Programming content like Javascript, HTML and CSS, as well as some important concepts in computer science like Computational Complexity.
+	Note based on CS50 course, the content and structure is somewhat different from the [official syllables](http://docs.cs50.net/2017/x/syllabus.html).	It covers the basics of C, Python, Web Programming content like Javascript, HTML and CSS, as well as some important concepts in computer science like Computational Complexity.
 <!-- Keywords: `C`, `Python`, `JavaScript`, `HTML/CSS`,`SQL`, `basic data structures` and `algorithms` et.c. -->
 
 1. ***Introduction to Web Development*** ![Pending](https://img.shields.io/badge/status-Pending-orange.svg)    
@@ -59,8 +59,8 @@ In addition, for visualizations there is [Data Structure Visualizations](https:/
 
 1. [***Graph Theory and Algorithms (with Python)***](https://github.com/BaksiLi/CS-Hypomnema/tree/master/Resources/Algorithm/Graph/GraphAlgorithm.md) ![Editing](https://img.shields.io/badge/status-revising-lightgreen.svg)   
 <sub>This note is uploaded but still upon editing for mathematical details.</sub>   
-	A summary note from [NET04x](https://www.imt-atlantique.fr/fr/formation/moocs-et-cours-ouverts/moocs/advanced-algorithmics-and-graph-theory-python) (IMTx) and [ALGS202x](https://www.edx.org/course/graph-algorithms-uc-san-diegox-algs202x) (UCSanDiegoX) with a nicely balanced theoretical and practical content. In the end, an example on applying combinatorial game theory to win a game described by graph is provided.    
-	For anyone who wishes to go deeper in the computational theory (esp. after studied Chapter IV), reading of *Complexity and NP-Complete Problems* is highly recommended.
+	A summary note from [NET04x](https://www.imt-atlantique.fr/fr/formation/moocs-et-cours-ouverts/moocs/advanced-algorithmics-and-graph-theory-python) (IMTx) and [ALGS202x](https://www.edx.org/course/graph-algorithms-uc-san-diegox-algs202x) (UCSanDiegoX) with a nicely balanced theoretical and practical content. In the end, an example on applying combinatorial game theory to win a game described by graph is provided.   
+	<sub>For anyone who wishes to go deeper in the computational theory (esp. after studied Chapter IV), reading of *Complexity and NP-Complete Problems* is highly recommended.</sub>
 
 1. ***Complexity and NP-Complete Problems*** ![Pending](https://img.shields.io/badge/status-Pending-orange.svg)   
 	A note from [ALGS203x](https://www.edx.org/course/np-complete-problems-uc-san-diegox-algs203x) (UCSanDiegoX). It covers NP-completeness, approximate algorithms and algorithm analysis.
