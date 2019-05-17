@@ -68,8 +68,9 @@ In addition, for visualizations there is [Data Structure Visualizations](https:/
 \* <sub>Although I have never finished reading any one of them :(</sub>  
 
 ## III. Maths & Stats
-Mathematics prerequisites covered by [Mathematics for Computer Science](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-042j-mathematics-for-computer-science-spring-2015/index.htm) (MIT).
+Mathematical prerequisites are covered in [Mathematics for Computer Science](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-042j-mathematics-for-computer-science-spring-2015/index.htm) (MIT).
 
+<!-- Discrete Maths (Logic, graph), Information Theory -->
 1. ***Coding theory (with Python)*** ![Pending](https://img.shields.io/badge/status-Pending-orange.svg)   
 	This is a coding theory text (thanks to Prof. PPM) with Python implementations. Not ready to upload so far.
 
@@ -84,9 +85,11 @@ Mathematics prerequisites covered by [Mathematics for Computer Science](https://
 	<details>
 	<summary>Workshop Lists</summary>
 	
+	<!-- Related functions -->
 	1. [Country flags colour analysis](https://github.com/BaksiLi/Wolflang-Workshops/blob/master/resources/AnalyzeFlagColours.nb): An analysis on the dominant colours of the country flags around the world.
 	1. [Impaint: Remove texts from Images](): This workshop starts from a simple usage – removing texts or any unwanted elements from an image – and therefore introduces *Impaint* function in Wolflang.
-	1. [Amateur sleuthing of NK nuclear tests](https://github.com/BaksiLi/Wolflang-Workshops/blob/master/resources/NorthKoreaSleuthing.nb): Note from Stephen Wolfram's live stream chat. I have added some parts into it as well.
+	1. [Amateur sleuthing of NK nuclear tests](https://github.com/BaksiLi/Wolflang-Workshops/blob/master/resources/NorthKoreaSleuthing.nb): Edited note from Stephen Wolfram's live stream chat. I have added some parts into it as well.
+	1. [Research of Historical Events](): Edited note from Stephen Wolfram's live stream [*\#243*](https://www.twitch.tv/videos/421281599).
 	
 	</details>
 	

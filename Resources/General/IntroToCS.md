@@ -5,47 +5,56 @@ Introduction to Computer Science
 
 - [Introduction](#intro)  
 - [Main](#main)    
-	1. [I: Programming](#w0)
+	1. [Programming](#i-programming)
 		1. Scratch
-		1. How computer works?
+		1. Program?
 		1. Computer Science?
-	1. [II: C Language Fundamentals](#w1)
+	1. [C Language Basics](#ii-c-language-basics)
 		1. Environments
 		1. C Language
-	1. [III: Arrays](w2)
-		1. Array Structure
-	1. [IV: Algorithms](w3)
-		1. Theory
+		1. Arrays
+	1. [Algorithms (Theory)](w3)
+		1. Algorithm?
+		1. Computational Complexity
+		1. Addressing Computational Problems
+	1. [Search and Sort]()
 		1. Search and Sort
-	1. [V: Memory](w4)
-	1. [VI: Data Structures](w5)
-	1. [VII: Web and Internet](w6)
-	1. [IIX: Python](w8)
-	1. [IX: SQL](w9)
-	1. [X: JavaScript](w10)
-	1. [Final Project](final)
+		1. Other algorithms <!-- Light-ups -->
+	1. [Memory](w4)
+		1. RAM ...
+	1. [Data Structures](w5)
+		1. Node ...
+	1. [Web and Internet](w6)
+	1. [Python](w8)
+	1. [SQL](w9)
+	1. [JavaScript](w10)
 - [Future Study](#future)
 
 ---
 # Introduction
 Note-taker: [Baksi](https://github.com/BaksiLi)  
 This article is edited based on my note of CS50x 2017 of Harvard University, lectured by <a mailto="malan@havard.edu">David J. Malan</a>.
-The content and structure may be different from the [official syllables](http://docs.cs50.net/2017/x/syllabus.html) since I have restructured and filled it with new materials, esp. to the part of computations. Nevertheless, all the knowledge are covered and extended beyond their scope. The original course video and other supporting materials could be found in the [seminar page](http://cs50.tv/2017/fall/#about,lectures), or in their channel [cs50 live](https://www.youtube.com/user/cs50tv/).
+The content and structure may be different from the [official syllables](http://docs.cs50.net/2017/x/syllabus.html) since it has been restructured and modified with new materials, esp. to the part of computations. Coding instructing parts were reduced for the sake of simplicity. Nevertheless, all the knowledge are covered and extended beyond their scope. 
+The original course video and other supporting materials could be found in the [seminar page](http://cs50.tv/2017/fall/#about,lectures), or in their channel [cs50 live](https://www.youtube.com/user/cs50tv/).
  
 # Main
-## I. Programming [w0]
+## I. Programming [i-programming]
+<!-- Originally week 0 -->
 ### Scratch
  [Scratch](www.scratch.mit.edu) is a visual toolkit for amateurs to learn and grab an idea of *programming*. <img src="http://www.quarrylane.org/uploaded/Summer/images/ScratchBlogLogo.jpg" alt = "Scratch logo" width = "330" />
 ### How program works?  
 - **Computers** are information processing automata; they are dumb machines in the sense that they do *only* what user instructed, but at the same time very clever if the people behind are intelligent.
-- A computer **program** is a collection of instructions to achieve specific tasks. It is a liminal artefact, since instructions are abstract but the operations are done in the physical world. **Binaries** corresponded directly to specific instructions. Tasks are approached by **Algorithms**.  
-- **Assembly Language** enabled the programmers to use symbolics instead of binaries, but it is symbol-to-operation therefore low-level and not portable. 
-- **Higher-level Language** is designed, *FORTRAN* (FORmula TRANslation) language is the first. They requires **compilers** for translating  statements into machine instructions. **Operating System** channeled all input and output (i.e. I/O) operations.
+- A computer **program** is a collection of instructions to achieve specific tasks. It is a liminal artefact, since instructions are abstract but the operations are done in the physical world. **Binaries** corresponded directly to specific instructions. 
+- **Assembly Language** enabled the programmers to use symbolics instead of binaries, released them from clerical workload, a symbolic assembler is used in such translations. It is just symbol-to-operation therefore low-level and not portable.
+- **Higher-level Language**s are designed, to abstract from features of the actual physical machines, among them *FORTRAN* (FORmula TRANslation Language) is the first. They requires a class of programs called **compilers** for translating  statements into sequence of machine codes (instructions) that can be directly executed. 
+	- A good short-piece discussion of programming languages, see [Blue. No! Yellow!](https://blog.cleancoder.com/uncle-bob/2016/05/21/BlueNoYellow.html).
+- Tasks are approached by **Algorithms**.  
+- **Operating System** channeled all input and output (i.e. I/O) operations.
 ### Computer Science?
 - Computational artefacts are *made*  things which entail the purpose of their creators. **Computer science** is the science of such artefacts.
 - Therefore often material computational artefacts, or computer hardwares, belong to the domain of engineering schools, while liminal and abstract ones are in the domain of school of science.
 ### Relevant readings at the stage
-- How Computers Work, Tenth Edition
+- *How Computers Work*, Tenth Edition
 Ron White
 Que Publishing, 2014
 ISBN 0-7897-4984-X
@@ -62,7 +71,8 @@ Henry S. Warren Jr.
 Pearson Education, 2013
 ISBN 0-321-84268-5
 
-## II. C Language Basics [w1]
+## II. C Language Basics [ii-c-language-basics]
+<!-- Originally week 1 -->
 ### Environment
 #### CS50 IDE
 - Environment: Cloud [IDE](https://ide.cs50.io/) platform, [CS50.h Reference](https://reference.cs50.net/math/modf). The library is available at GitHub, *cf.* [libcs50](https://github.com/cs50/libcs50).
@@ -75,92 +85,63 @@ ISBN 0-321-84268-5
 ### C language
 - Introduction to *C* language and basic *Bash* instructions
 - Good coding style is important. [CS50 style guide of C](https://manual.cs50.net/style)
+### Array structure
+- String: it turns out that underneath the hood, strings are a little more mundane - **grid of information**, sometimes known as bucket. Lee takes those contiguous block of memory "- L - e - e - \0 -" in RAM.  
+	`int main(int argc, string argv[])`  
+
 ### [Problem set #1](https://docs.cs50.net/2017/x/psets/1/pset1.html)
 - Hello World  
 - Functions  
 - IO & Loop  
-
-## III. Arrays [w2]
-### Array structure
-- String: it turns out that underneath the hood, strings are a little more mundane - **grid of information**, sometimes known as bucket. Lee takes those contiguous block of memory "- L - e - e - \0 -" in RAM.  
-	`int main(int argc, string argv[])`  
-### Python
-- Recursion in Python: functions can call themselves. For example:
-
-	<details>
-
-	``` python
-	def factorial(n):
-		if  n == 1:  # base case
-			return 1
-		return n * factorial(n - 1)
-	```
-	
-	</details>
-cf. [Recursion Factorial](https://www.cs.usfca.edu/~galles/visualization/RecFact.html) visualization.
-- Object-Oriented Programming features in Python: paradigm based on object. For example:
-	<details>
-
-	```python
-	class Coordinates:
-		def __init__(self, x, y):
-			self.x = x
-			self.y = y
-		
-		def shift(self, x, y):
-			self.x += x
-			self.y += y
-			
-	p = Coordinates(1, 2)
-	p.shift(1, 1)
-	print('x = {}, y = {}'.format(p.x, p.y))
-	```
-
-	</details>
 ### [Problem set #2](https://docs.cs50.net/2017/x/psets/2/pset2.html)
 - Caesar Cipher
 - Vigenere Cipher
 - [Crack Cytology question](https://docs.cs50.net/problems/crack/crack.html)
 
-## IV. Algorithms [w3]
+<!-- III. Arrays, Originally week 2, is moved to II-->
+
+## III. Algorithms [iii-algorithms]
+<!-- Originally week 3 -->
 <!-- This chapter is modified according to Subrata Dasgupta's *Computer Science* -->
 ### Algorithm?
-- **Algorithms** are abstract artefacts of the method for solving problems. They are designed to meet the goals or needs of its performer, in non-declarative procedures or *procedural knowledge*.
+- **Algorithms** are abstract artefacts of the method for solving problems. They are designed to meet the goals or needs of its performer, and embodies non-declarative procedures or *procedural knowledge* (objective knowledge as Karl Popper called).
 	- In chemistry, litmus test is a decision procedure which decides the acidity (or alkalinity) of substance, *if* blue *then* alkaline; *if* red, acid; *otherwise* it is neutral. Examples in maths: long division algorithm for factorization.
 	- "In computing practice the algorithm denotes the expression on paper of the proposed computational process (often by means of a flowchart) prior to the preparation of the program. If no algorithms is possible a heuristic solution has to be sought {in which it involves trial and error, as in iteration.}."
-	- In such procedure, the experimenter does not necessarily need to know why it works. It is comforting that the performance of an algorithm is not dependent of the performer.
+	- In such procedure, the experimenter does not necessarily need to know why it works:- the execution is mindless thinking. It is comforting that the performance of an algorithm is not dependent of the performer.
 - More generally, as enunciated by Donald Knuth, in order to procedure the following attributes must be satisfied:
 	1. Finiteness: An algorithm always terminates after a finite number of steps (or satisfied a certain termination criterion).
 	1. Definiteness: Every step of an algorithm must be precisely and unambiguously specified.
-		- In this sense, cookbook recipe is usually not algorithms, as it may includes instructions like 'cook slowly', 'moderately' which rely on the performer's judgement to interpret.
+		- In this sense, cookbook recipe is usually not algorithms, as it may includes instructions like 'cook slowly' or 'moderately' which rely on the performer's judgement to interpret.
 	1. Effectiveness: Each operation performed as part of an algorithm must be primitive enough for a human being to perform it exactly (using a pencil and paper).
 	1. Input and Output: An algorithm must have one or more inputs and one or more outputs.
 
-### Addressing a Computational Problem
-- To address a computational problem:
-	- Formulation:  Express the problem formally
-	- Specification: Find the algorithm
-	- Implementation: Coding
-
-### Computational complexity
+### Computational Complexity
 - In terms of the growth rate (# of operations against input size $n$), functions are ordered:
 > Logarithmic $log(n)$, Linear $an + b$, Quadratic $an^2 + bn + c$, Polynomial $an^z + \dots + an^1 + an^0\text{ with constant }z$, Exponential $a^n\text{ with constant }a$, Factorial $n!$
 - **Asymptotic complexity** measures the efficiency. Its notations is to indicate the running time of a give algorithm, which takes the behaviour with increasing input size into account. 
 	- $O$, a.k.a. asymptotic upper bound -> worst-case scenario.
 	- $\Omega$, a.k.a. asymptotic lower bound -> best-case scenario.
 	- $\Theta$ notes when $\Omega = O$, known as the asymptotically tight bound.
-- Constants and low-order terms are droped, which means two algorithms may have the same $O$ even though one is always faster than the other. Ordered:
+- Constants and low-order terms are dropped, which means two algorithms may have the same $O$ even though one is always faster than the other. Ordered:
 > $log(n)\leq n\leq n^2\leq n^z\leq a^n\approx n!$
 
 ![Complexity illustration, $z=3$. © Author.](Resources/algorithms.png)
 
+## Addressing Computational Problems
+- To address a computational problem:
+	- Formulation:  Express the problem formally
+	- Specification: Find the algorithm to deploy
+	- Implementation: Coding
+
 - Further in algorithm and computational complexity theory, cf. *Graph Theory and Algorithms (with Python)* note.
 
-[#]: (MARKER)
+## V. Search and Sort [v-xx]
+<!-- Originally week 3 -->
 ### Search and Sort
 1. Search (in a sorted list)
 	- Linear: Search linearly, i.e. if asking to guess a number in the range of 100, then $O(n)$.  
 	- Binary (Divide & Conquer Algorithm): $O(log_2 n)$.  
+
 		<details>
 	
 		```python
@@ -182,8 +163,9 @@ cf. [Recursion Factorial](https://www.cs.usfca.edu/~galles/visualization/RecFact
 		</details>
 1. Sorting  
 	1. **Counting sort**: Time Complexity: O(n+k) where n is the number of elements in input array and k is the range of input.
-	1. **Selection sort** gets slower&slower through time because the whole list is scanned everytime.  $\Omega(n^2)$ ok 
+	1. **Selection sort** gets slower&slower through time because the whole list is scanned every time.  $\Omega(n^2)$ ok 
  `for i from 0 from n-1: find smallest between i'th and n-1'th: swap smallest with i'th ` 
+ 
 		<details>
 	
  		```python
@@ -205,7 +187,7 @@ cf. [Recursion Factorial](https://www.cs.usfca.edu/~galles/visualization/RecFact
  		```
 		
 		</details>
-	1. **Bubble sort** that swap only consecutive pairwises every time.
+	1. **Bubble sort** that swap only consecutive pair-wises every time.
  `repeat until no swaps: for i from 0 to n-2: if i'th and i+1'th elements out of order: swap them`  
 Upper boundary $(n-1) + (n-2) + ... + 1 \\ = \frac{n(n-1)}{2} = O(n^2)$  ; Lower boundary $\Omega$ = n
 	1.  **Insertion sort**(Counting sort)
@@ -233,18 +215,19 @@ Upper boundary $(n-1) + (n-2) + ... + 1 \\ = \frac{n(n-1)}{2} = O(n^2)$  ; Lower
 	 	}
 	 }
 	 ```
-	 in a **Reflexive** or **inductive** or **recursive** calls (use the defination again & again) fashion.
+	 in a **Reflexive** or **inductive** or **recursive** calls (use the definition again & again) fashion.
 	 
 	 </details>
 	 
 1. [Problem set #3](https://docs.cs50.net/2017/x/psets/3/pset3.html)  
  <input type="checkbox" name="pset3" checked='True'> Status <br/>
 	- Find, either less or more comfortable: (latter one is chosen)
-		- how to **configurate a compiler**
+		- how to **configure a compiler**
 		- how to **write program in multiple files**
 	- Implement Game of Fifteen  
 
-## V. Memory [w4]
+## VI. Memory [w4]
+<!-- Originally week 4 -->
 1. Underneath the hood: **RAM**
 	Same "incantation of strings" are different, in the sense of memory. Why?
 	Notice that if you run a program in terminal, your computer would give that program the illusion of a really big chunk of memory all on its own. When main is called, main is given a stack space.	... [sloppily drawn]  
@@ -258,7 +241,7 @@ syntatic sugar `s[i]` is just `*(s+i)`
 [output is atrocious, pretty verbose] `valgrind` to check **memory leak**. `free()` .  stack overflow/ heap overflow/ buffer overflow.  
 
 	|:-:|:-:|:-:|
-	 | Arrary | Linked list
+	 | Array | Linked list
 	Read | O(1) | O(n)
 	Insert |  O(n) | O(1)
 	Remove | O(n) | O(1)
@@ -266,11 +249,11 @@ syntatic sugar `s[i]` is just `*(s+i)`
 	- Picture:
 		- BMP(Bit map): see [Bitmaps & Palette Manipulation](http://www.brackeen.com/vga/bitmaps.html).
 		![Grid of pixels](Resources/bpm-pic.jpg)
-		hex editor: ` xxd -c 24 -g 3 -s 54 smiley.bmp `. `-s 54` stead for starting from adress 00000036 which is 54 in hexadecimal since 14 + 40 = 54 lines (bytes) the metadate of a 24-bit BMP has. Further descriptions -> [this](https://docs.cs50.net/problems/whodunit/whodunit.html#background)  
+		hex editor: ` xxd -c 24 -g 3 -s 54 smiley.bmp `. `-s 54` stead for starting from address 00000036 which is 54 in hexadecimal since 14 + 40 = 54 lines (bytes) the metadata of a 24-bit BMP has. Further descriptions -> [this](https://docs.cs50.net/problems/whodunit/whodunit.html#background)  
 		In c there is *struct* can be defined.  RGB colour.
 		- JPEG image:  
 ![beginning of JPEG](Resources/jpg-pic.png)
-Incidentally, HTML and CSS (languages in which webpages can be written) model colors in this same way. If curious, see http://en.wikipedia.org/wiki/Web_colors for more details.
+Incidentally, HTML and CSS (languages in which webpages can be written) model colours in this same way. If curious, see http://en.wikipedia.org/wiki/Web_colors for more details.
 	- CSV (Comma separated)
 ### [Problem set #4](https://docs.cs50.net/2017/x/psets/4/pset4.html): Forensics  
 <input type="checkbox" name="pset3" checked="True"> Status <br/>
@@ -278,7 +261,8 @@ Incidentally, HTML and CSS (languages in which webpages can be written) model co
 	- Resize  NTBC;  
 	- [Recover](https://docs.cs50.net/problems/recover/recover.html)  
 
-## VI. Data Structures [w5]
+## VII. Data Structures [w5]
+<!-- Originally week 5 -->
 1. Data structure allows more flexible running, memory are allocated dynamically, rather than using remalloc(), free() and so frequently.  
 	- **Node** type is essential.  
 
@@ -296,7 +280,7 @@ Incidentally, HTML and CSS (languages in which webpages can be written) model co
 	node; 
 	```
 	
-1. Consider a **collection of nodes** that are linked together by pointers. The starting pointer and the ending null. In order to achive the function of *insert*, *remove* and *search*.   
+1. Consider a **collection of nodes** that are linked together by pointers. The starting pointer and the ending null. In order to achieve the function of *insert*, *remove* and *search*.   
 The running time of search  would always be O(n) since the only way of searching is just linear. code as below:
 
 	```C
@@ -346,7 +330,7 @@ The running time of search  would always be O(n) since the only way of searching
 	}
 	node;
 	``` 
-	therefore searching fuction:
+	therefore searching function:
 	```C
 	bool search(int n, node *tree){
 		if (tree == NULL)
@@ -355,11 +339,11 @@ The running time of search  would always be O(n) since the only way of searching
 		}
 		else if (n < tree->n)
 		{
-			return seach(n, tree->left);
+			return search(n, tree->left);
 		}
 		else if (n > tree->n)
 		{
-			return seach(n, tree->right);
+			return search(n, tree->right);
 		}
 		else
 		{
@@ -368,8 +352,8 @@ The running time of search  would always be O(n) since the only way of searching
 	}
 	 ``` 
 	but for the case of text, this is not that practical -> **Huffman coding**.
-	![Huffman Tree](Resources/huffman-srtuct.png)
-	Compression certainly has a lower limit, relavent to *information entropy*.  
+	![Huffman Tree](Resources/huffman-struct.png)
+	Compression certainly has a lower limit, relevant to *information entropy*.  
 	
 	```C
 	typedef struc node
@@ -385,17 +369,18 @@ The running time of search  would always be O(n) since the only way of searching
 	- **Hash tables**: Linear probing, or dynamically extended linked lists.  
 	- **Trie** type, widely used as spelling checker model (dictionary!).  
 	- **Min Heap** used in Graph Algorithms.
-1. [Problem set #5](https://docs.cs50.net/2017/x/psets/5/pset5.html): Mispellings  
+1. [Problem set #5](https://docs.cs50.net/2017/x/psets/5/pset5.html): Misspellings  
 <input type="checkbox" name="pset3" checked="True"> Status <br/>
 	- [Speller](https://docs.cs50.net/problems/speller/speller.html): `submit50 cs50/2017/x/speller`  
 	- Understand [C compiler](https://docs.cs50.net/problems/speller/speller.html#code-makefile-code)
 	- the [form](https://forms.cs50.net/2017/x/psets/5)   
 
-## VII. Web and Internet [w6]
- [//]: # (Waited to be reviewed after refered to a book.)  
+## IIX. Web and Internet [w6]
+<!-- Originally week 6 -->
+ [//]: # (Waited to be reviewed after referred to a book.)  
 1. Internet models. 
-	- A central **protocal** is used to assign certain settings to all the devices, so called **router**. It is a typical example, and a special type of software called **DHCP** (Dynamic Host Configuration Protocal). 
-	- At the first time a device is connected, a unique identifier, is given to it. **IP adress**, **Ether & Inet**.  
+	- A central **protocol** is used to assign certain settings to all the devices, so called **router**. It is a typical example, and a special type of software called **DHCP** (Dynamic Host Configuration Protocol). 
+	- At the first time a device is connected, a unique identifier, is given to it. **IP address**, **Ether & Inet**.  
 	- **DNS** helps the conversion between numerical address into more human-friendly host names, or fully qualified domain names (& thankfully no more mnemonics). Look up server address by cmd `nslookup xxxx`.  
 	- **Routers** globally system. Trace the route one query at a time to somewhere. `traceroute -q 1 xxxx`. 
 	- **Packet** leverage a feature of IP and its sister protocol(s) **TCP**(and others like **UDP** that often used for live streaming). The former fragment the info, and the TCP associates and guarantee fragments.  
@@ -412,13 +397,49 @@ The running time of search  would always be O(n) since the only way of searching
 
 [//]: # (Week 7: Machine Learning. This section is removed to another note, acting as an introduction.)
 
-## VII. Week 8: Python [w8] 
+## IX. Week 8: Python [w8] 
+<!-- Originally week 8 -->
+<!-- Move to II? Nope, but need to remove those Python codes in IV -->
+### Python
+- Recursion in Python: functions can call themselves. For example:
+
+	<details>
+
+	``` python
+	def factorial(n):
+		if  n == 1:  # base case
+			return 1
+		return n * factorial(n - 1)
+	```
+	
+	</details>
+cf. [Recursion Factorial](https://www.cs.usfca.edu/~galles/visualization/RecFact.html) visualization.
+- Object-Oriented Programming features in Python: paradigm based on object. For example:
+	<details>
+
+	```python
+	class Coordinates:
+		def __init__(self, x, y):
+			self.x = x
+			self.y = y
+		
+		def shift(self, x, y):
+			self.x += x
+			self.y += y
+			
+	p = Coordinates(1, 2)
+	p.shift(1, 1)
+	print('x = {}, y = {}'.format(p.x, p.y))
+	```
+
+	</details>
+
 1. The meaning of object type, value, and identity. Depending on the type of the object, it could be either immutable (*e.g.*, strings and tuples) or mutable (*e.g.*, dictionaries and lists). Methods are functions associated with objects, whereas data attributes are data associated with objects.   
 	Polymorphism to operators   
-	Typing or assigning data types feres to the set of rules that the language uses to ensure that the part of the program receiveing the data knows how to correctly interpret that data. Some langaguages are **statically typed**, like C/C++; whilst other languages are **dynamically typed**, like Python. Static typing means that type checking is perfoormed during compile time, whereas dynamic typing means that type checking is performed at run time. 
+	Typing or assigning data types feres to the set of rules that the language uses to ensure that the part of the program receiving the data knows how to correctly interpret that data. Some languages are **statically typed**, like C/C++; whilst other languages are **dynamically typed**, like Python. Static typing means that type checking is performed during compile time, whereas dynamic typing means that type checking is performed at run time. 
 	Therefore for an immutable object, like an int, Python creates a new object when operation is done; otherwise for a mutable object, it changes only the value at the address.   
 	
-	``` 
+	```
 	>>> N1 = 3
 	>>> N2 = N1
 	>>> N2 += 1
@@ -449,7 +470,7 @@ The running time of search  would always be O(n) since the only way of searching
 	>>> L3 is L1
 	False
 	```
-	More features of Python, see
+	More features of Python, see [xx]().
 	
 2. Web App with Python. 
 	![model](Resources/networkmodel.png)
@@ -459,20 +480,22 @@ The running time of search  would always be O(n) since the only way of searching
 	Flask, Twitter application, Analyzer
 <input type="checkbox" checked="True" name="pset3"> Status <br/>  
 
-## IIX. Week 9: SQL [w9]
+## X. Week 9: SQL [w9]
+<!-- Originally week 9 -->
 1. Model part of Web  
  
 1. [Problem set #7](https://docs.cs50.net/2017/x/psets/7/pset7.html): C$50 Finance  
 <input type="checkbox" name="pset3"> Status <br/>  
 
-## IX. Week 10: JavaScrip [w10]
+## XI. JavaScrip [w10]
+<!-- Originally week 10 -->
 1. [Problem set #8](https://docs.cs50.net/2017/x/psets/8/pset8.html): Mashup
 	- [Google map JS API](https://developers.google.com/maps/web/) powered by [Google Developers](console.developers.google.com)
 	- [Google JS tutorial](https://developers.google.com/maps/documentation/javascript/tutorial)  
 	- [SQLite csv_import](https://www.sqlite.org/cli.html#csv_import)
 <input type="checkbox" name="pset3"> Status <br/>  
 
-## X. Week 11: Final Project [final]
+## Final Project
 - [Project Page](https://docs.cs50.net/2017/fall/project/project.html)  
 
 ---
