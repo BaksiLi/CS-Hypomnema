@@ -38,7 +38,7 @@ According to [Curriculum Guidelines for Undergraduate Programs in Computer Scien
 ## I. Introductions
 
 1. [***Introduction to Computer Science***](https://github.com/BaksiLi/CS-Hypomnema/tree/master/Resources/General/IntroToCS.md) ![Editing](https://img.shields.io/badge/status-revising-lightgreen.svg)   
-	Note based on CS50 course, the content and structure is somewhat different from the [official syllables](http://docs.cs50.net/2017/x/syllabus.html).	It covers the basics of C, Python, Web Programming content like Javascript, HTML and CSS, as well as some important concepts in computer science like Computational Complexity.
+	Note based on [CS50](http://docs.cs50.net/2017/x/syllabus.html) course blended with some theoretical flavour. It covers the basics of C, Python, SQL, Web Programming content like Javascript, HTML and CSS, and important concepts in theoretical computer science.
 <!-- Keywords: `C`, `Python`, `JavaScript`, `HTML/CSS`,`SQL`, `basic data structures` and `algorithms` et.c. -->
 
 1. ***Introduction to Web Development*** ![Pending](https://img.shields.io/badge/status-Pending-orange.svg)    
