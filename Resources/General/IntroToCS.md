@@ -1,6 +1,8 @@
 <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 Introduction to Computer Science  
 ---  
+Note-taker: [Baksi](https://github.com/BaksiLi)  
+
 # Content
 
 - [Introduction](#intro)  
@@ -12,14 +14,15 @@ Introduction to Computer Science
 	1. [C Language Basics](#ii-c-language-basics)
 		1. Environments
 		1. C Language
-		1. Arrays
-	1. [Algorithms (Theory)](w3)
+		1. Array
+	1. [Computing](#iii-computing)
+		1. Addressing Computational Problems
 		1. Algorithm?
 		1. Computational Complexity
-		1. Addressing Computational Problems
-	1. [Search and Sort]()
-		1. Search and Sort
-		1. Other algorithms <!-- Light-ups -->
+	1. [Basic Algorithms](#iv-basic-algorithms)
+		1. Search Algorithms
+		1. Sort Algorithms
+		1. Others <!-- Light-ups -->
 	1. [Memory](w4)
 		1. RAM ...
 	1. [Data Structures](w5)
@@ -32,9 +35,8 @@ Introduction to Computer Science
 
 ---
 # Introduction
-Note-taker: [Baksi](https://github.com/BaksiLi)  
-This article is edited based on my note of CS50x 2017 of Harvard University, lectured by <a mailto="malan@havard.edu">David J. Malan</a>.
-The content and structure may be different from the [official syllables](http://docs.cs50.net/2017/x/syllabus.html) since it has been restructured and modified with new materials, esp. to the part of computations. Coding instructing parts were reduced for the sake of simplicity. Nevertheless, all the knowledge are covered and extended beyond their scope. 
+This is a short but tangible introduction of computer science, mostly based on the note of CS50x 2017 of Harvard University, lectured by <a mailto="malan@havard.edu">David J. Malan</a>.
+The content and structure may be different from the [official syllables](http://docs.cs50.net/2017/x/syllabus.html) since it has been restructured and modified with new materials, esp. the theoretical parts. Meanwhile, parts teaching how to code were reduced for the sake of simplicity. Nevertheless, all the knowledge are covered and extended beyond their scope. 
 The original course video and other supporting materials could be found in the [seminar page](http://cs50.tv/2017/fall/#about,lectures), or in their channel [cs50 live](https://www.youtube.com/user/cs50tv/).
  
 # Main
@@ -85,7 +87,7 @@ ISBN 0-321-84268-5
 ### C language
 - Introduction to *C* language and basic *Bash* instructions
 - Good coding style is important. [CS50 style guide of C](https://manual.cs50.net/style)
-### Array structure
+### Array
 - String: it turns out that underneath the hood, strings are a little more mundane - **grid of information**, sometimes known as bucket. Lee takes those contiguous block of memory "- L - e - e - \0 -" in RAM.  
 	`int main(int argc, string argv[])`  
 
@@ -100,9 +102,15 @@ ISBN 0-321-84268-5
 
 <!-- III. Arrays, Originally week 2, is moved to II-->
 
-## III. Algorithms [iii-algorithms]
+## III. Computing [iii-computing]
 <!-- Originally week 3 -->
 <!-- This chapter is modified according to Subrata Dasgupta's *Computer Science* -->
+## Addressing Computational Problems
+- To address a computational problem:
+	- Formulation:  Express the problem formally
+	- Specification: Find the **algorithm** to deploy
+	- Implementation: Coding
+
 ### Algorithm?
 - **Algorithms** are abstract artefacts of the method for solving problems. They are designed to meet the goals or needs of its performer, and embodies non-declarative procedures or *procedural knowledge* (objective knowledge as Karl Popper called).
 	- In chemistry, litmus test is a decision procedure which decides the acidity (or alkalinity) of substance, *if* blue *then* alkaline; *if* red, acid; *otherwise* it is neutral. Examples in maths: long division algorithm for factorization.
@@ -111,63 +119,58 @@ ISBN 0-321-84268-5
 - More generally, as enunciated by Donald Knuth, in order to procedure the following attributes must be satisfied:
 	1. Finiteness: An algorithm always terminates after a finite number of steps (or satisfied a certain termination criterion).
 	1. Definiteness: Every step of an algorithm must be precisely and unambiguously specified.
-		- In this sense, cookbook recipe is usually not algorithms, as it may includes instructions like 'cook slowly' or 'moderately' which rely on the performer's judgement to interpret.
+		- In this sense, cookbook recipe is usually not algorithms, as it may include instructions like 'cook slowly' or 'moderately' which rely on the performer's judgement to interpret.
 	1. Effectiveness: Each operation performed as part of an algorithm must be primitive enough for a human being to perform it exactly (using a pencil and paper).
 	1. Input and Output: An algorithm must have one or more inputs and one or more outputs.
 
 ### Computational Complexity
-- In terms of the growth rate (# of operations against input size $n$), functions are ordered:
+- An algorithm cannot be measured in *physical* time since it is abstract , and an algorithm qua algorithm involves no material thing. Instead, people assume that each basic step of the algorithm takes the same amount of time, a.k.a. *abstract* time.
+- In terms of the growth rate (# of operations against input size $n$), functions are roughly ordered:
 > Logarithmic $log(n)$, Linear $an + b$, Quadratic $an^2 + bn + c$, Polynomial $an^z + \dots + an^1 + an^0\text{ with constant }z$, Exponential $a^n\text{ with constant }a$, Factorial $n!$
-- **Asymptotic complexity** measures the efficiency. Its notations is to indicate the running time of a give algorithm, which takes the behaviour with increasing input size into account. 
+
+- **Asymptotic complexity** (introduced by German Mathematician P. Bachmann in 1892) provides a way to specify the efficiency of an algorithm as a function of the problems size $n$. 
 	- $O$, a.k.a. asymptotic upper bound -> worst-case scenario.
 	- $\Omega$, a.k.a. asymptotic lower bound -> best-case scenario.
 	- $\Theta$ notes when $\Omega = O$, known as the asymptotically tight bound.
 - Constants and low-order terms are dropped, which means two algorithms may have the same $O$ even though one is always faster than the other. Ordered:
 > $log(n)\leq n\leq n^2\leq n^z\leq a^n\approx n!$
 
-![Complexity illustration, $z=3$. © Author.](Resources/algorithms.png)
-
-## Addressing Computational Problems
-- To address a computational problem:
-	- Formulation:  Express the problem formally
-	- Specification: Find the algorithm to deploy
-	- Implementation: Coding
+![Complexity illustration, $z=3$. © Author.](Resources/algorithms2.png)
 
 - Further in algorithm and computational complexity theory, cf. *Graph Theory and Algorithms (with Python)* note.
 
-## V. Search and Sort [v-xx]
+## IV. Basic Algorithms [iv-basic-algorithms]
 <!-- Originally week 3 -->
-### Search and Sort
-1. Search (in a sorted list)
-	- Linear: Search linearly, i.e. if asking to guess a number in the range of 100, then $O(n)$.  
-	- Binary (Divide & Conquer Algorithm): $O(log_2 n)$.  
+#### Search Algorithms
+- *Linear Search*, i.e. if asking to guess a number in the range of 100, then $O(n)$.  
+- *BinarySearch* or Divide & Conquer, for a sorted list, for each step the middle entry is identified and compared to the target, $O(\log_2 n)$.  
 
-		<details>
-	
-		```python
-		def binary_search(list, n):	
-			low = 0
-			high = len(list) - 1
-			while low <= high:
-				mid = (low + high) / 2
-				guess = list[mid]
-				if guess == n:
-					return mid
-				if guess > n:
-					high = mid - 1
-				else:
-					high  = mod + 1
-			return None
-		```
-		
-		</details>
-1. Sorting  
-	1. **Counting sort**: Time Complexity: O(n+k) where n is the number of elements in input array and k is the range of input.
-	1. **Selection sort** gets slower&slower through time because the whole list is scanned every time.  $\Omega(n^2)$ ok 
+<details>
+
+```python
+def binary_search(list, n):	
+	low = 0
+	high = len(list) - 1
+	while low <= high:
+		mid = (low + high) / 2
+		guess = list[mid]
+		if guess == n:
+			return mid
+		if guess > n:
+			high = mid - 1
+		else:
+			high  = mod + 1
+	return None
+```
+
+</details>
+## Sort Algorithms
+1. **Counting sort**: Time Complexity: O(n+k) where n is the number of elements in input array and k is the range of input.
+1. **Selection sort** gets slower&slower through time because the whole list is scanned every time.  $\Omega(n^2)$ ok 
  `for i from 0 from n-1: find smallest between i'th and n-1'th: swap smallest with i'th ` 
  
-		<details>
-	
+	<details>
+
  		```python
  		def findsmallest(arr):
  			smallest = arr[0]
@@ -185,48 +188,47 @@ ISBN 0-321-84268-5
  				arr_new.append(arr.pop(smallest))
  			return arr_new
  		```
-		
-		</details>
-	1. **Bubble sort** that swap only consecutive pair-wises every time.
+	
+	</details>
+1. **Bubble sort** that swap only consecutive pair-wises every time.
  `repeat until no swaps: for i from 0 to n-2: if i'th and i+1'th elements out of order: swap them`  
 Upper boundary $(n-1) + (n-2) + ... + 1 \\ = \frac{n(n-1)}{2} = O(n^2)$  ; Lower boundary $\Omega$ = n
-	1.  **Insertion sort**(Counting sort)
+1.  **Insertion sort**(Counting sort)
 `for i from 1 to n-1: call 0'th throgh i-1'th elements the sorted side: remove i'th element: insert into sorted side in order `  
-	1. **Merge sort**
+1. **Merge sort**
 `On input of n elements: if n<2: return; else: sort left half of elements; sort right half of elements; merge sorted halves `  → $T(n) = T(\frac{n}{2}) + T(\frac{n}{2}) + O(n) \\ \stackrel{\text{if n \geq 2}}{=} O(nlogn)$  
 
-	<details>
-	
-	```C
-	int sigma(int m){
-		int sum = 0;
-		for(int i = 1; i <= n; i++){
-			sum += i;
-		}
-	 }
-	 ```
-	 *aut pro*:  
-	 ```C
-	 int sigma(int m){
-	 	if(m <= 0){
-	 		return 0;
-	 	}else{
-	 		return (m + sigma(m - 1));
-	 	}
-	 }
-	 ```
-	 in a **Reflexive** or **inductive** or **recursive** calls (use the definition again & again) fashion.
-	 
-	 </details>
-	 
-1. [Problem set #3](https://docs.cs50.net/2017/x/psets/3/pset3.html)  
- <input type="checkbox" name="pset3" checked='True'> Status <br/>
-	- Find, either less or more comfortable: (latter one is chosen)
-		- how to **configure a compiler**
-		- how to **write program in multiple files**
-	- Implement Game of Fifteen  
+<details>
 
-## VI. Memory [w4]
+```C
+int sigma(int m){
+	int sum = 0;
+	for(int i = 1; i <= n; i++){
+		sum += i;
+	}
+ }
+ ```
+ *aut pro*:  
+ ```C
+ int sigma(int m){
+ 	if(m <= 0){
+ 		return 0;
+ 	}else{
+ 		return (m + sigma(m - 1));
+ 	}
+ }
+ ```
+ in a **Reflexive** or **inductive** or **recursive** calls (use the definition again & again) fashion.
+ 
+ </details>
+	 
+### [Problem set #3](https://docs.cs50.net/2017/x/psets/3/pset3.html)  
+- Find, either less or more comfortable: (latter one is chosen)
+	- how to **configure a compiler**
+	- how to **write program in multiple files**
+- Implement Game of Fifteen  
+
+## V. Memory [w4]
 <!-- Originally week 4 -->
 1. Underneath the hood: **RAM**
 	Same "incantation of strings" are different, in the sense of memory. Why?
