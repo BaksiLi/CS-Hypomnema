@@ -40,7 +40,7 @@ The content and structure may be different from the [official syllables](http://
 The original course video and other supporting materials could be found in the [seminar page](http://cs50.tv/2017/fall/#about,lectures), or in their channel [cs50 live](https://www.youtube.com/user/cs50tv/).
  
 # Main
-## I. Programming [i-programming]
+## I. Programming
 <!-- Originally week 0 -->
 ### Scratch
  [Scratch](www.scratch.mit.edu) is a visual toolkit for amateurs to learn and grab an idea of *programming*. <img src="http://www.quarrylane.org/uploaded/Summer/images/ScratchBlogLogo.jpg" alt = "Scratch logo" width = "330" />
@@ -73,7 +73,7 @@ Henry S. Warren Jr.
 Pearson Education, 2013
 ISBN 0-321-84268-5
 
-## II. C Language Basics [ii-c-language-basics]
+## II. C Language Basics
 <!-- Originally week 1 -->
 ### Environment
 #### CS50 IDE
@@ -102,7 +102,7 @@ ISBN 0-321-84268-5
 
 <!-- III. Arrays, Originally week 2, is moved to II-->
 
-## III. Computing [iii-computing]
+## III. Computing
 <!-- Originally week 3 -->
 <!-- This chapter is modified according to Subrata Dasgupta's *Computer Science* -->
 ## Addressing Computational Problems
@@ -135,11 +135,9 @@ ISBN 0-321-84268-5
 - Constants and low-order terms are dropped, which means two algorithms may have the same $O$ even though one is always faster than the other. Ordered:
 > $log(n)\leq n\leq n^2\leq n^z\leq a^n\approx n!$
 
-![Complexity illustration, $z=3$. © Author.](Resources/algorithms2.png)
+<img src="Resources/algorithms2.png" alt="Complexity illustration. © Author." class="center">
 
-- Further in algorithm and computational complexity theory, cf. *Graph Theory and Algorithms (with Python)* note.
-
-## IV. Basic Algorithms [iv-basic-algorithms]
+## IV. Basic Algorithms
 <!-- Originally week 3 -->
 #### Search Algorithms
 - *Linear Search*, i.e. if asking to guess a number in the range of 100, then $O(n)$.  
@@ -164,37 +162,39 @@ def binary_search(list, n):
 ```
 
 </details>
+
 ## Sort Algorithms
 1. **Counting sort**: Time Complexity: O(n+k) where n is the number of elements in input array and k is the range of input.
 1. **Selection sort** gets slower&slower through time because the whole list is scanned every time.  $\Omega(n^2)$ ok 
  `for i from 0 from n-1: find smallest between i'th and n-1'th: swap smallest with i'th ` 
  
-	<details>
+<details>
 
- 		```python
- 		def findsmallest(arr):
- 			smallest = arr[0]
- 			smallest_index = 0
- 			for i in range(1, range(arr)):
- 				if arr[i] < smallest:
- 					smallest = arr[i]
- 					smallest_index = i
- 			return smallest_index
- 			
- 		def selection_sort(arr):
- 			arr_new = []
- 			for i in range(len(arr)):
- 				smallest = findsmaillest(arr)
- 				arr_new.append(arr.pop(smallest))
- 			return arr_new
- 		```
-	
-	</details>
+ ```python
+ def findsmallest(arr):
+ 	smallest = arr[0]
+ 	smallest_index = 0
+ 	for i in range(1, range(arr)):
+ 		if arr[i] < smallest:
+ 			smallest = arr[i]
+ 			smallest_index = i
+ 	return smallest_index
+ 	
+ def selection_sort(arr):
+ 	arr_new = []
+ 	for i in range(len(arr)):
+ 		smallest = findsmaillest(arr)
+ 		arr_new.append(arr.pop(smallest))
+ 	return arr_new
+ ```
+
+</details>
+
 1. **Bubble sort** that swap only consecutive pair-wises every time.
- `repeat until no swaps: for i from 0 to n-2: if i'th and i+1'th elements out of order: swap them`  
+ `repeat until no swaps: for i from 0 to n-2: if i-th and i + 1-th elements out of order: swap them`  
 Upper boundary $(n-1) + (n-2) + ... + 1 \\ = \frac{n(n-1)}{2} = O(n^2)$  ; Lower boundary $\Omega$ = n
 1.  **Insertion sort**(Counting sort)
-`for i from 1 to n-1: call 0'th throgh i-1'th elements the sorted side: remove i'th element: insert into sorted side in order `  
+`for i from 1 to n-1: call 0-th throgh i - 1-th elements the sorted side: remove i-th element: insert into sorted side in order `  
 1. **Merge sort**
 `On input of n elements: if n<2: return; else: sort left half of elements; sort right half of elements; merge sorted halves `  → $T(n) = T(\frac{n}{2}) + T(\frac{n}{2}) + O(n) \\ \stackrel{\text{if n \geq 2}}{=} O(nlogn)$  
 
@@ -228,7 +228,9 @@ int sigma(int m){
 	- how to **write program in multiple files**
 - Implement Game of Fifteen  
 
-## V. Memory [w4]
+- Further in algorithm and computational complexity theory, cf. *Graph Theory and Algorithms (with Python)* note.
+
+## V. Memory
 <!-- Originally week 4 -->
 1. Underneath the hood: **RAM**
 	Same "incantation of strings" are different, in the sense of memory. Why?
@@ -247,6 +249,7 @@ syntatic sugar `s[i]` is just `*(s+i)`
 	Read | O(1) | O(n)
 	Insert |  O(n) | O(1)
 	Remove | O(n) | O(1)
+	
 1. file structures
 	- Picture:
 		- BMP(Bit map): see [Bitmaps & Palette Manipulation](http://www.brackeen.com/vga/bitmaps.html).
@@ -258,12 +261,11 @@ syntatic sugar `s[i]` is just `*(s+i)`
 Incidentally, HTML and CSS (languages in which webpages can be written) model colours in this same way. If curious, see http://en.wikipedia.org/wiki/Web_colors for more details.
 	- CSV (Comma separated)
 ### [Problem set #4](https://docs.cs50.net/2017/x/psets/4/pset4.html): Forensics  
-<input type="checkbox" name="pset3" checked="True"> Status <br/>
 	- [Whodunit](https://docs.cs50.net/problems/whodunit/whodunit.html#background): restore a forensic image by switching certain pixels into other colours. To be familiar with the structure of 24-bit uncompressed BMPs.  
 	- Resize  NTBC;  
 	- [Recover](https://docs.cs50.net/problems/recover/recover.html)  
 
-## VII. Data Structures [w5]
+## VI. Data Structures
 <!-- Originally week 5 -->
 1. Data structure allows more flexible running, memory are allocated dynamically, rather than using remalloc(), free() and so frequently.  
 	- **Node** type is essential.  
@@ -399,8 +401,8 @@ The running time of search  would always be O(n) since the only way of searching
 
 [//]: # (Week 7: Machine Learning. This section is removed to another note, acting as an introduction.)
 
-## IX. Week 8: Python [w8] 
-<!-- Originally week 8 -->
+## IX. Python Language [w8] 
+<!-- Originally week 8 Python-->
 <!-- Move to II? Nope, but need to remove those Python codes in IV -->
 ### Python
 - Recursion in Python: functions can call themselves. For example:
