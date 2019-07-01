@@ -86,9 +86,9 @@ Mathematical prerequisites are covered in [Mathematics for Computer Science](htt
 	<summary>Workshop Lists</summary>
 	
 	<!-- Related functions -->
-	1. [Country flags colour analysis](https://github.com/BaksiLi/Wolflang-Workshops/blob/master/resources/AnalyzeFlagColours.nb): An analysis on the dominant colours of the country flags around the world.
+	1. [Analysis of Country Flags Colour](https://github.com/BaksiLi/Wolflang-Workshops/blob/master/src/AnalyzeFlagColours.nb): An analysis on the dominant colours of the country flags around the world.
 	1. [Impaint: Remove texts from Images](): This workshop starts from a simple usage – removing texts or any unwanted elements from an image – and therefore introduces *Impaint* function in Wolflang.
-	1. [Amateur sleuthing of NK nuclear tests](https://github.com/BaksiLi/Wolflang-Workshops/blob/master/resources/NorthKoreaSleuthing.nb): Edited note from Stephen Wolfram's live stream chat. I have added some parts into it as well.
+	1. [Amateur sleuthing of NK nuclear tests](https://github.com/BaksiLi/Wolflang-Workshops/blob/master/src/NorthKoreaSleuthing.nb): Edited note from Stephen Wolfram's live stream chat. I have added some parts into it as well.
 	1. [Research of Historical Events](): Edited note from Stephen Wolfram's live stream [*\#243*](https://www.twitch.tv/videos/421281599).
 	
 	</details>
