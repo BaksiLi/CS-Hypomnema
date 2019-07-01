@@ -10,20 +10,20 @@ Note-taker: [Baksi](https://github.com/BaksiLi)
 	1. [Programming](#i-programming)
 		1. Scratch
 		1. Program?
-		1. Computer Science?
-	1. [C Language Basics](#ii-c-language-basics)
-		1. Environments
-		1. C Language
-		1. Array
-	1. [Computing](#iii-computing)
+		1. What is Computer Science about?
+	1. [Computing](#ii-computing)
 		1. Addressing Computational Problems
 		1. Algorithm?
 		1. Computational Complexity
+	1. [C Language Basics](#iii-c-language-basics)
+		1. Environments
+		1. C Language
+		1. Array
 	1. [Basic Algorithms](#iv-basic-algorithms)
 		1. Search Algorithms
 		1. Sort Algorithms
 		1. Others <!-- Light-ups -->
-	1. [Memory](w4)
+	1. [Memory (Provisional)](v-xxxx)
 		1. RAM ...
 	1. [Data Structures](w5)
 		1. Node ...
@@ -38,23 +38,31 @@ Note-taker: [Baksi](https://github.com/BaksiLi)
 This is a short but tangible introduction of computer science, mostly based on the note of CS50x 2017 of Harvard University, lectured by <a mailto="malan@havard.edu">David J. Malan</a>.
 The content and structure may be different from the [official syllables](http://docs.cs50.net/2017/x/syllabus.html) since it has been restructured and modified with new materials, esp. the theoretical parts. Meanwhile, parts teaching how to code were reduced for the sake of simplicity. Nevertheless, all the knowledge are covered and extended beyond their scope. 
 The original course video and other supporting materials could be found in the [seminar page](http://cs50.tv/2017/fall/#about,lectures), or in their channel [cs50 live](https://www.youtube.com/user/cs50tv/).
- 
+
 # Main
 ## I. Programming
 <!-- Originally week 0 -->
+
 ### Scratch
  [Scratch](www.scratch.mit.edu) is a visual toolkit for amateurs to learn and grab an idea of *programming*. <img src="http://www.quarrylane.org/uploaded/Summer/images/ScratchBlogLogo.jpg" alt = "Scratch logo" width = "330" />
+
 ### How program works?  
 - **Computers** are information processing automata; they are dumb machines in the sense that they do *only* what user instructed, but at the same time very clever if the people behind are intelligent.
 - A computer **program** is a collection of instructions to achieve specific tasks. It is a liminal artefact, since instructions are abstract but the operations are done in the physical world. **Binaries** corresponded directly to specific instructions. 
 - **Assembly Language** enabled the programmers to use symbolics instead of binaries, released them from clerical workload, a symbolic assembler is used in such translations. It is just symbol-to-operation therefore low-level and not portable.
 - **Higher-level Language**s are designed, to abstract from features of the actual physical machines, among them *FORTRAN* (FORmula TRANslation Language) is the first. They requires a class of programs called **compilers** for translating  statements into sequence of machine codes (instructions) that can be directly executed. 
+	
 	- A good short-piece discussion of programming languages, see [Blue. No! Yellow!](https://blog.cleancoder.com/uncle-bob/2016/05/21/BlueNoYellow.html).
 - Tasks are approached by **Algorithms**.  
+	> A programmer designs algorithms, intended for mechanical execution, intended to control existing or conceivable computer equipment.   
+	Dijkstra, Edsger W. (1974), 'Programming as a Discipline of Mathematical Nature', *American Mathematical Monthly*, 81(6): 608–612. Available [here](http://www.cs.utexas.edu/~EWD/transcriptions/EWD03xx/EWD361.html).
+	
 - **Operating System** channeled all input and output (i.e. I/O) operations.
-### Computer Science?
+
+### What is Computer Science about?
 - Computational artefacts are *made*  things which entail the purpose of their creators. **Computer science** is the science of such artefacts.
 - Therefore often material computational artefacts, or computer hardwares, belong to the domain of engineering schools, while liminal and abstract ones are in the domain of school of science.
+
 ### Relevant readings at the stage
 - *How Computers Work*, Tenth Edition
 Ron White
@@ -73,43 +81,18 @@ Henry S. Warren Jr.
 Pearson Education, 2013
 ISBN 0-321-84268-5
 
-## II. C Language Basics
-<!-- Originally week 1 -->
-### Environment
-#### CS50 IDE
-- Environment: Cloud [IDE](https://ide.cs50.io/) platform, [CS50.h Reference](https://reference.cs50.net/math/modf). The library is available at GitHub, *cf.* [libcs50](https://github.com/cs50/libcs50).
-- Debugging in IDE: `eprintf`, ` help50` and `debug50`.
-#### In situ
-- Editors: [Vim](https://en.wikipedia.org/wiki/Vim_(text_editor)) or [Eclipse](https://en.wikipedia.org/wiki/Eclipse_(software)) for Hardcore players. The presenter uses [Atom](https://atom.io/).
 - IDEs are good and easy to install. 
-	- C: MacOS users can (sometimes must) install [Xcode](https://developer.apple.com/xcode/); for cross-platform [Visual Studio Code](https://code.visualstudio.com/).
-	- Python: [Anaconda](https://www.anaconda.com/distribution/) (with its Spyder) is the default choice for data scientists, while [PyCharm](https://www.jetbrains.com/pycharm/) is more compatible with other uses. However, in early 2019 Anaconda and JetBrains announced that they will [join forces to launch 'PyCharm for Anaconda'](https://www.businesswire.com/news/home/20190404005205/en/Anaconda-JetBrains-Join-Forces-Launch-%E2%80%98PyCharm-Anaconda%E2%80%99), so no more troubles in the future.
-### C language
-- Introduction to *C* language and basic *Bash* instructions
-- Good coding style is important. [CS50 style guide of C](https://manual.cs50.net/style)
-### Array
-- String: it turns out that underneath the hood, strings are a little more mundane - **grid of information**, sometimes known as bucket. Lee takes those contiguous block of memory "- L - e - e - \0 -" in RAM.  
-	`int main(int argc, string argv[])`  
-
-### [Problem set #1](https://docs.cs50.net/2017/x/psets/1/pset1.html)
-- Hello World  
-- Functions  
-- IO & Loop  
-### [Problem set #2](https://docs.cs50.net/2017/x/psets/2/pset2.html)
-- Caesar Cipher
-- Vigenere Cipher
-- [Crack Cytology question](https://docs.cs50.net/problems/crack/crack.html)
-
-<!-- III. Arrays, Originally week 2, is moved to II-->
-
-## III. Computing
+## II. Computing
 <!-- Originally week 3 -->
 <!-- This chapter is modified according to Subrata Dasgupta's *Computer Science* -->
-## Addressing Computational Problems
+## Levels of Transformation
 - To address a computational problem:
-	- Formulation:  Express the problem formally
-	- Specification: Find the **algorithm** to deploy
-	- Implementation: Coding
+	- **Formulation**:  Express the problem formally
+	- **Specification**: Find the *algorithm* to deploy
+	- **Implementation**: Programming (in a programming language).
+- Underneath the hood: Computer program is the specification of a desired computation in a language understandable to computers. To achieve this, the program is translated into **ISA** (Instruction Set Architecture), and to **microarchitecture**, **circuits** and eventually **electrical components**. This is roughly called ' 7-levels of transformation' (see Yale N. Patt and Sanjay J. Patel, Introduction to Computing Systems: From Bits and Gates to C and Beyond.).
+
+- The notion of abstraction (ergo non-distinction of soft- and hard-wares).
 
 ### Algorithm?
 - **Algorithms** are abstract artefacts of the method for solving problems. They are designed to meet the goals or needs of its performer, and embodies non-declarative procedures or *procedural knowledge* (objective knowledge as Karl Popper called).
@@ -136,6 +119,41 @@ ISBN 0-321-84268-5
 > $log(n)\leq n\leq n^2\leq n^z\leq a^n\approx n!$
 
 <img src="Resources/algorithms2.png" alt="Complexity illustration. © Author." class="center">
+
+## III. C Language Basics
+<!-- Originally week 1 -->
+### Environment
+#### CS50 IDE
+- Environment: Cloud [IDE](https://ide.cs50.io/) platform, [CS50.h Reference](https://reference.cs50.net/math/modf). The library is available at GitHub, *cf.* [libcs50](https://github.com/cs50/libcs50).
+- Debugging in IDE: `eprintf`, ` help50` and `debug50`.
+#### In situ
+- Editors: [Vim](https://en.wikipedia.org/wiki/Vim_(text_editor)) or [Eclipse](https://en.wikipedia.org/wiki/Eclipse_(software)) for Hardcore players. The presenter uses [Atom](https://atom.io/).
+- IDEs are good and easy to install. 
+	- C: MacOS users can (sometimes must) install [Xcode](https://developer.apple.com/xcode/); for cross-platform [Visual Studio Code](https://code.visualstudio.com/).
+	- Python: [Anaconda](https://www.anaconda.com/distribution/) (with its Spyder) is the default choice for data scientists, while [PyCharm](https://www.jetbrains.com/pycharm/) is more compatible with other uses. However, in early 2019 Anaconda and JetBrains announced that they will [join forces to launch 'PyCharm for Anaconda'](https://www.businesswire.com/news/home/20190404005205/en/Anaconda-JetBrains-Join-Forces-Launch-%E2%80%98PyCharm-Anaconda%E2%80%99), so no more troubles in the future.
+### C language
+- Introduction to *C* language and basic *Bash* instructions
+- Good coding style is important. [CS50 style guide of C](https://manual.cs50.net/style)
+- [Popular Coding Convention on Github](http://sideeffect.kr/popularconvention).
+### Array
+1. Data types come with computing languages. They define what data objects could hold along with the operations that are permissible on such values.  
+1. It could be either *primitive* or *structured* (composite of primitives).
+<!--- From data types to data structure?--->
+- An array (or linear list) is a . It is immutable: once created cannot be changed.
+
+- It turns out that underneath the hood, strings are a little more mundane - **grid of information**, sometimes known as bucket. Lee takes those contiguous block of memory "- L - e - e - \0 -" in RAM.  
+	`int main(int argc, string argv[])`  
+
+### [Problem set #1](https://docs.cs50.net/2017/x/psets/1/pset1.html)
+- Hello World  
+- Functions  
+- IO & Loop  
+### [Problem set #2](https://docs.cs50.net/2017/x/psets/2/pset2.html)
+- Caesar Cipher
+- Vigenere Cipher
+- [Crack Cytology question](https://docs.cs50.net/problems/crack/crack.html)
+
+<!-- III. Arrays, Originally week 2, is moved to II-->
 
 ## IV. Basic Algorithms
 <!-- Originally week 3 -->
@@ -167,7 +185,7 @@ def binary_search(list, n):
 1. **Counting sort**: Time Complexity: O(n+k) where n is the number of elements in input array and k is the range of input.
 1. **Selection sort** gets slower&slower through time because the whole list is scanned every time.  $\Omega(n^2)$ ok 
  `for i from 0 from n-1: find smallest between i'th and n-1'th: swap smallest with i'th ` 
- 
+
 <details>
 
  ```python
@@ -207,7 +225,7 @@ int sigma(int m){
 		sum += i;
 	}
  }
- ```
+```
  *aut pro*:  
  ```C
  int sigma(int m){
@@ -219,7 +237,7 @@ int sigma(int m){
  }
  ```
  in a **Reflexive** or **inductive** or **recursive** calls (use the definition again & again) fashion.
- 
+
  </details>
 	 
 ### [Problem set #3](https://docs.cs50.net/2017/x/psets/3/pset3.html)  
@@ -230,7 +248,7 @@ int sigma(int m){
 
 - Further in algorithm and computational complexity theory, cf. *Graph Theory and Algorithms (with Python)* note.
 
-## V. Memory
+## V. Memory (provisional)
 <!-- Originally week 4 -->
 1. Underneath the hood: **RAM**
 	Same "incantation of strings" are different, in the sense of memory. Why?
@@ -238,7 +256,7 @@ int sigma(int m){
 	A string is technically just the address of a character in memory (the first byte of your 'string' array, ends with '\0').   Therefore when two individually defined strings are compared, they are different since their address are different. It is just an address, AKA a **pointer**.  
 	A string is a synonym for a data type called `char *`, `strcmp()` can compare two strings from their pointers. 
 	
-	 [//]: # (He who wonderfully sat down with me at  office hours one day in the dining hall, trying to help me understand pointers because it was just so much more technical than the other stuffs. This is among those topics that might take a little bit of time to sink in, but it does. and when it does, it really is that proverbial light bulb that goes off. and for me that light bulb went off right then and there.) 
+	[//]: # "He who wonderfully sat down with me at  office hours one day in the dining hall, trying to help me understand pointers because it was just so much more technical than the other stuffs. This is among those topics that might take a little bit of time to sink in, but it does. and when it does, it really is that proverbial light bulb that goes off. and for me that light bulb went off right then and there."
 	`malloc()` tells computer to give a block of memory of sizeof(xx), and return it to main().  
 1. Pointer arithmetic  
 syntatic sugar `s[i]` is just `*(s+i)`   
@@ -276,7 +294,7 @@ Incidentally, HTML and CSS (languages in which webpages can be written) model co
 
 	*ut idem pro*:
 	
-	 ```C
+	```C
 	typedef struct node{
 		int n; 
 		struct node *next;
@@ -299,7 +317,7 @@ The running time of search  would always be O(n) since the only way of searching
 		}
 		return false;
 	}
-	``` 
+	```
 	
 	- **Stack** type: Push and Pop (?LIFO data structure)  
 
@@ -309,7 +327,7 @@ The running time of search  would always be O(n) since the only way of searching
 		int size;
 	}
 	stack;
-	``` 
+	```
 	
 	- **Queue** type: enqueue and dequeue   
 
@@ -320,12 +338,12 @@ The running time of search  would always be O(n) since the only way of searching
 		int size;
 	}
 	queue;
-	``` 
+	```
 	
 	- **Tree** type: <!--58:00-->
 ![tree](Resources/tree-struct.png)
 	*Binary search tree*, left smaller right greater. *aut idem pro*:  
-		 
+		
 	```C
 	typedef struc node{
 	int n;
@@ -333,7 +351,7 @@ The running time of search  would always be O(n) since the only way of searching
 		struct node *right;
 	}
 	node;
-	``` 
+	```
 	therefore searching function:
 	```C
 	bool search(int n, node *tree){
@@ -354,7 +372,7 @@ The running time of search  would always be O(n) since the only way of searching
 			return true;
 		}
 	}
-	 ``` 
+	```
 	but for the case of text, this is not that practical -> **Huffman coding**.
 	![Huffman Tree](Resources/huffman-struct.png)
 	Compression certainly has a lower limit, relevant to *information entropy*.  
@@ -368,7 +386,7 @@ The running time of search  would always be O(n) since the only way of searching
 		struct node *right;
 	}
 	node;
-	``` 	
+	```
 	
 	- **Hash tables**: Linear probing, or dynamically extended linked lists.  
 	- **Trie** type, widely used as spelling checker model (dictionary!).  
@@ -381,7 +399,7 @@ The running time of search  would always be O(n) since the only way of searching
 
 ## IIX. Web and Internet [w6]
 <!-- Originally week 6 -->
- [//]: # (Waited to be reviewed after referred to a book.)  
+[//]: # "Waited to be reviewed after referred to a book."
 1. Internet models. 
 	- A central **protocol** is used to assign certain settings to all the devices, so called **router**. It is a typical example, and a special type of software called **DHCP** (Dynamic Host Configuration Protocol). 
 	- At the first time a device is connected, a unique identifier, is given to it. **IP address**, **Ether & Inet**.  
@@ -399,7 +417,10 @@ The running time of search  would always be O(n) since the only way of searching
 	- `telnet sss.harvard.edu 80`. N.B. telnet and ftp are no longer available due to some "insecure" reason (or due to 32bit) on macOS 10.13, so nc, ssh and stfp is used instead. `curl -I ` just for header.  
 1. **CSS**  
 
-[//]: # (Week 7: Machine Learning. This section is removed to another note, acting as an introduction.)
+### Other programming paradigms
+- Declarative, logic programming
+
+[//]: # "Week 7: Machine Learning. This section is removed to another note, acting as an introduction."
 
 ## IX. Python Language [w8] 
 <!-- Originally week 8 Python-->
@@ -451,7 +472,7 @@ cf. [Recursion Factorial](https://www.cs.usfca.edu/~galles/visualization/RecFact
 	3
 	>>> N2
 	4
-	``` 
+	```
 	but for a mutable list:   
 
 	``` 
@@ -479,15 +500,16 @@ cf. [Recursion Factorial](https://www.cs.usfca.edu/~galles/visualization/RecFact
 2. Web App with Python. 
 	![model](Resources/networkmodel.png)
 	using http.server module b;
-1. [Problem set #6](https://docs.cs50.net/2017/x/psets/6/pset6.html): Sentimental
-	NTBC
+### [Problem set #6](https://docs.cs50.net/2017/x/psets/6/pset6.html): Sentimental
 	Flask, Twitter application, Analyzer
-<input type="checkbox" checked="True" name="pset3"> Status <br/>  
+
+
+<!-- Operating System? -->
 
 ## X. Week 9: SQL [w9]
 <!-- Originally week 9 -->
 1. Model part of Web  
- 
+
 1. [Problem set #7](https://docs.cs50.net/2017/x/psets/7/pset7.html): C$50 Finance  
 <input type="checkbox" name="pset3"> Status <br/>  
 
