@@ -7,21 +7,22 @@ Note-taker: [Baksi](https://github.com/BaksiLi)
 
 - [Introduction](#intro)  
 - [Main](#main)    
-	1. [Programming](#i-programming)
-		1. Scratch
-		1. Program?
+	1. [Before Everything](#i-before-everything)
+		1. What is a computer and what can it do?
+		1. What is Information?
 		1. What is Computer Science about?
 	1. [Computing](#ii-computing)
+		1. Notion of Abstraction
 		1. Addressing Computational Problems
+	1. [Programming](#iii-programming)
+		1. Preparations
+		1. Programming Languages
+		1. C Language
+	1. [Algorithms](#iv-basic-algorithms)
 		1. Algorithm?
 		1. Computational Complexity
-	1. [C Language Basics](#iii-c-language-basics)
-		1. Environments
-		1. C Language
-		1. Array
-	1. [Basic Algorithms](#iv-basic-algorithms)
-		1. Search Algorithms
-		1. Sort Algorithms
+		1. Basic Search Algorithms
+		1. Basic Sort Algorithms
 		1. Others <!-- Light-ups -->
 	1. [Memory (Provisional)](v-xxxx)
 		1. RAM ...
@@ -36,32 +37,30 @@ Note-taker: [Baksi](https://github.com/BaksiLi)
 ---
 # Introduction
 This is a short but tangible introduction of computer science, mostly based on the note of CS50x 2017 of Harvard University, lectured by <a mailto="malan@havard.edu">David J. Malan</a>.
-The content and structure may be different from the [official syllables](http://docs.cs50.net/2017/x/syllabus.html) since it has been restructured and modified with new materials, esp. the theoretical parts. Meanwhile, parts teaching how to code were reduced for the sake of simplicity. Nevertheless, all the knowledge are covered and extended beyond their scope. 
+The content and structure may be different from the [official syllables](http://docs.cs50.net/2017/x/syllabus.html) since it has been restructured and modified with new materials, esp. the theoretical parts. Meanwhile, parts teaching how to code were reduced for the sake of simplicity. Nevertheless, all the knowledge are covered and extended beyond their scope.   
+<!-- My aim is to... -->
 The original course video and other supporting materials could be found in the [seminar page](http://cs50.tv/2017/fall/#about,lectures), or in their channel [cs50 live](https://www.youtube.com/user/cs50tv/).
 
 # Main
-## I. Programming
+## I. Before Everything
 <!-- Originally week 0 -->
 
 ### Scratch
  [Scratch](www.scratch.mit.edu) is a visual toolkit for amateurs to learn and grab an idea of *programming*. <img src="http://www.quarrylane.org/uploaded/Summer/images/ScratchBlogLogo.jpg" alt = "Scratch logo" width = "330" />
 
-### How program works?  
-- **Computers** are information processing automata; they are dumb machines in the sense that they do *only* what user instructed, but at the same time very clever if the people behind are intelligent.
-- A computer **program** is a collection of instructions to achieve specific tasks. It is a liminal artefact, since instructions are abstract but the operations are done in the physical world. **Binaries** corresponded directly to specific instructions. 
-- **Assembly Language** enabled the programmers to use symbolics instead of binaries, released them from clerical workload, a symbolic assembler is used in such translations. It is just symbol-to-operation therefore low-level and not portable.
-- **Higher-level Language**s are designed, to abstract from features of the actual physical machines, among them *FORTRAN* (FORmula TRANslation Language) is the first. They requires a class of programs called **compilers** for translating  statements into sequence of machine codes (instructions) that can be directly executed. 
-	
-	- A good short-piece discussion of programming languages, see [Blue. No! Yellow!](https://blog.cleancoder.com/uncle-bob/2016/05/21/BlueNoYellow.html).
-- Tasks are approached by **Algorithms**.  
-	> A programmer designs algorithms, intended for mechanical execution, intended to control existing or conceivable computer equipment.   
-	Dijkstra, Edsger W. (1974), 'Programming as a Discipline of Mathematical Nature', *American Mathematical Monthly*, 81(6): 608–612. Available [here](http://www.cs.utexas.edu/~EWD/transcriptions/EWD03xx/EWD361.html).
-	
-- **Operating System** channeled all input and output (i.e. I/O) operations.
+Students are encouraged to play with scratch in the lecture.
+
+### What is a computer and what can it do?
+- **Computers** are information processing automata; they are dumb machines (*Electronic idiots*) in the sense that they do *only* what user instructed, but at the same time very clever if the people behind are intelligent.... {Discuss!}
+
+- What can a computer do?
 
 ### What is Computer Science about?
 - Computational artefacts are *made*  things which entail the purpose of their creators. **Computer science** is the science of such artefacts.
 - Therefore often material computational artefacts, or computer hardwares, belong to the domain of engineering schools, while liminal and abstract ones are in the domain of school of science.
+
+### What is Information?
+- Datum
 
 ### Relevant readings at the stage
 - *How Computers Work*, Tenth Edition
@@ -81,21 +80,76 @@ Henry S. Warren Jr.
 Pearson Education, 2013
 ISBN 0-321-84268-5
 
-- IDEs are good and easy to install. 
 ## II. Computing
 <!-- Originally week 3 -->
 <!-- This chapter is modified according to Subrata Dasgupta's *Computer Science* -->
-## Levels of Transformation
+
+### Notion of Abstraction
+- When we were taught about electric circuit, as the circuits get more and more complicated, often teachers would tell us to see some parts of them as *black boxes*. And when these black boxes are operating, unless problems occurred they could stay in this harmony for the rest of their life. They are given individual names, as the relay unit, the automatic tripping unit and so on. This process is called *abstraction*.
+- Levels of Transformation:   
+	- Computational problems > Algorithms > Language > Machine (ISA) Architecture > Microarchitecture > Circuits > Devices.   
+	(see Yale N. Patt and Sanjay J. Patel, Introduction to Computing Systems: From Bits and Gates to C and Beyond.).
+
+### Addressing a Computational Problem
 - To address a computational problem:
 	- **Formulation**:  Express the problem formally
 	- **Specification**: Find the *algorithm* to deploy
 	- **Implementation**: Programming (in a programming language).
-- Underneath the hood: Computer program is the specification of a desired computation in a language understandable to computers. To achieve this, the program is translated into **ISA** (Instruction Set Architecture), and to **microarchitecture**, **circuits** and eventually **electrical components**. This is roughly called ' 7-levels of transformation' (see Yale N. Patt and Sanjay J. Patel, Introduction to Computing Systems: From Bits and Gates to C and Beyond.).
 
-- The notion of abstraction (ergo non-distinction of soft- and hard-wares).
+- Underneath the hood: A computer program is the specification of a desired computation in a language understandable to computers. To achieve this, the program is translated into **ISA** (Instruction Set Architecture), and to **microarchitecture**, **circuits** and eventually **electrical components**. We do not bother too much about these in this module.
+- What is the difference between a program that does mathematical operations and the actual maths? A program however, when designing it, there are constraints which applied by virtue of the machine... (ergo non-distinction of soft- and hard-wares)
+
+
+## III. Programming
+<!-- Originally week 1 -->
+### Preparation
+#### CS50 IDE
+- Environment: Cloud [IDE](https://ide.cs50.io/) platform, [CS50.h Reference](https://reference.cs50.net/math/modf). The library is available at GitHub, *cf.* [libcs50](https://github.com/cs50/libcs50).
+- Debugging in IDE: `eprintf`, ` help50` and `debug50`.
+#### In situ
+- Elementary *Bash* instructions
+- Editors: [Vim](https://en.wikipedia.org/wiki/Vim_(text_editor)) or [Eclipse](https://en.wikipedia.org/wiki/Eclipse_(software)) for Hardcore players. The presenter uses [Atom](https://atom.io/).
+- IDEs are good and easy to install. 
+	- C: MacOS users can (sometimes must) install [Xcode](https://developer.apple.com/xcode/); for cross-platform [Visual Studio Code](https://code.visualstudio.com/).
+	- Python: [Anaconda](https://www.anaconda.com/distribution/) (with its Spyder) is the default choice for data scientists, while [PyCharm](https://www.jetbrains.com/pycharm/) is more compatible with other uses. However, in early 2019 Anaconda and JetBrains announced that they will [join forces to launch 'PyCharm for Anaconda'](https://www.businesswire.com/news/home/20190404005205/en/Anaconda-JetBrains-Join-Forces-Launch-%E2%80%98PyCharm-Anaconda%E2%80%99), so no more troubles in the future.
+
+### Programming Languages
+- A computer **program** is a collection of instructions to achieve specific tasks. It is a liminal artefact, since instructions are abstract but the operations are done in the physical world. **Binaries** corresponded directly to specific instructions. 
+- **Assembly Languages** enabled the programmers to use symbolics instead of binaries, released them from clerical workload, a symbolic assembler is used in such translations. It is just symbol-to-operation therefore low-level and not portable. Low-level languages are tied to the computer on which the programs will execute.
+- **High-level Languages** are designed, to abstract from features of the actual physical machines, among them *FORTRAN* (FORmula TRANslation Language) is the first.
+	- A good short-piece discussion of programming languages, see [Blue. No! Yellow!](https://blog.cleancoder.com/uncle-bob/2016/05/21/BlueNoYellow.html).
+- **Compilers** translate statements into sequence of machine codes (ISAs) that can be directly executed. The translation from the unique assembly language of a computer to its ISA is done by an assembler.
+
+### C Language
+- *C* language was designed for manipulation of low-level hardware structures.
+- Good coding style is important. [CS50 style guide of C](https://manual.cs50.net/style) and [Popular Coding Convention on Github](http://sideeffect.kr/popularconvention).
+#### Array
+1. Data types come with computing languages. They define what data objects could hold along with the operations that are permissible on such values.  
+1. It could be either *primitive* or *structured* (composite of primitives).
+<!--- From data types to data structure?--->
+- An array (or linear list) is a . It is immutable: once created cannot be changed.
+
+- It turns out that underneath the hood, strings are a little more mundane - **grid of information**, sometimes known as bucket. Lee takes those contiguous block of memory "- L - e - e - \0 -" in RAM.  
+	`int main(int argc, string argv[])`  
+
+### [Problem set #1](https://docs.cs50.net/2017/x/psets/1/pset1.html)
+- Hello World  
+- Functions  
+- IO & Loop  
+### [Problem set #2](https://docs.cs50.net/2017/x/psets/2/pset2.html)
+- Caesar Cipher
+- Vigenere Cipher
+- [Crack Cytology question](https://docs.cs50.net/problems/crack/crack.html)
+
+<!-- III. Arrays, Originally week 2, is moved to II-->
+
+## IV. Algorithms
+<!-- Originally week 3 -->
+> A programmer designs algorithms, intended for mechanical execution, intended to control existing or conceivable computer equipment.   
+Dijkstra, Edsger W. (1974), 'Programming as a Discipline of Mathematical Nature', *American Mathematical Monthly*, 81(6): 608–612. Available [here](http://www.cs.utexas.edu/~EWD/transcriptions/EWD03xx/EWD361.html).
 
 ### Algorithm?
-- **Algorithms** are abstract artefacts of the method for solving problems. They are designed to meet the goals or needs of its performer, and embodies non-declarative procedures or *procedural knowledge* (objective knowledge as Karl Popper called).
+- An **Algorithm** is an abstract artefacts of the method for solving problems, which embodies non-declarative procedure or *procedural knowledge* (objective knowledge as Karl Popper called).
 	- In chemistry, litmus test is a decision procedure which decides the acidity (or alkalinity) of substance, *if* blue *then* alkaline; *if* red, acid; *otherwise* it is neutral. Examples in maths: long division algorithm for factorization.
 	- "In computing practice the algorithm denotes the expression on paper of the proposed computational process (often by means of a flowchart) prior to the preparation of the program. If no algorithms is possible a heuristic solution has to be sought {in which it involves trial and error, as in iteration.}."
 	- In such procedure, the experimenter does not necessarily need to know why it works:- the execution is mindless thinking. It is comforting that the performance of an algorithm is not dependent of the performer.
@@ -120,44 +174,7 @@ ISBN 0-321-84268-5
 
 <img src="Resources/algorithms2.png" alt="Complexity illustration. © Author." class="center">
 
-## III. C Language Basics
-<!-- Originally week 1 -->
-### Environment
-#### CS50 IDE
-- Environment: Cloud [IDE](https://ide.cs50.io/) platform, [CS50.h Reference](https://reference.cs50.net/math/modf). The library is available at GitHub, *cf.* [libcs50](https://github.com/cs50/libcs50).
-- Debugging in IDE: `eprintf`, ` help50` and `debug50`.
-#### In situ
-- Editors: [Vim](https://en.wikipedia.org/wiki/Vim_(text_editor)) or [Eclipse](https://en.wikipedia.org/wiki/Eclipse_(software)) for Hardcore players. The presenter uses [Atom](https://atom.io/).
-- IDEs are good and easy to install. 
-	- C: MacOS users can (sometimes must) install [Xcode](https://developer.apple.com/xcode/); for cross-platform [Visual Studio Code](https://code.visualstudio.com/).
-	- Python: [Anaconda](https://www.anaconda.com/distribution/) (with its Spyder) is the default choice for data scientists, while [PyCharm](https://www.jetbrains.com/pycharm/) is more compatible with other uses. However, in early 2019 Anaconda and JetBrains announced that they will [join forces to launch 'PyCharm for Anaconda'](https://www.businesswire.com/news/home/20190404005205/en/Anaconda-JetBrains-Join-Forces-Launch-%E2%80%98PyCharm-Anaconda%E2%80%99), so no more troubles in the future.
-### C language
-- Introduction to *C* language and basic *Bash* instructions
-- Good coding style is important. [CS50 style guide of C](https://manual.cs50.net/style)
-- [Popular Coding Convention on Github](http://sideeffect.kr/popularconvention).
-### Array
-1. Data types come with computing languages. They define what data objects could hold along with the operations that are permissible on such values.  
-1. It could be either *primitive* or *structured* (composite of primitives).
-<!--- From data types to data structure?--->
-- An array (or linear list) is a . It is immutable: once created cannot be changed.
-
-- It turns out that underneath the hood, strings are a little more mundane - **grid of information**, sometimes known as bucket. Lee takes those contiguous block of memory "- L - e - e - \0 -" in RAM.  
-	`int main(int argc, string argv[])`  
-
-### [Problem set #1](https://docs.cs50.net/2017/x/psets/1/pset1.html)
-- Hello World  
-- Functions  
-- IO & Loop  
-### [Problem set #2](https://docs.cs50.net/2017/x/psets/2/pset2.html)
-- Caesar Cipher
-- Vigenere Cipher
-- [Crack Cytology question](https://docs.cs50.net/problems/crack/crack.html)
-
-<!-- III. Arrays, Originally week 2, is moved to II-->
-
-## IV. Basic Algorithms
-<!-- Originally week 3 -->
-#### Search Algorithms
+### Search Algorithms
 - *Linear Search*, i.e. if asking to guess a number in the range of 100, then $O(n)$.  
 - *BinarySearch* or Divide & Conquer, for a sorted list, for each step the middle entry is identified and compared to the target, $O(\log_2 n)$.  
 
@@ -181,7 +198,7 @@ def binary_search(list, n):
 
 </details>
 
-## Sort Algorithms
+### Sort Algorithms
 1. **Counting sort**: Time Complexity: O(n+k) where n is the number of elements in input array and k is the range of input.
 1. **Selection sort** gets slower&slower through time because the whole list is scanned every time.  $\Omega(n^2)$ ok 
  `for i from 0 from n-1: find smallest between i'th and n-1'th: swap smallest with i'th ` 
@@ -508,6 +525,7 @@ cf. [Recursion Factorial](https://www.cs.usfca.edu/~galles/visualization/RecFact
 
 ## X. Week 9: SQL [w9]
 <!-- Originally week 9 -->
+1. RegEx
 1. Model part of Web  
 
 1. [Problem set #7](https://docs.cs50.net/2017/x/psets/7/pset7.html): C$50 Finance  
