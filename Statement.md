@@ -1,6 +1,6 @@
 About learning
 ---
-This article is ought to be more private than the [main article]((https://github.com/BaksiLi/CS-Hypomnema/tree/master/README.md), a bit like a discussion but less formal. I decided to put some writings here because I didn't want to let them overstaff the collection. Since, as you may already noticed, I am a talkative person.
+This article is ought to be more private than the [main article](https://github.com/BaksiLi/CS-Hypomnema/tree/master/README.md), a bit like a discussion but less formal. I decided to put some writings here because I didn't want to let them overstuff the collection. Since, as you may already noticed, I am a talkative person.
 
 # Why bother to collect notes?
 I initially created this repository for storing some of the notes from finished online courses and university lectures. 
@@ -19,6 +19,8 @@ It is noted aptly in  [Curriculum Guidelines for Undergraduate Programs in Compu
 > While computer science encompasses technologies that change rapidly over time, it is defined by essential concepts, perspectives, and methodologies that are constant.
 
 <!-- Therefore, ... -->
+
+I pursue a bottom-up approach to the discipline of computational artefact, rather than 'information hiding'.
 
 # Acknowledgement
 [![Licence](https://ocw.tudelft.nl/wp-content/uploads/CC-by-nc-sa-300x105.jpg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)

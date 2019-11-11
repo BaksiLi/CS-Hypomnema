@@ -1,4 +1,4 @@
-CS-Hypomnema: Computer Science Notes Collection
+CS-Hypomnema: Computer Science Note Collection
 ---
 [![Licence: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/) <!-- contribute badge -->
 
@@ -39,13 +39,15 @@ According to [Curriculum Guidelines for Undergraduate Programs in Computer Scien
 
 1. [***Introduction to Computer Science***](https://github.com/BaksiLi/CS-Hypomnema/tree/master/Resources/General/IntroToCS.md) ![Editing](https://img.shields.io/badge/status-revising-lightgreen.svg)   
 	Note based on [CS50](http://docs.cs50.net/2017/x/syllabus.html) course blended with some theoretical flavour. It covers the basics of C, Python, SQL, Web Programming content like Javascript, HTML and CSS, and important concepts in theoretical computer science.
-<!-- Keywords: `C`, `Python`, `JavaScript`, `HTML/CSS`,`SQL`, `basic data structures` and `algorithms` et.c. -->
+	<!-- Keywords: `C`, `Python`, `JavaScript`, `HTML/CSS`,`SQL`, `basic data structures` and `basic algorithms` et.c. -->
+
+<details>
+<summary>Ongoing Projects</summary>
 
 1. ***Introduction to Web Development*** ![Pending](https://img.shields.io/badge/status-Pending-orange.svg)    
 	Note based on CS50w course structure. It covers Git, HTML/CSS, JavaScript, Web Frameworks like Flask, Django et.c.
-
-1. ***Zsh (Z shell) Development with Comparison to Bash*** ![Pending](https://img.shields.io/badge/status-Pending-orange.svg)   
-	This is a *Learn X in Y minutes*-styled tutorial of  Zsh development. It act as a fast introduction for programmers, esp. those who have knowledge about Bash.
+	
+</details>
 	
 <!-- 1. Philosophy of Information -->
 <!-- 1. Network -->
@@ -62,21 +64,33 @@ In addition, for visualizations there is [Data Structure Visualizations](https:/
 	A summary note from [NET04x](https://www.imt-atlantique.fr/fr/formation/moocs-et-cours-ouverts/moocs/advanced-algorithmics-and-graph-theory-python) (IMTx) and [ALGS202x](https://www.edx.org/course/graph-algorithms-uc-san-diegox-algs202x) (UCSanDiegoX) with a nicely balanced theoretical and practical content. In the end, an example on applying combinatorial game theory to win a game described by graph is provided.   
 	<sub>For anyone who wishes to go deeper in the computational theory (esp. after studied Chapter IV), reading of *Complexity and NP-Complete Problems* is highly recommended.</sub>
 
+<details>
+<summary>Ongoing Projects</summary>
+
 1. ***Complexity and NP-Complete Problems*** ![Pending](https://img.shields.io/badge/status-Pending-orange.svg)   
 	A note from [ALGS203x](https://www.edx.org/course/np-complete-problems-uc-san-diegox-algs203x) (UCSanDiegoX). It covers NP-completeness, approximate algorithms and algorithm analysis.
 
-\* <sub>Although I have never finished reading any one of them :(</sub>  
+</details>
 
-## III. Maths & Stats
+## III. Theories
 Mathematical prerequisites are covered in [Mathematics for Computer Science](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-042j-mathematics-for-computer-science-spring-2015/index.htm) (MIT).
+
+<details>
+<summary>Ongoing Projects</summary>
 
 <!-- Discrete Maths (Logic, graph), Information Theory -->
 1. ***Coding theory (with Python)*** ![Pending](https://img.shields.io/badge/status-Pending-orange.svg)   
 	This is a coding theory text (thanks to Prof. PPM) with Python implementations. Not ready to upload so far.
 
+</details>
+
 ## IV. Scientific Computing
-### i. Mathematica (Wolfram Language)
-1. [***Learn Mathematica by Example***](https://github.com/BaksiLi/Wolflang-Workshops/blob/master/resources/myNote.nb) ![Editing](https://img.shields.io/badge/status-revising-lightgreen.svg)   
+### High-Performance Computing (HPC)
+- High-Performance Computing Case Studies ![Editing](https://img.shields.io/badge/status-revising-lightgreen.svg)   
+
+## V. Language-specific Notes
+### Mathematica (Wolfram Language)
+1. [***Learn Mathematica by Example***](https://github.com/BaksiLi/Wolflang-Workshops/blob/master/src/myNote.nb) ![Editing](https://img.shields.io/badge/status-revising-lightgreen.svg)   
 	I wrote this notebook alongside with learning. The official tutorial, [*Fast Introduction for math students*](http://www.wolfram.com/language/fast-introduction-for-math-students/en/) is a good source of reference as well.
 1. [***WolfLang Workshops***](https://github.com/BaksiLi/Wolflang-Workshops) ![Editing](https://img.shields.io/badge/status-updating-lightgreen.svg)      
 	This is a collection of notebooks, each has its own topic. 
@@ -92,15 +106,27 @@ Mathematical prerequisites are covered in [Mathematics for Computer Science](htt
 	1. [Research of Historical Events](): Edited note from Stephen Wolfram's live stream [*\#243*](https://www.twitch.tv/videos/421281599).
 	
 	</details>
-	
-[//]: # (### ii. Machine Learning Specification)
-## V. Quantum Computing
+
+<details>
+<summary>Ongoing Projects</summary>
+
+1. ***Zsh (Z shell) Development with Comparison to Bash*** ![Pending](https://img.shields.io/badge/status-Pending-orange.svg)   
+	This is a *Learn X in Y minutes*-styled tutorial of  Zsh development. It act as a fast introduction for programmers, esp. those who have knowledge about Bash.
+
+</details>
+
+## VI. Quantum Computing
 For reading materials, [Quantum Computation and Quantum Information (Cambridge, 2010)](https://books.google.co.uk/books?id=-s4DEy7o-a0C) is the choice, though a bit dated, it is a classical reference for stepping into the field.
+
+<details>
+<summary>Ongoing Projects</summary>
 
 1. ***D-Wave machine Introduction*** ![Pending](https://img.shields.io/badge/status-Pending-orange.svg)   
 	This was part of my undergraduate thesis topic. The code is available now, see [here](https://github.com/BaksiLi/CS-Hypomnema/blob/master/Resources/Quantum/D-Wave/mapcl.py).   
 	
 <!-- As I've been studied about Quantum technologies for so long, and early notes are hand-written, the note in this part may lack of detail for fundamental stuffs. Another book (I know from my uni course) [Introduction to Quantum Information Science (Oxford, 2006)]() -->
+
+</details>
 
 # Acknowledgement
 Unless otherwise specified, the repository CS-Hypomnema and its contents are Copyright [BaksiLi](https://github.com/BaksiLi), and are licenced under the Creative Commons [BY-NC-SA](https://creativecommons.org/licenses/by-nc-sa/4.0/) (*Attribution-NonCommercial-ShareAlike 4.0 International*) Licence. 
