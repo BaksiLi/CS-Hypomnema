@@ -38,6 +38,7 @@ This is a summary note from NET04x (IMTx) [^1], ALGS202x and {NP-Complete Proble
 
 There are six units in total, where each unit consists of a section of theory and a several sections of algorithms.
 
+
 [^1]: [NET04x: Advanced Algorithmics and Graph Theory with Python](https://www.imt-atlantique.fr/fr/formation/moocs-et-cours-ouverts/moocs/advanced-algorithmics-and-graph-theory-python) at IMT website, or [Advanced Algorithmics and Graph Theory with Python] at EdX. 
 
 [^2]: [ALGS202x: Graph Algorithms](https://www.edx.org/course/graph-algorithms-uc-san-diegox-algs202x). (UCSanDiegoX).
@@ -116,13 +117,13 @@ Graph traversal explores the graph, one vertex at a time, between pairs of verti
 	- proof: Need to show reachability is an equivalence relation (Namely: 1.  v is reachable from v; 2. if v reachable from w, w is reachable from v; 3. if v reachable from u, and w reachable from v, w reachable from u.)
 	- 	Explore(v) modified with a counter
 
-		```
-		visited(v) <- true:
-		CCnum(v) <- cc
-		for (v, w) in E:
-			if not visited:
-				Explore(w)
-		```
+	```
+	visited(v) <- true:
+	CCnum(v) <- cc
+	for (v, w) in E:
+		if not visited:
+			Explore(w)
+	```
 		
 	- Still $O(|V|+|E|)$
 1. We can add Previsit and Postvisit orderings to the algorithm, which tell us about the execution of DFS. Lemma: For any vertices $u$, $v$ the intervals [pre(u), post(u)] and [pre(v), post(v)] are either nested or disjoint.
@@ -369,7 +370,7 @@ This section is in the status `to be added` since it is not included in the cour
 
 ### Travelling Salesperson Problem (TSP)
 - To find the shortest route going through all vertices of a weighted graph from an initial vertex. 
-- A typical **NP-hard** problem (proved) in **combinatorial optimisation**.
+- A typical **NP-hard**(? or just NP) problem (proved) in **combinatorial optimisation**.
 - The problem is represented by a weighted graph with vertices as cities and weights on the edges as travel costs. The aim is to find the path which has the minimum cost, *i.e.* the optimal solution. 
 - *E.g.* Transportation and logistics (to find the shortest path), Routing an artificial satellite (to reduce the cost in journey), Optical fibre network *etc*.
 - meta-graph
@@ -405,6 +406,8 @@ Iteratively examines the lengths of routes and immediately aborts examination of
 	- The order in which vertices are explored has an important influence on overall execution time.
 
 ## Unit 5 Heuristics, Greedy approaches
+> ... I imitated those travellers who, finding themselves lost in a forest, must not wander first in circles first to one side then to the other, and still less stop in one place, but have to walk as straight as possible in one direction, and not alter course for weak reasons, even if it might only have been chance which had led them to settle on the direction they had chosen; for by this means, even if they do not end up precisely where they want to be, they will eventually reach somewhere where they will most likely be better off than the middle of the forest. --- René Descartes, A Discourse on the Method
+
 - Heuristic, produce a solution that's faster to solve problem in hand. For example, if we know the direction of the destination, we can design the heuristic that move only in the direction, although this may be worse. A good heuristic provides a gain and is of the limited complexity.
 - Greedy Approach: The purpose of a greedy algorithm is to approximate the solution to a problem by a succession of locally optimal solutions. In TSP, we always chose to go for the edge with the shortest distance until reached the destination, which results in $O(|V|^{2})$.
 - An example in which greedy algorithm is optimal. 
