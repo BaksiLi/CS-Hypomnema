@@ -35,9 +35,8 @@ Note-taker: [Baksi](https://github.com/BaksiLi)
 
 ---
 # Preface
-This is a short but tangible introduction of Computer Science, originally the note of CS50x 2017 of Harvard University, lectured by <a mailto="malan@havard.edu">David J. Malan</a>.
-The content and structure is now largely different from the [CS50x syllables](http://docs.cs50.net/2017/x/syllabus.html) since it has been restructured and modified with new materials, according to my own taste (as a theorist). Meanwhile, parts which teach how to code were reduced for the sake of simplicity. Nevertheless, all the knowledge are covered and extended beyond their scope.   
-The original course video and other supporting materials could be found in the [seminar page](http://cs50.tv/2017/fall/#about,lectures), or in their channel [cs50 live](https://www.youtube.com/user/cs50tv/). It will also be helpful to check out the literature mentioned in the context.   
+This is a short but tangible introduction of Computer Science. I should give credits to CS50x 2017 of Harvard University, ALGS201x of UC San Diego, and a lot more.
+The content and structure is undergoing restructures and modifications according to my own taste (as a theorist). Parts which teach how to code were reduced for the sake of simplicity. Nevertheless, all the basics of CS are covered and extended beyond their scope. It will also be helpful to check out the literature mentioned in the context. It bears little resemblance to the early versions, having been improved by...   
 <center><b>Have a nice journey!</b></center>
 
 <details>
@@ -70,7 +69,7 @@ ISBN 0-321-84268-5
 - We will come back to its formal definition later after we discussed what is mean by computing.
 
 #### What is Computer Science about?
-- Computational artefacts are *made*  things which entail the purpose of their creators. **Computer science** is the science of such artefacts.
+- Computational artefacts are *made*  things which entail the purpose of their creators. **Computer science** is the study of such artefacts.
 - Therefore often material computational artefacts, or computer hardwares, belong to the domain of engineering schools, while liminal and abstract ones are in the domain of school of science.
 
 ### Notion of Abstraction
@@ -113,11 +112,12 @@ ISBN 0-321-84268-5
 - **Assembly Languages** enabled the programmers to use symbolics instead of binaries, released them from clerical workload, a symbolic assembler is used in such translations. It is just symbol-to-operation therefore low-level and not portable. Low-level languages are tied to the computer on which the programs will execute.
 - **High-level Languages** are designed, to abstract from features of the actual physical machines, among them *FORTRAN* (FORmula TRANslation Language) is the first.
 	- A good short-piece discussion of programming languages, see [Blue. No! Yellow!](https://blog.cleancoder.com/uncle-bob/2016/05/21/BlueNoYellow.html).
-- **Compilers** translate statements into sequence of machine codes (ISAs) that can be directly executed. The translation from the unique assembly language of a computer to its ISA is done by an assembler.
+- **Compilers** translate statements into sequence of machine codes (ISAs) that can be directly executed. The translation from the unique assembly language of a computer to its ISA is done by an assembler. Examples of compiled languages are Fortran, C/C++, Java, C#, Rust, Go, Swift, etc. Among which Java and C# compile into an intermediate machine language and are usually just-in-time compiled during execution.
+- **Interpreters**... E.g. Python, Ruby, Javascript, PHP, Lua
 
 ### C Language
-- https://www.youtube.com/watch?v=ci1PJexnfNE&ab_channel=Computerphile
-- *C* language was designed for manipulation of low-level hardware structures.
+- Short video: [Why is C so influential](https://www.youtube.com/watch?v=ci1PJexnfNE&ab_channel=Computerphile)
+- *C* language was designed for manipulation of low-level hardware structures. Famous compilers of C are gcc, clang, icc, pgcc, etc.
 - Good coding style is important. [CS50 style guide of C](https://manual.cs50.net/style) and [Popular Coding Convention on Github](http://sideeffect.kr/popularconvention).
 
 
@@ -554,6 +554,7 @@ int sigma(int m){
 		- curl ifconfig.me, open a specific port: sudo pfctl -vnf /etc/pf.conf
 		- show who is using lsof -i:8000 [open port](http://blog.csdn.net/human8848/article/details/52268337)
 	- To conclude: xx  
+	- json
 
 1. **HTTP**(Hyper Text Transmitting Protocol): "Handshake agreement", contents are written in **HTML**(Hyper Text Markup Language). <!-- Succint -->  
 	- **Status code**(Table).
@@ -569,6 +570,7 @@ int sigma(int m){
 <!-- Originally week 8 Python-->
 <!-- Move to II? Nope, but need to remove those Python codes in IV -->
 ### Python
+- Python is a high0level dynamic programming language, which supports procedural, object and functional programming paradigms. It could easily interface with C/C++ and many other languages.
 - Recursion in Python: functions can call themselves. For example:
 
 	<details>
